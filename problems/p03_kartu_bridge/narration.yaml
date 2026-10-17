@@ -6,85 +6,106 @@ voice: id-ID-ArdiNeural
 rate: "-4%"
 beats:
   - id: hook
+    visual: "Five cards fan in; K♥ and 7♣ lift out with tags 'bergambar', 'merah', 'hitam'; question mark."
     chapter: TANTANGAN
     say: "Dua kartu diambil dari satu set kartu bridge. Hanya satu yang bergambar, dan warnanya berbeda. Berapa peluangnya?"
     caption: "Dua kartu diambil dari satu set kartu bridge. | Hanya *satu* yang bergambar, dan warnanya *berbeda*. | Berapa peluangnya?"
 
   - id: question
+    visual: "Original question card; 'sekaligus', 'tepat satu kartu bergambar', 'berlainan warna' highlighted as read."
     chapter: SOAL
     say: "Soalnya begini. Dua kartu diambil sekaligus dari satu set kartu bridge standar, lima puluh dua kartu, tanpa joker. Berapa peluang tepat satu kartu bergambar, yaitu J, Q, atau K, dan kedua kartu berlainan warna?"
     caption: "Dua kartu diambil *sekaligus* dari 52 kartu bridge, tanpa joker. | Berapa peluang *tepat~satu* kartu bergambar (J,~Q,~atau~K) | dan kedua kartu *berlainan~warna*?"
   - id: options
+    visual: "Options 20/221 … 80/221 appear and pulse as read."
     say: "Pilihannya: dua puluh, empat puluh, enam puluh, atau delapan puluh, semuanya per dua ratus dua puluh satu."
     caption: "Pilihannya: 20, 40, 60, atau 80, semuanya per 221."
 
   - id: conditions
+    visual: "Two condition tags; examples: K♥+7♣ ✓ (cocok), K♥+Q♠ ✗ (2 bergambar), K♥+7♦ ✗ (warna sama)."
     chapter: PAHAMI
     say: "Ada dua syarat yang harus terpenuhi bersamaan. Pertama, tepat satu kartu bergambar. Kedua, warnanya berbeda: satu merah, satu hitam."
     caption: "Ada *dua* syarat sekaligus. | Pertama: tepat satu kartu bergambar. | Kedua: warnanya berbeda, satu merah, satu hitam."
   - id: together
+    visual: "K♥ 7♣ = 7♣ K♥ (cards swap along arcs); the set {K♥, 7♣} = 1 pasangan."
     say: "Diambil sekaligus berarti urutan tidak penting. Yang kita hitung adalah pasangan kartu."
     caption: "*Sekaligus* berarti urutan tidak penting. | Kita menghitung *pasangan* kartu."
 
   - id: deck
+    visual: "All 52 cards deal into a 4×13 grid (♥ ♦ ♠ ♣ × A…K); red rows get a pink band, black rows a grey band."
     chapter: KELOMPOK
     say: "Susun kelima puluh dua kartu. Ada empat jenis, masing-masing tiga belas kartu. Hati dan wajik berwarna merah, sekop dan keriting berwarna hitam."
     caption: "Susun ke-52 kartu: 4 jenis, masing-masing 13 kartu. | Hati dan wajik *merah*, sekop dan keriting *hitam*."
   - id: faces
+    visual: "An orange frame surrounds the J, Q, K columns; 12 = 6 merah + 6 hitam."
     say: "Kartu bergambar adalah J, Q, dan K, tiga di setiap jenis. Totalnya dua belas: enam merah dan enam hitam."
     caption: "Kartu bergambar: J, Q, dan K, tiga per jenis. | Totalnya 12: *6~merah* dan *6~hitam*."
   - id: plain
+    visual: "The other 40 cards pulse; 40 = 20 merah + 20 hitam."
     say: "Sisanya empat puluh kartu tidak bergambar: dua puluh merah dan dua puluh hitam."
     caption: "Sisanya 40 kartu tidak bergambar: *20~merah* dan *20~hitam*."
   - id: blocks
+    visual: "Cards fly into a 2×2 table of groups (Merah/Hitam × bergambar/tidak) with count badges 6, 6, 20, 20."
     say: "Jadi dek terbagi menjadi empat kelompok yang jelas."
     caption: "Jadi dek terbagi menjadi *empat* kelompok."
 
   - id: link
+    visual: "Table shrinks; top row then bottom row outlined; two green diagonal links connect the valid group pairs."
     chapter: PASANGAN
     say: "Tepat satu bergambar berarti satu kartu dari baris atas, dan satu dari baris bawah. Warna berbeda berarti kolomnya juga harus beda."
     caption: "Tepat satu bergambar: satu dari baris *atas*, satu dari baris *bawah*. | Warna berbeda: kolomnya juga harus *beda*."
   - id: rect1
+    visual: "6 × 20 dot rectangle (red-face × black-plain pairs) grows dot by dot; 6 × 20 = 120."
     say: "Merah bergambar dengan hitam tidak bergambar: enam kali dua puluh, ada seratus dua puluh pasangan."
     caption: "Merah bergambar dengan hitam tidak bergambar: | 6~×~20 = *120* pasangan."
   - id: rect2
+    visual: "Second 6 × 20 dot rectangle (black-face × red-plain); 120 + 120 = 240 circled."
     say: "Hitam bergambar dengan merah tidak bergambar: juga seratus dua puluh. Totalnya dua ratus empat puluh pasangan yang cocok."
     caption: "Hitam bergambar dengan merah tidak bergambar: juga 120. | Totalnya *240* pasangan yang cocok."
 
   - id: total
+    visual: "Tag 'cocok: 240'; slots Kartu ke-1: 52, Kartu ke-2: 51; 52 × 51 = 2652."
     chapter: SEMUA PASANGAN
     say: "Sekarang hitung semua pasangan yang mungkin. Kartu pertama punya lima puluh dua pilihan, kartu kedua lima puluh satu."
     caption: "Sekarang hitung *semua* pasangan. | Kartu pertama: 52 pilihan, kartu kedua: 51."
   - id: double
+    visual: "K♥7♣ = 7♣K♥ shown; formula becomes C(52,2) = 52×51/2 = 1326; tag 'semua: 1326'."
     say: "Tapi setiap pasangan terhitung dua kali. K hati lalu tujuh keriting, sama saja dengan tujuh keriting lalu K hati. Jadi kita bagi dua, hasilnya seribu tiga ratus dua puluh enam pasangan."
     caption: "Tapi setiap pasangan terhitung *dua~kali*: | K♥ lalu 7♣ sama dengan 7♣ lalu K♥. | Bagi dua: *1326* pasangan."
 
   - id: prob
+    visual: "P = 240/1326 assembled from the two tags."
     chapter: HITUNG
     say: "Peluangnya, dua ratus empat puluh per seribu tiga ratus dua puluh enam."
     caption: "Peluangnya 240 per 1326."
   - id: simplify
+    visual: "÷6 on numerator and denominator → 40/221; 240 = 6·40, 1326 = 6·221; circled."
     say: "Bagi pembilang dan penyebut dengan enam. Hasilnya empat puluh per dua ratus dua puluh satu."
     caption: "Bagi pembilang dan penyebut dengan 6: *40/221*."
 
   - id: answer
+    visual: "Option B confirmed with check badge; others fade."
     chapter: JAWABAN
     say: "Jadi jawabannya adalah B, empat puluh per dua ratus dua puluh satu."
     caption: "Jawabannya *B*, yaitu 40/221."
     pause: 0.8
 
   - id: seq
+    visual: "K♥ → 7♣ drawn one at a time; 6/52 × 20/51."
     chapter: CEK
     say: "Mari kita cek dengan mengambil kartu satu per satu. Misalnya, merah bergambar dulu, lalu hitam tidak bergambar: enam per lima puluh dua, dikali dua puluh per lima puluh satu."
     caption: "Cek dengan mengambil satu per satu. | Merah bergambar dulu, lalu hitam tidak bergambar: | 6/52~×~20/51."
   - id: seq2
+    visual: "4 × (6/52 × 20/51) = 480/2652 = 40/221 ✓, with 4 = 2 colour pairings × 2 orders."
     say: "Ada empat susunan seperti itu: dua pasangan warna, masing-masing dengan dua urutan. Empat kali hasil tadi, juga sama dengan empat puluh per dua ratus dua puluh satu."
     caption: "Ada *4* susunan: 2 pasangan warna × 2 urutan. | Hasilnya juga *40/221*."
   - id: trap
+    visual: "Card: only one colour pairing gives 120/1326 = 20/221 ✗ — 'jebakan pilihan A'."
     say: "Hati-hati. Kalau hanya menghitung satu pasangan warna, kamu mendapat dua puluh per dua ratus dua puluh satu. Itu jebakan di pilihan A."
     caption: "Hati-hati: hanya satu pasangan warna memberi 20/221. | Itu *jebakan* di pilihan A."
 
   - id: takeaway
+    visual: "Card: 1. kelompok 6, 6, 20, 20; 2. pasangkan: 6×20 + 6×20 = 240; 3. bagi: 240/1326 = 40/221."
     chapter: INTINYA
     say: "Intinya, pecah kartu menjadi kelompok yang jelas. Pasangkan kelompok yang memenuhi semua syarat, lalu kalikan untuk menghitung pasangannya."
     caption: "Intinya: pecah menjadi *kelompok* yang jelas. | Pasangkan kelompok yang memenuhi *semua* syarat, lalu *kalikan*."

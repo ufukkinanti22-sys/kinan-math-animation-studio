@@ -139,6 +139,7 @@ class TextCard(VGroup):
         self.rows = wrap(text, max_chars)
         self.size = size
         self.text = lines(*self.rows, size=size)
+        self.text.set_z_index(1)  # highlighter marks (z 0) always stay behind the words
         h = self.text.height + 2 * pad
         self.card = Card(width, h, fill=fill)
         self.text.move_to(self.card.body).align_to(self.card.body, LEFT).shift(RIGHT * pad)

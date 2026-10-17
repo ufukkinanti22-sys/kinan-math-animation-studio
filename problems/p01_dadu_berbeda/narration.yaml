@@ -6,87 +6,108 @@ voice: id-ID-ArdiNeural
 rate: "-4%"
 beats:
   - id: hook
+    visual: "Two dice drop and bounce (2 and 5); a red ≠ appears with the tag 'petunjuk: mata dadu berbeda'; a purple question mark pops above."
     chapter: TANTANGAN
     say: "Dua dadu dilempar, dan kita diberi satu petunjuk: kedua mata dadunya berbeda. Apakah petunjuk ini mengubah peluangnya?"
     caption: "Dua dadu dilempar, dan kita diberi satu *petunjuk*: kedua mata dadunya *berbeda*. | Apakah petunjuk ini mengubah peluangnya?"
 
   - id: question
+    visual: "The original question card slides in; 'kedua mata dadu berbeda' and 'bilangan prima' get yellow highlighter marks as they are read."
     chapter: SOAL
     say: "Soalnya begini. Dua dadu fair dilempar bersamaan. Diketahui kedua mata dadu berbeda. Berapa peluang jumlah mata dadunya merupakan bilangan prima?"
     caption: "Soalnya begini. Dua dadu fair dilempar bersamaan. | Diketahui kedua mata dadu *berbeda*. | Berapa peluang jumlahnya merupakan bilangan *prima*?"
   - id: options
+    visual: "Options A–D appear as cards and pulse as each value is read."
     say: "Pilihannya: sepertiga, tujuh per lima belas, delapan per lima belas, atau tujuh belas per tiga puluh."
     caption: "Pilihannya: 1/3, 7/15, 8/15, atau 17/30."
 
   - id: keyword
+    visual: "The question card shrinks to the top; the highlighted condition flies out into a red SYARAT tag."
     chapter: PAHAMI
     say: "Kata kuncinya adalah diketahui. Informasi itu mempersempit kemungkinan yang tersisa."
     caption: "Kata kuncinya: *diketahui*. Informasi itu mempersempit kemungkinan yang tersisa."
   - id: idea
+    visual: "A word fraction: Peluang = hasil yang cocok (green) / hasil yang masih mungkin (red)."
     say: "Jadi peluangnya adalah banyak hasil yang cocok, dibagi banyak hasil yang masih mungkin setelah syarat dipakai."
     caption: "Peluang = hasil yang *cocok* dibagi hasil yang *masih~mungkin* setelah syarat dipakai."
 
   - id: axes
+    visual: "Die faces 1–6 form the column header (Dadu 1, blue) and the row header (Dadu 2, orange)."
     chapter: RUANG SAMPEL
     say: "Mari susun semua kemungkinan. Dadu pertama bisa muncul satu sampai enam. Dadu kedua juga."
     caption: "Mari susun semua kemungkinan. Dadu pertama: 1 sampai 6. | Dadu kedua juga."
   - id: cells
+    visual: "Pair (2,5) is located from its two headers, then all 36 cells fill with pairs 'i,j'; 6×6 = 36 is written; all cells shimmer (equally likely)."
     say: "Setiap pasangan menempati satu kotak. Enam kali enam, ada tiga puluh enam hasil, dan semuanya sama mungkin."
     caption: "Setiap pasangan menempati satu kotak. | 6~×~6 = 36 hasil, semuanya *sama~mungkin*."
 
   - id: doubles
+    visual: "Condition tag appears; the six diagonal cells turn pink, then are struck through."
     chapter: SYARAT
     say: "Sekarang pakai petunjuknya: mata dadu berbeda. Pasangan kembar, satu satu, dua dua, sampai enam enam, tidak mungkin terjadi."
     caption: "Sekarang pakai petunjuknya: mata dadu *berbeda*. | Pasangan kembar (1,1), (2,2), ..., (6,6) *tidak~mungkin*."
   - id: shrink
+    visual: "Counter morphs 6×6=36 → 36−6=30 → boxed n(S) = 30."
     say: "Enam kotak di diagonal dicoret. Ruang sampel kita menyusut, dari tiga puluh enam menjadi tiga puluh."
     caption: "Enam kotak diagonal dicoret. | Ruang sampel menyusut: 36~−~6 = *30*."
 
   - id: sums
+    visual: "Each pair label morphs into its sum, sweeping along anti-diagonals."
     chapter: JUMLAH
     say: "Sekarang, ganti setiap pasangan dengan jumlah kedua matanya."
     caption: "Sekarang ganti setiap pasangan dengan *jumlah* kedua matanya."
   - id: pattern
+    visual: "An orange band outlines the anti-diagonal of 7s; the six 7s pulse."
     say: "Lihat polanya. Jumlah yang sama selalu berjajar miring. Misalnya, semua jumlah tujuh ada di satu garis."
     caption: "Lihat polanya: jumlah yang sama berjajar *miring*. | Semua jumlah 7 ada di satu garis."
 
   - id: primes
+    visual: "A 2…12 number strip appears; 2, 3, 5, 7, 11 turn green as they are named."
     chapter: PRIMA
     say: "Jumlahnya berkisar dari dua sampai dua belas. Yang prima adalah dua, tiga, lima, tujuh, dan sebelas."
     caption: "Jumlahnya dari 2 sampai 12. | Yang prima: 2, 3, 5, 7, dan 11."
   - id: two
+    visual: "Cell (1,1) pulses red; '2' on the strip turns red and is struck out."
     say: "Tapi jumlah dua hanya bisa dari satu dan satu. Itu pasangan kembar yang sudah dicoret, jadi tidak ikut dihitung."
     caption: "Tapi jumlah 2 hanya dari (1,1): pasangan kembar yang sudah *dicoret*."
 
   - id: light
+    visual: "Anti-diagonals for sums 3, 5, 7, 11 light up green (only non-diagonal cells)."
     chapter: HITUNG
     say: "Sekarang nyalakan jajaran jumlah tiga, lima, tujuh, dan sebelas."
     caption: "Nyalakan jajaran jumlah 3, 5, 7, dan 11."
   - id: count
+    visual: "Strip is replaced by 2 + 4 + 6 + 2 = 14; each term appears while its line pulses; 14 is circled."
     say: "Dua, ditambah empat, ditambah enam, ditambah dua. Ada empat belas kotak yang cocok."
     caption: "2 + 4 + 6 + 2 = *14* kotak yang cocok."
   - id: fraction
+    visual: "Table shrinks to the top; P(prima | berbeda) = 14/30 is assembled from the tally (14) and n(S) (30); ÷2 on both parts gives 7/15, circled."
     say: "Jadi peluangnya empat belas per tiga puluh. Bagi pembilang dan penyebut dengan dua, hasilnya tujuh per lima belas."
     caption: "Peluangnya 14/30. | Bagi pembilang dan penyebut dengan 2: *7/15*."
 
   - id: answer
+    visual: "Options return; B scales up, turns green and gets a check badge; others fade."
     chapter: JAWABAN
     say: "Jadi jawabannya adalah B, tujuh per lima belas."
     caption: "Jawabannya *B*, yaitu 7/15."
     pause: 0.8
 
   - id: symmetry
+    visual: "Full table returns; a dashed purple mirror line is drawn on the diagonal; the lower half fades; tag '15 pasangan'."
     chapter: CEK
     say: "Mari kita cek dengan cara lain. Tabelnya simetris, jadi cukup lihat setengahnya: lima belas pasangan berbeda, tanpa memperhatikan urutan."
     caption: "Cek dengan cara lain. Tabelnya *simetris*. | Cukup lihat setengahnya: 15 pasangan tanpa urutan."
   - id: half
+    visual: "The 7 green cells in the upper half pulse; 7/15 with a check badge appears."
     say: "Di setengah ini, yang jumlahnya prima ada tujuh. Tujuh dari lima belas. Hasilnya sama!"
     caption: "Yang jumlahnya prima ada 7. | 7 dari 15, hasilnya *sama*!"
   - id: trap
+    visual: "Card: 'Tanpa memakai syarat': 15/36 = 5/12 with a red cross, 'tidak ada di pilihan'."
     say: "Hati-hati. Kalau syaratnya diabaikan, kamu akan membagi dengan tiga puluh enam, dan mendapat lima per dua belas. Itu tidak ada di pilihan."
     caption: "Hati-hati: tanpa syarat, peluangnya 15/36 = 5/12. | Tidak ada di pilihan."
 
   - id: takeaway
+    visual: "Summary card: 1. Coret yang tidak mungkin (36→30), 2. Hitung yang cocok (14), P = 14/30 = 7/15 circled."
     chapter: INTINYA
     say: "Intinya, kata diketahui berarti ruang sampel menyusut. Coret dulu yang tidak mungkin, baru hitung yang cocok."
     caption: "Intinya: *diketahui* berarti ruang sampel *menyusut*. | Coret dulu yang tidak mungkin, baru hitung yang cocok."

@@ -93,6 +93,9 @@ jobs:
           pip install -r requirements.txt
           manim --version
 
+      - name: Verify mathematics (brute force)
+        run: python scripts/verify_math.py
+
       - name: Generate narration (edge-tts, Indonesian)
         id: narrate
         if: env.NARRATION == 'true'
