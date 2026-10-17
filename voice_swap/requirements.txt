@@ -1,0 +1,21 @@
+# Versions known to work with Seed-VC's BigVGAN loader (newer huggingface_hub 1.x / transformers 5.x
+# changed an interface Seed-VC relies on and fail with "_from_pretrained() missing ... proxies").
+torch
+torchaudio
+transformers>=4.46,<5
+huggingface_hub>=0.28.1,<1.0
+munch
+einops
+pyyaml
+pydub
+scipy
+librosa
+soundfile
+descript-audio-codec
+resemblyzer
+faster-whisper
+jiwer
+num2words
+matplotlib
+scikit-learn
+setuptools<81

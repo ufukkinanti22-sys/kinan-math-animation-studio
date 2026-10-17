@@ -43,6 +43,13 @@ def load_seedvc(seedvc_dir: Path):
     sys.path.insert(0, str(seedvc_dir))
     os.chdir(seedvc_dir)  # Seed-VC uses relative paths (configs/, ./checkpoints cache)
     sys.argv = [sys.argv[0]]
+    import soundfile
+    import torchaudio
+
+    def save_wav(path, wav, sr, **_):  # torchaudio >= 2.9 needs torchcodec just to write a WAV
+        soundfile.write(str(path), wav.detach().cpu().numpy().T, int(sr))
+
+    torchaudio.save = save_wav
     if not torch.cuda.is_available():
         import transformers  # CPU: Whisper must not be loaded in float16
 

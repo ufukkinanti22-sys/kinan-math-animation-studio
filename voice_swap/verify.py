@@ -79,7 +79,8 @@ class Asr:
                                   device="cuda" if gpu else "cpu", compute_type="float16" if gpu else "int8")
 
     def __call__(self, wav: Path) -> tuple[str, list[tuple[str, float]]]:
-        segs, _ = self.model.transcribe(str(wav), language="id", beam_size=5, word_timestamps=True,
+        # decode with ffmpeg ourselves (faster-whisper's PyAV decoder breaks on some PyAV versions)
+        segs, _ = self.model.transcribe(decode(wav, 16000), language="id", beam_size=5, word_timestamps=True,
                                         condition_on_previous_text=False)
         words = [(w.word, float(w.start)) for s in segs for w in (s.words or [])]
         return " ".join(w for w, _ in words), words

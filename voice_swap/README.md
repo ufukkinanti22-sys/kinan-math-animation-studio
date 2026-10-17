@@ -39,8 +39,7 @@ assets/audio/<id>/<beat>.mp3 ──► convert_beats (Seed-VC) ──► <beat>.
 
 ```bash
 git clone https://github.com/Plachtaa/seed-vc seed-vc
-pip install torch torchaudio munch einops transformers huggingface_hub pyyaml pydub scipy librosa soundfile \
-    descript-audio-codec resemblyzer faster-whisper jiwer num2words matplotlib scikit-learn
+pip install -r voice_swap/requirements.txt   # versi dipatok: transformers<5 dan huggingface_hub<1.0 wajib
 python -m voice_swap.run --zip Kinan_Voice_References.zip --seedvc-dir seed-vc --stage trial
 python -m voice_swap.run --zip Kinan_Voice_References.zip --seedvc-dir seed-vc --stage rest
 ```
@@ -62,14 +61,14 @@ Hasil diserahkan lewat unduhan langsung (Colab / lampiran), bukan lewat commit.
 | Komponen | Lisensi | Status verifikasi |
 |---|---|---|
 | Kode Seed-VC | **GPL-3.0** (berkas `LICENSE` di repositori Seed-VC) | terverifikasi |
-| Model Seed-VC `Plachta/Seed-VC` | ? | **belum terverifikasi** (huggingface.co tidak bisa diakses saat pembuatan) |
-| `openai/whisper-small` | ? | belum terverifikasi |
-| `nvidia/bigvgan_v2_22khz_80band_256x` | ? | belum terverifikasi |
-| `funasr/campplus` | ? | belum terverifikasi |
+| Model Seed-VC `Plachta/Seed-VC` | **gpl-3.0** | terverifikasi dari kartu model, 2026-10-17 |
+| `openai/whisper-small` | **apache-2.0** | terverifikasi dari kartu model, 2026-10-17 |
+| `nvidia/bigvgan_v2_22khz_80band_256x` | **mit** | terverifikasi dari kartu model, 2026-10-17 |
+| `funasr/campplus` | **apache-2.0** | terverifikasi dari kartu model, 2026-10-17 |
 
 `python -m voice_swap.check_licenses --seedvc-dir seed-vc` membaca lisensi tiap model langsung dari kartu
 model di Hugging Face dan menulisnya ke `voice_out/reports/licenses.json` (dijalankan otomatis oleh `run.py`).
-**Periksa hasilnya sebelum memakai audio untuk keperluan komersial.**
+Kartu model hanya menyebut lisensi bobot model; kebijakan penggunaan data pelatihan tidak ikut terperiksa.
 
 Catatan GPL-3.0: Seed-VC dipakai sebagai program terpisah (di-*clone* saat dijalankan, tidak disalin ke
 repositori ini). GPL mewajibkan sumber terbuka bila Anda *mendistribusikan* kode Seed-VC (atau turunannya);
