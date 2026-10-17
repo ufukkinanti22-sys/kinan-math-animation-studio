@@ -7,3 +7,11 @@ output/tmp/
 output/preview/
 *.log
 .DS_Store
+
+# Voice swap: personal voice material and its outputs must never be committed (public repo)
+voice_private/
+voice_out/
+*.m4a
+*.aac
+*.wav
+!assets/**/*.wav

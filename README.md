@@ -114,6 +114,12 @@ python scripts/narrate.py p01_dadu_berbeda      # needs internet
 python scripts/render.py p01_dadu_berbeda --quality preview
 ```
 
+## Ganti suara narator (voice swap)
+
+[`voice_swap/`](voice_swap/README.md) mengganti **hanya suara narator** pada video yang sudah jadi dengan suara
+pemilik (Seed-VC, speech-to-speech), tanpa menyentuh gambar. Rekaman suara pribadi tidak pernah disimpan di
+repositori ini.
+
 ## Credits
 
 - Visual language inspired by the provided reference explainer (cream canvas, bold
