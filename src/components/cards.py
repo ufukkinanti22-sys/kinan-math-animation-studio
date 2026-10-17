@@ -7,7 +7,7 @@ from manim import (
     DOWN, LEFT, ORIGIN, RIGHT, UP, Circle, Line, RoundedRectangle, VGroup, VMobject,
 )
 
-from .text import BLACK, HEAVY, T, wrap_lines
+from .text import BLACK, HEAVY, T, lines, wrap
 from .theme import THEME
 
 PX = 1 / 120  # one pixel at 1080x1920
@@ -43,7 +43,7 @@ class Pill(VGroup):
     """Small rounded chapter label, e.g. ``RUANG SAMPEL``."""
 
     def __init__(self, text: str, color: str | None = None, fill: str | None = None,
-                 size: float = 30, **kw):
+                 size: float = 34, **kw):
         super().__init__(**kw)
         label = T(text.upper(), size=size, color=color or THEME.purple, weight=BLACK)
         bg = RoundedRectangle(
@@ -136,11 +136,36 @@ class TextCard(VGroup):
     def __init__(self, text: str, width: float = 8.0, size: float = 36,
                  max_chars: int = 34, pad: float = 0.4, fill: str | None = None, **kw):
         super().__init__(**kw)
-        self.text = wrap_lines(text, max_chars=max_chars, size=size)
+        self.rows = wrap(text, max_chars)
+        self.size = size
+        self.text = lines(*self.rows, size=size)
         h = self.text.height + 2 * pad
         self.card = Card(width, h, fill=fill)
         self.text.move_to(self.card.body).align_to(self.card.body, LEFT).shift(RIGHT * pad)
         self.add(self.card, self.text)
+
+    def mark(self, phrase: str, color: str | None = None) -> VGroup:
+        """Highlighter boxes behind ``phrase`` (may span several lines)."""
+        full = " ".join(self.rows)
+        start = full.find(phrase)
+        if start < 0:
+            raise ValueError(f"phrase not in card: {phrase!r}")
+        end = start + len(phrase)
+        cap = self.size * 0.72 / 120
+        boxes = VGroup()
+        offset = 0
+        for r, row in enumerate(self.rows):
+            a, b = max(start, offset) - offset, min(end, offset + len(row)) - offset
+            if a < b:
+                glyphs = VGroup(*[g for ch, g in zip(row[a:b], self.text[r][a:b]) if ch != " "])
+                base = min((g.get_bottom()[1] for ch, g in zip(row, self.text[r])
+                            if ch in "acemnorsuvwxz"), default=self.text[r].get_bottom()[1])
+                box = RoundedRectangle(width=glyphs.width + 0.14, height=cap * 1.9, corner_radius=0.07,
+                                       fill_color=color or THEME.hl, fill_opacity=1, stroke_width=0)
+                box.move_to([glyphs.get_center()[0], base + cap / 2, 0])
+                boxes.add(box)
+            offset += len(row) + 1
+        return boxes
 
 
 def column(*mobs, buff: float = 0.3, aligned_edge=ORIGIN) -> VGroup:

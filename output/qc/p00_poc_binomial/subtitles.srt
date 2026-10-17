@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:05,771
+Banyak yang mengira (a + b)² sama dengan a² + b².
+
+2
+00:00:05,771 --> 00:00:09,402
+Benarkah?
+
+3
+00:00:09,433 --> 00:00:11,883
+Mari kita lihat.
+
+4
+00:00:11,883 --> 00:00:14,254
+Gambar persegi dengan sisi a + b.
+
+5
+00:00:14,254 --> 00:00:18,091
+Luasnya adalah (a + b)².
+
+6
+00:00:18,100 --> 00:00:24,166
+Sekarang potong persegi itu, sekali mendatar, sekali tegak.
+
+7
+00:00:24,167 --> 00:00:32,729
+Muncul empat bagian: a², b², dan dua persegi panjang a × b.
+
+8
+00:00:32,733 --> 00:00:40,503
+Jumlahkan semua bagian: a² + 2ab + b².
+
+9
+00:00:40,533 --> 00:00:49,941
+Jadi 2ab itulah yang sering terlupa: dua persegi panjang di tengah.

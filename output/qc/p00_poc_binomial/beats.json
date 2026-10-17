@@ -1,0 +1,112 @@
+{
+  "problem": "p00_poc_binomial",
+  "theme": "kinan",
+  "duration": 49.967,
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 9.433,
+      "chapter": "PERTANYAAN",
+      "audio": true,
+      "say": "Banyak yang mengira, a ditambah b, lalu dikuadratkan, sama dengan a kuadrat ditambah b kuadrat. Benarkah?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 5.771,
+          "text": "Banyak yang mengira (a + b)² sama dengan a² + b²."
+        },
+        {
+          "start": 5.771,
+          "end": 9.402,
+          "text": "Benarkah?"
+        }
+      ]
+    },
+    {
+      "id": "square",
+      "start": 9.433,
+      "end": 18.1,
+      "chapter": "LIHAT LUASNYA",
+      "audio": true,
+      "say": "Mari kita lihat. Gambar persegi dengan sisi a ditambah b. Luasnya adalah a ditambah b, dikuadratkan.",
+      "pages": [
+        {
+          "start": 9.433,
+          "end": 11.883,
+          "text": "Mari kita lihat."
+        },
+        {
+          "start": 11.883,
+          "end": 14.254,
+          "text": "Gambar persegi dengan sisi a + b."
+        },
+        {
+          "start": 14.254,
+          "end": 18.091,
+          "text": "Luasnya adalah (a + b)²."
+        }
+      ]
+    },
+    {
+      "id": "cut",
+      "start": 18.1,
+      "end": 24.167,
+      "chapter": null,
+      "audio": true,
+      "say": "Sekarang potong persegi itu di titik yang sama, sekali mendatar, sekali tegak.",
+      "pages": [
+        {
+          "start": 18.1,
+          "end": 24.166,
+          "text": "Sekarang potong persegi itu, sekali mendatar, sekali tegak."
+        }
+      ]
+    },
+    {
+      "id": "parts",
+      "start": 24.167,
+      "end": 32.733,
+      "chapter": null,
+      "audio": true,
+      "say": "Muncul empat bagian: persegi a kuadrat, persegi b kuadrat, dan dua persegi panjang, masing-masing a kali b.",
+      "pages": [
+        {
+          "start": 24.167,
+          "end": 32.729,
+          "text": "Muncul empat bagian: a², b², dan dua persegi panjang a × b."
+        }
+      ]
+    },
+    {
+      "id": "sum",
+      "start": 32.733,
+      "end": 40.533,
+      "chapter": "SUSUN RUMUSNYA",
+      "audio": true,
+      "say": "Jumlahkan semua bagian. a kuadrat, ditambah dua a b, ditambah b kuadrat.",
+      "pages": [
+        {
+          "start": 32.733,
+          "end": 40.503,
+          "text": "Jumlahkan semua bagian: a² + 2ab + b²."
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "start": 40.533,
+      "end": 49.967,
+      "chapter": "INTINYA",
+      "audio": true,
+      "say": "Jadi, dua a b itulah yang sering terlupa. Dua persegi panjang di tengah, yang terlihat jelas di gambar.",
+      "pages": [
+        {
+          "start": 40.533,
+          "end": 49.941,
+          "text": "Jadi 2ab itulah yang sering terlupa: dua persegi panjang di tengah."
+        }
+      ]
+    }
+  ]
+}

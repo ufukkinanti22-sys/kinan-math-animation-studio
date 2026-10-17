@@ -37,7 +37,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PROBLEMS = ROOT / "problems"
 AUDIO = ROOT / "assets" / "audio"
 
-CHARS_PER_SECOND = 14.0  # speaking-rate estimate used when no audio exists
+CHARS_PER_SECOND = 12.5  # speaking-rate estimate used when no audio exists
 DEFAULT_PAUSE = 0.45
 
 

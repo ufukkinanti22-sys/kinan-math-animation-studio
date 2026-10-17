@@ -25,6 +25,8 @@ _PX = 1 / 120  # one pixel in Manim units (frame is 9 units wide)
 
 def T(text: str, size: float = 40, color: str | None = None, weight: str = HEAVY, **kw) -> Text:
     """Rounded UI text. ``size`` ~ font size in pixels on the final 1080p video."""
+    # one submobject per character (spaces included) so glyphs can be sliced by index
+    kw.setdefault("disable_ligatures", True)
     t = Text(text, font=weight, color=color or THEME.ink, font_size=100, **kw)
     t.scale(size * _PX * 0.72 / _cap_height(weight))  # capital letters ~ 0.72*size px tall
     return t
@@ -108,3 +110,21 @@ def wrap(text: str, max_chars: int) -> list[str]:
 def wrap_lines(text: str, max_chars: int = 34, size: float = 36, color: str | None = None,
                weight: str = HEAVY, buff: float = 0.2) -> VGroup:
     return lines(*wrap(text, max_chars), size=size, color=color, weight=weight, buff=buff)
+
+
+class Frac(VGroup):
+    """Stacked fraction built from separate parts (``num``, ``bar``, ``den``) so
+    numerator and denominator can be animated independently."""
+
+    def __init__(self, num, den, size: float = 64, color: str | None = None, **kw):
+        from manim import DOWN, Line, UP
+
+        super().__init__(**kw)
+        c = color or THEME.ink
+        self.num = num if isinstance(num, VGroup) else M(str(num), size=size, color=c)
+        self.den = den if isinstance(den, VGroup) else M(str(den), size=size, color=c)
+        w = max(self.num.width, self.den.width) + size / 120 * 0.35
+        self.bar = Line([-w / 2, 0, 0], [w / 2, 0, 0]).set_stroke(c, size / 120 * 7)
+        self.num.next_to(self.bar, UP, buff=size / 120 * 0.22)
+        self.den.next_to(self.bar, DOWN, buff=size / 120 * 0.22)
+        self.add(self.num, self.bar, self.den)

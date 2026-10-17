@@ -81,6 +81,26 @@ def main():
             else:
                 check("audio level", True, f"mean {m} dB, peak {p} dB (silent track expected)")
 
+    # A/V sync: every narrated beat must start speaking right when its visuals start,
+    # and speech must not run past the end of its beat (truncation / overlap).
+    if narrated and a is not None:
+        r = subprocess.run(["ffmpeg", "-v", "info", "-i", str(args.video), "-af",
+                            "silencedetect=noise=-38dB:d=0.18", "-vn", "-f", "null", "-"],
+                           capture_output=True, text=True)
+        onsets = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r.stderr)]
+        offsets = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r.stderr)]
+        late, overrun = [], []
+        for b in beats:
+            hits = [o for o in onsets if b["start"] - 0.05 <= o <= b["start"] + 0.8]
+            if not hits and not (b["start"] < 0.1):  # speech at t=0 has no preceding silence
+                late.append(b["id"])
+            ends = [o for o in offsets if b["start"] < o <= b["end"] + 0.5]
+            if ends and max(ends) > b["end"] + 0.15:
+                overrun.append(b["id"])
+        check("speech starts with its beat (A/V sync)", not late,
+              f"{len(beats) - len(late)}/{len(beats)} beats" + (f"; late: {late}" if late else ""))
+        check("no speech runs past its beat", not overrun, ", ".join(overrun))
+
     # blank frames: blackdetect on luma; our backgrounds are never black
     r = subprocess.run(["ffmpeg", "-v", "info", "-i", str(args.video), "-vf",
                         "blackdetect=d=0.2:pix_th=0.05", "-an", "-f", "null", "-"],

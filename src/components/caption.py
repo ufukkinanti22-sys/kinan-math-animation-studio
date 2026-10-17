@@ -48,8 +48,7 @@ class KaraokeCaption(VGroup):
             boxes: list[RoundedRectangle] = [None] * len(texts)  # type: ignore[list-item]
             lines = VGroup()
             for r, idx in enumerate(rows):
-                line = T("H " + " ".join(texts[i] for i in idx), size=size, weight=HEAVY,
-                         disable_ligatures=True)
+                line = T("H " + " ".join(texts[i] for i in idx), size=size, weight=HEAVY)
                 # Text keeps one submobject per character, spaces included
                 ref, glyphs = line[0], line[2:]
                 base = ref.get_bottom()[1]
