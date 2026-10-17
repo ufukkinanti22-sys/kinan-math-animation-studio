@@ -74,11 +74,19 @@ Catatan GPL-3.0: Seed-VC dipakai sebagai program terpisah (di-*clone* saat dijal
 repositori ini). GPL mewajibkan sumber terbuka bila Anda *mendistribusikan* kode Seed-VC (atau turunannya);
 audio keluaran bukan karya turunan kode tersebut.
 
-## Yang sudah dan belum diuji
+## Hasil uji nyata (P01, 2026-10-17, CPU 4 inti)
 
-Sudah diuji (tanpa model, di sesi pembuatan): pemilihan referensi pada rekaman asli; susunan ulang audio
-dari narator asli vs audio di video jadi (korelasi 0,996–0,999, selisih waktu 0,0 ms); penempelan ke
-video asli (paket dan frame identik); normalisasi teks / WER; jalur ukur waktu dan kemiripan.
+* Konversi 21 segmen P01 jalan penuh dengan Seed-VC (30 langkah, ±25× lebih lambat dari waktu nyata di CPU).
+* Kemiripan dengan suara pemilik: narator AI 0,545 → hasil konversi **0,874** (klip rekaman pemilik saling 0,88).
+* Durasi tiap segmen identik (selisih < 12 ms), selisih waktu 0 s/d −10 ms, korelasi envelope 0,81–0,89.
+* Gambar identik dengan video asli (paket dan frame), kelantangan −16,0 LUFS, QC proyek lulus.
+* Pengenalan ucapan (Whisper medium): 19 dari 21 segmen sama dengan narator asli. Dua segmen masih ditandai
+  setelah dua kali konversi ulang (dan `cfg` 1,0): `axes` ("sampai" tidak terdengar) dan `trap`
+  ("pilihan" terdengar "pimihan"). Perlu didengarkan oleh telinga manusia.
 
-**Belum diuji:** konversi Seed-VC itu sendiri, pengenalan ucapan Whisper, dan notebook Colab: sesi
-pembuatan tidak punya GPU dan `huggingface.co` diblokir (403). Belum ada hasil suara hasil konversi.
+Temuan selama uji: Whisper *small* memberi alarm palsu dan melewatkan cacat nyata, karena itu verifikasi memakai
+*medium*; awal segmen bisa rusak bila tidak diberi jeda hening di depan (sekarang selalu diberi 0,5 s); versi
+`transformers`/`huggingface_hub` terbaru tidak cocok dengan Seed-VC (lihat `requirements.txt`).
+
+## Yang belum diuji
+Notebook Colab (belum pernah dijalankan), serta video P02, P03, dan P00 (menunggu keputusan setelah P01).

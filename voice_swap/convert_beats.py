@@ -30,7 +30,7 @@ import numpy as np
 
 from .common import PRIVATE, PROBLEMS, beats_log, decode, source_mp3, write_wav
 
-DEFAULTS = {"steps": 30, "cfg": 0.7, "seed": 20261017}
+DEFAULTS = {"steps": 30, "cfg": 0.7, "seed": 20261017, "pad_s": 0.5}
 
 
 def load_seedvc(seedvc_dir: Path):
@@ -76,19 +76,24 @@ def load_seedvc(seedvc_dir: Path):
 
 
 def convert_problem(pid: str, reference: Path, out_dir: Path, sv, torch, steps: int, cfg: float,
-                    seed: int, fp16: bool, log=print) -> list[dict]:
+                    seed: int, fp16: bool, log=print, pad_s: float = DEFAULTS["pad_s"],
+                    only: set[str] | None = None) -> list[dict]:
+    """``pad_s``: silence added before/after the source and removed again after conversion.
+    Without it the first syllable of a beat can be damaged ("Pilihannya" -> "Pimihannya") because
+    the narrator track starts almost immediately."""
     out_dir.mkdir(parents=True, exist_ok=True)
     stats = []
     reference = reference.resolve()
     for i, b in enumerate(beats_log(pid)):
         dst = out_dir / f"{b['id']}.wav"
-        if dst.exists():
+        if dst.exists() or (only is not None and b["id"] not in only):
             continue
         with tempfile.TemporaryDirectory() as td:
             td = Path(td)
             src = td / f"{b['id']}.wav"
             audio = decode(source_mp3(pid, b["id"]), 22050)
-            write_wav(src, audio, 22050)
+            pad = np.zeros(int(round(pad_s * 22050)), dtype=np.float32)
+            write_wav(src, np.concatenate([pad, audio, pad]), 22050)
             args = SimpleNamespace(source=str(src), target=str(reference), output=str(td / "out"),
                                    diffusion_steps=steps, length_adjust=1.0, inference_cfg_rate=cfg,
                                    f0_condition=False, auto_f0_adjust=False, semi_tone_shift=0,
@@ -99,7 +104,12 @@ def convert_problem(pid: str, reference: Path, out_dir: Path, sv, torch, steps: 
             produced = list((td / "out").glob("vc_*.wav"))
             if len(produced) != 1:
                 raise RuntimeError(f"{pid}/{b['id']}: Seed-VC produced {len(produced)} files")
-            shutil.move(str(produced[0]), str(dst))
+            import soundfile
+            y, sr = soundfile.read(str(produced[0]), dtype="float32")
+            y = y[len(pad):len(pad) + len(audio)]  # back to the exact original length
+            if len(y) < len(audio):
+                y = np.concatenate([y, np.zeros(len(audio) - len(y), dtype=np.float32)])
+            soundfile.write(str(dst), y, sr)
             dt = time.time() - t0
         stats.append({"beat": b["id"], "source_s": round(len(audio) / 22050, 2), "seconds": round(dt, 1),
                       "rtf": round(dt / (len(audio) / 22050), 2)})

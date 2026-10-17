@@ -46,6 +46,18 @@ def process(pid: str, args, sv, torch, asr, reference: Path) -> dict:
                                   convert_beats.DEFAULTS["seed"], bool(torch.cuda.is_available()))
     print(f"=== {pid}: verifying")
     ver = verify.verify(pid, beats, reference, asr)
+    for attempt in (1, 2):  # beats that failed are converted again (new seed, silence padding) up to twice
+        bad = ver.get("flagged_beats", [])
+        if ver["ok"] or not bad:
+            break
+        print(f"=== {pid}: retry {attempt} for {bad}")
+        for b in bad:
+            (beats / f"{b}.wav").unlink(missing_ok=True)
+        convert_beats.convert_problem(pid, reference, beats, sv, torch, args.steps, args.cfg,
+                                      convert_beats.DEFAULTS["seed"] + 7919 * attempt,
+                                      bool(torch.cuda.is_available()))
+        ver = verify.verify(pid, beats, reference, asr)
+        ver["retries"] = attempt
     (OUT / "reports").mkdir(parents=True, exist_ok=True)
     suffix = "_suara_kinan" if ver["ok"] else "_suara_kinan_BELUM_LOLOS"
     print(f"=== {pid}: building video ({'verified' if ver['ok'] else 'NOT verified'})")

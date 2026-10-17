@@ -69,13 +69,23 @@ def error_rates(ref: str, hyp: str) -> tuple[float, float]:
     return float(wer), float(cer)
 
 
+def lost_words(script: str, src_txt: str, conv_txt: str) -> list[str]:
+    """Script words the recogniser hears in the ORIGINAL narrator but not in the converted audio."""
+    from collections import Counter
+
+    sc = Counter(normalise(script).split())
+    a, b = Counter(normalise(src_txt).split()), Counter(normalise(conv_txt).split())
+    return sorted(w for w in sc if w.isalpha() and a[w] >= 1 and b[w] < min(a[w], sc[w]))
+
+
 class Asr:
     def __init__(self, size: str | None = None):
         import torch
         from faster_whisper import WhisperModel
 
         gpu = torch.cuda.is_available()
-        self.model = WhisperModel(size or ("medium" if gpu else "small"),
+        # "small" gave false alarms ("B715" for "B, 7 per 15") and missed a real defect: use medium
+        self.model = WhisperModel(size or "medium",
                                   device="cuda" if gpu else "cpu", compute_type="float16" if gpu else "int8")
 
     def __call__(self, wav: Path) -> tuple[str, list[tuple[str, float]]]:
@@ -87,13 +97,15 @@ class Asr:
 
 
 def word_shift(a: list[tuple[str, float]], b: list[tuple[str, float]]) -> list[float]:
-    """Start-time differences (s) of the words both recognitions agree on."""
+    """Start-time differences (s) of the alphabetic words both recognitions agree on.
+    (Numbers are skipped: the recogniser writes them as digits or words and times them loosely.)"""
     na = [normalise(w) for w, _ in a]
     nb = [normalise(w) for w, _ in b]
     out = []
     for blk in difflib.SequenceMatcher(None, na, nb, autojunk=False).get_matching_blocks():
         for k in range(blk.size):
-            out.append(b[blk.b + k][1] - a[blk.a + k][1])
+            if a[blk.a + k][0].strip(" ,.?!:;").isalpha():
+                out.append(b[blk.b + k][1] - a[blk.a + k][1])
     return out
 
 
@@ -124,9 +136,11 @@ def verify(pid: str, beat_dir: Path, reference: Path, asr: Asr | None, log=print
             row["asr_src"], row["asr_conv"] = t_src, t_conv
             row["wer_src"], row["cer_src"] = (round(v, 3) for v in error_rates(say[bid], t_src))
             row["wer_conv"], row["cer_conv"] = (round(v, 3) for v in error_rates(say[bid], t_conv))
+            row["lost_words"] = lost_words(say[bid], t_src, t_conv)
             sh = word_shift(w_src, w_conv)
             if sh:
                 row["word_shift_median_ms"] = round(1000 * float(np.median(np.abs(sh))))
+                row["word_shift_p90_ms"] = round(1000 * float(np.percentile(np.abs(sh), 90)))
                 row["word_shift_max_ms"] = round(1000 * float(np.max(np.abs(sh))))
         rows.append(row)
         log(f"  {bid:<10} " + "  ".join(f"{k}={v}" for k, v in row.items() if k.startswith(("len", "env", "sim_conv", "cer_conv"))))
@@ -139,8 +153,12 @@ def verify(pid: str, beat_dir: Path, reference: Path, asr: Asr | None, log=print
             problems.append(f"{r['beat']}: timing envelope corr {r['env_corr']} lag {r['env_lag_ms']} ms")
         if "cer_conv" in r and r["cer_conv"] > r["cer_src"] + MAX_CER_EXTRA:
             problems.append(f"{r['beat']}: converted CER {r['cer_conv']} vs original {r['cer_src']} -> words lost/changed?")
-        if r.get("word_shift_max_ms", 0) > 250:
-            problems.append(f"{r['beat']}: a word starts {r['word_shift_max_ms']} ms away from the original")
+        if r.get("lost_words"):
+            problems.append(f"{r['beat']}: heard in the original narrator but not in the converted audio: {r['lost_words']}")
+        # the maximum alone is dominated by recogniser timing jitter; judge the typical shift
+        if r.get("word_shift_p90_ms", 0) > 150 or r.get("word_shift_median_ms", 0) > 80:
+            problems.append(f"{r['beat']}: words start {r['word_shift_median_ms']} ms (median) / "
+                            f"{r['word_shift_p90_ms']} ms (p90) away from the original")
     sims = [(r["sim_src_ref"], r["sim_conv_ref"]) for r in rows if "sim_conv_ref" in r]
     summary = {"beats": len(rows)}
     if sims:
@@ -156,7 +174,9 @@ def verify(pid: str, beat_dir: Path, reference: Path, asr: Asr | None, log=print
             problems.append(f"mean WER {w_conv:.3f} vs original narrator {w_src:.3f}")
     else:
         problems.append("speech recognition was NOT run: pronunciation / missing words are unverified")
-    return {"problem": pid, "ok": not problems, "problems": problems, "summary": summary, "per_beat": rows}
+    flagged = sorted({p.split(":", 1)[0] for p in problems if re.match(r"^[a-z0-9_]+: ", p)})
+    return {"problem": pid, "ok": not problems, "problems": problems, "flagged_beats": flagged,
+            "summary": summary, "per_beat": rows}
 
 
 def main() -> None:
