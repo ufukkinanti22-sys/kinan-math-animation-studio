@@ -1,0 +1,86 @@
+id: p02_tiga_koin
+title: "Tiga koin, sedikitnya satu gambar"
+scene_file: src/scenes/p02_tiga_koin.py
+scene_class: P02TigaKoin
+voice: id-ID-ArdiNeural
+rate: "-4%"
+beats:
+  - id: hook
+    chapter: TANTANGAN
+    say: "Tiga koin dilempar. Lalu ada bocoran: sedikitnya satu sisi gambar muncul. Apakah bocoran ini mengubah peluangnya?"
+    caption: "Tiga koin dilempar. Lalu ada *bocoran*: sedikitnya satu sisi gambar muncul. | Apakah bocoran ini mengubah peluangnya?"
+
+  - id: question
+    chapter: SOAL
+    say: "Soalnya begini. Tiga koin fair dilempar bersamaan. Jika diketahui sedikitnya satu sisi gambar muncul, berapa peluang muncul tepat dua sisi gambar?"
+    caption: "Soalnya begini. Tiga koin fair dilempar bersamaan. | Jika diketahui *sedikitnya* satu sisi gambar muncul, | berapa peluang *tepat* dua sisi gambar?"
+  - id: options
+    say: "Pilihannya: dua per tujuh, tiga per tujuh, empat per tujuh, atau setengah."
+    caption: "Pilihannya: 2/7, 3/7, 4/7, atau 1/2."
+
+  - id: faces
+    chapter: PAHAMI
+    say: "Setiap koin punya dua sisi: G untuk gambar, dan A untuk angka. Karena koinnya fair, keduanya sama mungkin."
+    caption: "Setiap koin punya dua sisi: *G* untuk gambar, *A* untuk angka. | Koinnya fair, jadi keduanya *sama~mungkin*."
+  - id: words
+    say: "Perhatikan dua frasa penting. Sedikitnya satu, artinya satu, dua, atau tiga gambar. Tepat dua, artinya dua saja, tidak lebih."
+    caption: "Perhatikan dua frasa penting. | *Sedikitnya~satu* = 1, 2, atau 3 gambar. | *Tepat~dua* = 2 saja, tidak lebih."
+
+  - id: tree1
+    chapter: RUANG SAMPEL
+    say: "Kita gambar diagram pohon. Koin pertama bercabang dua: G atau A."
+    caption: "Kita gambar *diagram~pohon*. Koin pertama bercabang dua: G atau A."
+  - id: tree2
+    say: "Setiap cabang bercabang dua lagi untuk koin kedua, lalu dua lagi untuk koin ketiga."
+    caption: "Setiap cabang bercabang dua lagi untuk koin *kedua*, | lalu dua lagi untuk koin *ketiga*."
+  - id: tree3
+    say: "Ikuti setiap jalur dari kiri ke kanan. Dua kali dua kali dua, ada delapan hasil, dan semuanya sama mungkin."
+    caption: "Ikuti setiap jalur dari kiri ke kanan. | 2~×~2~×~2 = *8* hasil, semuanya sama mungkin."
+
+  - id: condition
+    chapter: SYARAT
+    say: "Sekarang pakai bocorannya: sedikitnya satu gambar. Hanya ada satu hasil yang sama sekali tidak punya gambar, yaitu A A A."
+    caption: "Sekarang pakai bocorannya: sedikitnya satu gambar. | Hanya satu hasil tanpa gambar sama sekali: *AAA*."
+  - id: shrink
+    say: "Hasil itu kita coret. Ruang sampel baru tinggal tujuh."
+    caption: "Hasil itu dicoret. Ruang sampel baru: 8~−~1 = *7*."
+
+  - id: badges
+    chapter: HITUNG
+    say: "Sekarang hitung banyaknya gambar di setiap hasil yang tersisa."
+    caption: "Sekarang hitung banyaknya *gambar* di setiap hasil yang tersisa."
+  - id: exactly
+    say: "Yang tepat dua gambar adalah G G A, G A G, dan A G G. Ada tiga."
+    caption: "Tepat dua gambar: GGA, GAG, dan AGG. Ada *3*."
+  - id: fraction
+    say: "Jadi peluangnya tiga dari tujuh hasil yang masih mungkin, yaitu tiga per tujuh."
+    caption: "Peluangnya 3 dari 7 hasil yang masih mungkin: *3/7*."
+
+  - id: answer
+    chapter: JAWABAN
+    say: "Jadi jawabannya adalah B, tiga per tujuh."
+    caption: "Jawabannya *B*, yaitu 3/7."
+    pause: 0.8
+
+  - id: groups
+    chapter: CEK
+    say: "Mari kita cek dari strukturnya. Kelompokkan kedelapan hasil menurut banyak gambarnya: nol, satu, dua, atau tiga gambar."
+    caption: "Cek dari strukturnya. | Kelompokkan hasil menurut banyak gambar: 0, 1, 2, atau 3."
+  - id: pascal
+    say: "Isinya satu, tiga, tiga, satu. Syarat sedikitnya satu gambar membuang kelompok nol. Tersisa tiga ditambah tiga ditambah satu, yaitu tujuh. Yang tepat dua: tiga."
+    caption: "Isinya 1, 3, 3, 1. | Syaratnya membuang kelompok 0: tersisa 3~+~3~+~1 = 7. | Yang tepat dua: *3*."
+  - id: subset
+    say: "Dengan rumus peluang bersyarat. Karena tepat dua gambar pasti termasuk sedikitnya satu gambar, irisan kedua kejadian adalah kejadian tepat dua itu sendiri."
+    caption: "Dengan rumus peluang bersyarat. | Tepat dua gambar pasti termasuk sedikitnya satu, | jadi *irisannya* adalah kejadian tepat dua itu sendiri."
+  - id: formula
+    say: "Jadi tiga per delapan, dibagi tujuh per delapan. Penyebut delapan saling menghilangkan, tersisa tiga per tujuh."
+    caption: "Jadi 3/8 dibagi 7/8. | Penyebut 8 saling *menghilangkan*: tersisa 3/7."
+  - id: trap
+    say: "Hati-hati. Kalau bocorannya diabaikan, peluangnya tiga per delapan, dan itu tidak ada di pilihan."
+    caption: "Hati-hati: tanpa syarat, peluangnya 3/8. | Tidak ada di pilihan."
+
+  - id: takeaway
+    chapter: INTINYA
+    say: "Intinya, syarat tidak mengubah koinnya. Syarat mengubah ruang sampelnya, dari delapan menjadi tujuh. Karena itu peluangnya naik, dari tiga per delapan menjadi tiga per tujuh."
+    caption: "Intinya: syarat tidak mengubah koinnya, tapi mengubah *ruang~sampel*: 8 → 7. | Peluangnya naik dari 3/8 menjadi *3/7*."
+    pause: 1.5

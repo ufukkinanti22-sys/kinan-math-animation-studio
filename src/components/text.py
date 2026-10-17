@@ -53,7 +53,7 @@ def _tex_cap_height() -> float:
 
 def _make_template() -> TexTemplate:
     tpl = TexTemplate()
-    tpl.add_to_preamble(r"\usepackage{amssymb}")
+    tpl.add_to_preamble(r"\usepackage{amssymb}\usepackage{cancel}")
     return tpl
 
 
