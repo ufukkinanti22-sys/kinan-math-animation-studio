@@ -1,0 +1,81 @@
+Dua dadu dilempar, dan kita diberi satu petunjuk:
+kedua mata dadunya berbeda.
+Apakah petunjuk ini mengubah peluangnya?
+
+Soalnya begini.
+Dua dadu fair dilempar bersamaan.
+Diketahui kedua mata dadu berbeda.
+Berapa peluang jumlah mata dadunya merupakan bilangan prima?
+
+Pilihannya: sepertiga, tujuh per lima belas,
+delapan per lima belas,
+atau tujuh belas per tiga puluh.
+
+Kata kuncinya adalah diketahui.
+Informasi itu mempersempit kemungkinan yang tersisa.
+
+Jadi peluangnya adalah banyak hasil yang cocok,
+dibagi banyak hasil yang masih mungkin setelah syarat dipakai.
+
+Mari susun semua kemungkinan.
+Dadu pertama bisa muncul satu sampai enam.
+Dadu kedua juga.
+
+Setiap pasangan menempati satu kotak.
+Enam kali enam, ada tiga puluh enam hasil,
+dan semuanya sama mungkin.
+
+Sekarang pakai petunjuknya: mata dadu berbeda.
+Pasangan kembar, satu satu, dua dua,
+sampai enam enam, tidak mungkin terjadi.
+
+Enam kotak di diagonal dicoret.
+Ruang sampel kita menyusut,
+dari tiga puluh enam menjadi tiga puluh.
+
+Sekarang,
+ganti setiap pasangan dengan jumlah kedua matanya.
+
+Lihat polanya.
+Jumlah yang sama selalu berjajar miring.
+Misalnya, semua jumlah tujuh ada di satu garis.
+
+Jumlahnya berkisar dari dua sampai dua belas.
+Yang prima adalah dua, tiga, lima, tujuh,
+dan sebelas.
+
+Tapi jumlah dua hanya bisa dari satu dan satu.
+Itu pasangan kembar yang sudah dicoret,
+jadi tidak ikut dihitung.
+
+Sekarang nyalakan jajaran jumlah tiga, lima, tujuh,
+dan sebelas.
+
+Dua, ditambah empat, ditambah enam, ditambah dua.
+Ada empat belas kotak yang cocok.
+
+Jadi peluangnya empat belas per tiga puluh.
+Bagi pembilang dan penyebut dengan dua,
+hasilnya tujuh per lima belas.
+
+Jadi jawabannya adalah B, tujuh per lima belas.
+
+Mari kita cek dengan cara lain.
+Tabelnya simetris, jadi cukup lihat setengahnya:
+lima belas pasangan berbeda,
+tanpa memperhatikan urutan.
+
+Di setengah ini, yang jumlahnya prima ada tujuh.
+Tujuh dari lima belas.
+Hasilnya sama!
+
+Hati-hati.
+Kalau syaratnya diabaikan,
+kamu akan membagi dengan tiga puluh enam,
+dan mendapat lima per dua belas.
+Itu tidak ada di pilihan.
+
+Intinya,
+kata diketahui berarti ruang sampel menyusut.
+Coret dulu yang tidak mungkin,
+baru hitung yang cocok.

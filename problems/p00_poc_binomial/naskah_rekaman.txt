@@ -1,0 +1,22 @@
+Banyak yang mengira, a ditambah b,
+lalu dikuadratkan,
+sama dengan a kuadrat ditambah b kuadrat.
+Benarkah?
+
+Mari kita lihat.
+Gambar persegi dengan sisi a ditambah b.
+Luasnya adalah a ditambah b, dikuadratkan.
+
+Sekarang potong persegi itu di titik yang sama,
+sekali mendatar, sekali tegak.
+
+Muncul empat bagian: persegi a kuadrat,
+persegi b kuadrat, dan dua persegi panjang,
+masing-masing a kali b.
+
+Jumlahkan semua bagian.
+a kuadrat, ditambah dua a b, ditambah b kuadrat.
+
+Jadi, dua a b itulah yang sering terlupa.
+Dua persegi panjang di tengah,
+yang terlihat jelas di gambar.

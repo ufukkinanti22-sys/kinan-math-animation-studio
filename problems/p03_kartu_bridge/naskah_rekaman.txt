@@ -1,0 +1,83 @@
+Dua kartu diambil dari satu set kartu bridge.
+Hanya satu yang bergambar, dan warnanya berbeda.
+Berapa peluangnya?
+
+Soalnya begini.
+Dua kartu diambil sekaligus dari satu set kartu bridge standar,
+lima puluh dua kartu, tanpa joker.
+Berapa peluang tepat satu kartu bergambar, yaitu J,
+Q, atau K, dan kedua kartu berlainan warna?
+
+Pilihannya: dua puluh, empat puluh, enam puluh,
+atau delapan puluh,
+semuanya per dua ratus dua puluh satu.
+
+Ada dua syarat yang harus terpenuhi bersamaan.
+Pertama, tepat satu kartu bergambar.
+Kedua, warnanya berbeda: satu merah, satu hitam.
+
+Diambil sekaligus berarti urutan tidak penting.
+Yang kita hitung adalah pasangan kartu.
+
+Susun kelima puluh dua kartu.
+Ada empat jenis, masing-masing tiga belas kartu.
+Hati dan wajik berwarna merah,
+sekop dan keriting berwarna hitam.
+
+Kartu bergambar adalah J, Q, dan K,
+tiga di setiap jenis.
+Totalnya dua belas: enam merah dan enam hitam.
+
+Sisanya empat puluh kartu tidak bergambar:
+dua puluh merah dan dua puluh hitam.
+
+Jadi dek terbagi menjadi empat kelompok yang jelas.
+
+Tepat satu bergambar berarti satu kartu dari baris atas,
+dan satu dari baris bawah.
+Warna berbeda berarti kolomnya juga harus beda.
+
+Merah bergambar dengan hitam tidak bergambar:
+enam kali dua puluh, ada seratus dua puluh pasangan.
+
+Hitam bergambar dengan merah tidak bergambar:
+juga seratus dua puluh.
+Totalnya dua ratus empat puluh pasangan yang cocok.
+
+Sekarang hitung semua pasangan yang mungkin.
+Kartu pertama punya lima puluh dua pilihan,
+kartu kedua lima puluh satu.
+
+Tapi setiap pasangan terhitung dua kali.
+K hati lalu tujuh keriting,
+sama saja dengan tujuh keriting lalu K hati.
+Jadi kita bagi dua,
+hasilnya seribu tiga ratus dua puluh enam pasangan.
+
+Peluangnya,
+dua ratus empat puluh per seribu tiga ratus dua puluh enam.
+
+Bagi pembilang dan penyebut dengan enam.
+Hasilnya empat puluh per dua ratus dua puluh satu.
+
+Jadi jawabannya adalah B,
+empat puluh per dua ratus dua puluh satu.
+
+Mari kita cek dengan mengambil kartu satu per satu.
+Misalnya, merah bergambar dulu,
+lalu hitam tidak bergambar: enam per lima puluh dua,
+dikali dua puluh per lima puluh satu.
+
+Ada empat susunan seperti itu: dua pasangan warna,
+masing-masing dengan dua urutan.
+Empat kali hasil tadi,
+juga sama dengan empat puluh per dua ratus dua puluh satu.
+
+Hati-hati.
+Kalau hanya menghitung satu pasangan warna,
+kamu mendapat dua puluh per dua ratus dua puluh satu.
+Itu jebakan di pilihan A.
+
+Intinya, pecah kartu menjadi kelompok yang jelas.
+Pasangkan kelompok yang memenuhi semua syarat,
+lalu kalikan untuk menghitung pasangannya.

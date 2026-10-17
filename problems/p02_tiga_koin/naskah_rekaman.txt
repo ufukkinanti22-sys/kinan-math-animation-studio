@@ -1,0 +1,78 @@
+Tiga koin dilempar.
+Lalu ada bocoran:
+sedikitnya satu sisi gambar muncul.
+Apakah bocoran ini mengubah peluangnya?
+
+Soalnya begini.
+Tiga koin fair dilempar bersamaan.
+Jika diketahui sedikitnya satu sisi gambar muncul,
+berapa peluang muncul tepat dua sisi gambar?
+
+Pilihannya: dua per tujuh, tiga per tujuh,
+empat per tujuh, atau setengah.
+
+Setiap koin punya dua sisi: G untuk gambar,
+dan A untuk angka.
+Karena koinnya fair, keduanya sama mungkin.
+
+Perhatikan dua frasa penting.
+Sedikitnya satu, artinya satu, dua,
+atau tiga gambar.
+Tepat dua, artinya dua saja, tidak lebih.
+
+Kita gambar diagram pohon.
+Koin pertama bercabang dua: G atau A.
+
+Setiap cabang bercabang dua lagi untuk koin kedua,
+lalu dua lagi untuk koin ketiga.
+
+Ikuti setiap jalur dari kiri ke kanan.
+Dua kali dua kali dua, ada delapan hasil,
+dan semuanya sama mungkin.
+
+Sekarang pakai bocorannya: sedikitnya satu gambar.
+Hanya ada satu hasil yang sama sekali tidak punya gambar,
+yaitu A A A.
+
+Hasil itu kita coret.
+Ruang sampel baru tinggal tujuh.
+
+Sekarang hitung banyaknya gambar di setiap hasil yang tersisa.
+
+Yang tepat dua gambar adalah G G A, G A G,
+dan A G G.
+Ada tiga.
+
+Jadi peluangnya tiga dari tujuh hasil yang masih mungkin,
+yaitu tiga per tujuh.
+
+Jadi jawabannya adalah B, tiga per tujuh.
+
+Mari kita cek dari strukturnya.
+Kelompokkan kedelapan hasil menurut banyak gambarnya:
+nol, satu, dua, atau tiga gambar.
+
+Isinya satu, tiga, tiga, satu.
+Syarat sedikitnya satu gambar membuang kelompok nol.
+Tersisa tiga ditambah tiga ditambah satu,
+yaitu tujuh.
+Yang tepat dua: tiga.
+
+Dengan rumus peluang bersyarat.
+Karena tepat dua gambar pasti termasuk sedikitnya satu gambar,
+irisan kedua kejadian adalah kejadian tepat dua itu sendiri.
+
+Jadi tiga per delapan, dibagi tujuh per delapan.
+Penyebut delapan saling menghilangkan,
+tersisa tiga per tujuh.
+
+Hati-hati.
+Kalau bocorannya diabaikan,
+peluangnya tiga per delapan,
+dan itu tidak ada di pilihan.
+
+Intinya, syarat tidak mengubah koinnya.
+Syarat mengubah ruang sampelnya,
+dari delapan menjadi tujuh.
+Karena itu peluangnya naik,
+dari tiga per delapan menjadi tiga per tujuh.
