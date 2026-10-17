@@ -1,0 +1,32 @@
+# Proof of concept: verifies the full pipeline (theme, progress, captions,
+# LaTeX, narration timing, rendering, encoding) on a short visual proof.
+id: p00_poc_binomial
+title: "(a + b)² dalam satu gambar"
+scene_file: src/scenes/p00_poc_binomial.py
+scene_class: P00PocBinomial
+voice: id-ID-ArdiNeural
+rate: "-4%"
+beats:
+  - id: hook
+    chapter: PERTANYAAN
+    say: "Banyak yang mengira, a ditambah b, lalu dikuadratkan, sama dengan a kuadrat ditambah b kuadrat. Benarkah?"
+    caption: "Banyak yang mengira (a~+~b)² sama dengan a²~+~b². *Benarkah?*"
+  - id: square
+    chapter: LIHAT LUASNYA
+    say: "Mari kita lihat. Gambar persegi dengan sisi a ditambah b. Luasnya adalah a ditambah b, dikuadratkan."
+    caption: "Mari kita lihat. Gambar *persegi* dengan sisi a~+~b. | Luasnya adalah (a~+~b)²."
+  - id: cut
+    say: "Sekarang potong persegi itu di titik yang sama, sekali mendatar, sekali tegak."
+    caption: "Sekarang *potong* persegi itu, sekali mendatar, sekali tegak."
+  - id: parts
+    say: "Muncul empat bagian: persegi a kuadrat, persegi b kuadrat, dan dua persegi panjang, masing-masing a kali b."
+    caption: "Muncul empat bagian: a², b², dan *dua* persegi panjang a~×~b."
+  - id: sum
+    chapter: SUSUN RUMUSNYA
+    say: "Jumlahkan semua bagian. a kuadrat, ditambah dua a b, ditambah b kuadrat."
+    caption: "Jumlahkan semua bagian: a² + 2ab + b²."
+  - id: takeaway
+    chapter: INTINYA
+    say: "Jadi, dua a b itulah yang sering terlupa. Dua persegi panjang di tengah, yang terlihat jelas di gambar."
+    caption: "Jadi *2ab* itulah yang sering terlupa: dua persegi panjang di tengah."
+    pause: 1.2

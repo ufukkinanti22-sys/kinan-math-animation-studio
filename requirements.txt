@@ -1,0 +1,6 @@
+# Animation engine
+manim==0.19.0
+# Narration scripts
+PyYAML>=6.0
+# Neural Indonesian text-to-speech (needs internet; used in GitHub Actions)
+edge-tts==7.3.1

@@ -1,0 +1,184 @@
+name: Render math videos
+
+# Manual rendering: Actions tab -> "Render math videos" -> Run workflow.
+# Every push to a claude/** branch that touches the project also runs a smoke
+# test: narration audio is (re)generated for all problems and committed back,
+# and the proof-of-concept video is rendered and uploaded as an artifact.
+
+on:
+  workflow_dispatch:
+    inputs:
+      problems:
+        description: "Problem id(s), comma-separated (e.g. p01_dadu_berbeda), or 'all'"
+        required: true
+        default: "all"
+        type: string
+      quality:
+        description: "final = 1080x1920, preview = 540x960 (faster)"
+        type: choice
+        options: [final, preview]
+        default: final
+      theme:
+        description: "kinan = cream explainer style, dark = 3Blue1Brown-style navy"
+        type: choice
+        options: [kinan, dark]
+        default: kinan
+      narration:
+        description: "Generate Indonesian voice-over (edge-tts)"
+        type: boolean
+        default: true
+      force:
+        description: "Re-render even if output/videos already holds a finished video"
+        type: boolean
+        default: false
+      commit_outputs:
+        description: "Commit narration audio, videos and QC files back to this branch"
+        type: boolean
+        default: false
+  push:
+    branches: ["claude/**"]
+    paths:
+      - "src/**"
+      - "problems/**"
+      - "scripts/**"
+      - "assets/fonts/**"
+      - "requirements.txt"
+      - "manim.cfg"
+      - ".github/workflows/render.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    env:
+      IS_PUSH: ${{ github.event_name == 'push' }}
+      PROBLEMS: ${{ github.event_name == 'push' && 'p00_poc_binomial' || inputs.problems }}
+      NARRATE: ${{ github.event_name == 'push' && 'all' || inputs.problems }}
+      QUALITY: ${{ github.event_name == 'push' && 'final' || inputs.quality }}
+      THEME: ${{ github.event_name == 'push' && 'kinan' || inputs.theme }}
+      NARRATION: ${{ github.event_name == 'push' || inputs.narration }}
+      FORCE: ${{ github.event_name == 'push' || inputs.force }}
+      COMMIT_OUTPUTS: ${{ github.event_name != 'push' && inputs.commit_outputs }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Install system packages (FFmpeg, Cairo/Pango, LaTeX)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            ffmpeg libcairo2-dev libpango1.0-dev pkg-config fonts-dejavu-core \
+            texlive-latex-base texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-science dvisvgm cm-super > /dev/null
+          ffmpeg -version | head -1
+          latex --version | head -1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          manim --version
+
+      - name: Generate narration (edge-tts, Indonesian)
+        id: narrate
+        if: env.NARRATION == 'true'
+        continue-on-error: true
+        run: python scripts/narrate.py "$NARRATE"
+
+      - name: Render video(s)
+        id: render
+        run: |
+          args=("$PROBLEMS" --quality "$QUALITY" --theme "$THEME")
+          [ "$FORCE" = "true" ] && args+=(--force)
+          [ "$NARRATION" != "true" ] && args+=(--no-audio)
+          python scripts/render.py "${args[@]}"
+
+      - name: Verify exported MP4 files
+        if: always()
+        run: |
+          shopt -s nullglob
+          files=(output/videos/*.mp4 output/preview/*.mp4)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "::error::No MP4 was produced. See the 'Render video(s)' step log above."
+            exit 1
+          fi
+          {
+            echo "## Rendered videos"
+            echo
+            echo "| File | Resolution | FPS | Duration | Size |"
+            echo "|---|---|---|---|---|"
+            for f in "${files[@]}"; do
+              res=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$f")
+              fps=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of csv=p=0 "$f")
+              dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")
+              echo "| \`$f\` | $res | $fps | ${dur%.*} s | $(du -h "$f" | cut -f1) |"
+            done
+            echo
+            echo "## QC"
+            for q in output/qc/*/qc.json output/preview/qc/*/qc.json; do
+              python - "$q" <<'PY'
+          import json, sys
+          r = json.load(open(sys.argv[1]))
+          print(f"\n**{r['video']}**: {'PASSED' if r['ok'] else 'FAILED'}\n")
+          for c in r["checks"]:
+              print(f"- {'✅' if c['ok'] else '❌'} {c['check']}: {c['detail']}")
+          PY
+            done
+            if [ "${{ steps.narrate.outcome }}" = "failure" ]; then
+              echo
+              echo "> ⚠️ Narration generation failed; videos were rendered without voice-over."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          ls -la "${files[@]}"
+
+      - name: Upload videos as downloadable artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: math-videos-${{ github.run_number }}
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            output/videos/*.mp4
+            output/videos/*.srt
+            output/preview/*.mp4
+            output/preview/*.srt
+            output/qc/
+            output/preview/qc/
+
+      - name: Commit narration audio (and outputs when requested)
+        if: always() && steps.narrate.outcome == 'success'
+        run: |
+          git config user.name "kinan-render-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio
+          msg="Render bot: update narration audio"
+          if [ "$COMMIT_OUTPUTS" = "true" ]; then
+            git add output/videos output/qc
+            msg="Render bot: update narration audio and rendered videos"
+          fi
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          git commit -m "$msg [skip ci]"
+          for i in 1 2 3 4; do
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((2 ** i))
+          done
+          echo "::error::Could not push generated files"
+          exit 1
