@@ -1,0 +1,505 @@
+{
+ "hook": {
+  "hash": "097b5cbbfd26",
+  "voice": "id-ID-ArdiNeural",
+  "rate": "-4%",
+  "duration": 8.952,
+  "words": [
+   {
+    "text": "Banyak",
+    "start": 0.115,
+    "end": 0.454
+   },
+   {
+    "text": "yang",
+    "start": 0.454,
+    "end": 0.571
+   },
+   {
+    "text": "mengira",
+    "start": 0.571,
+    "end": 1.144
+   },
+   {
+    "text": "a",
+    "start": 1.43,
+    "end": 1.56
+   },
+   {
+    "text": "ditambah",
+    "start": 1.56,
+    "end": 2.003
+   },
+   {
+    "text": "b",
+    "start": 2.003,
+    "end": 2.394
+   },
+   {
+    "text": "lalu",
+    "start": 2.641,
+    "end": 2.915
+   },
+   {
+    "text": "dikuadratkan",
+    "start": 2.915,
+    "end": 3.774
+   },
+   {
+    "text": "sama",
+    "start": 4.073,
+    "end": 4.399
+   },
+   {
+    "text": "dengan",
+    "start": 4.399,
+    "end": 4.646
+   },
+   {
+    "text": "a",
+    "start": 4.646,
+    "end": 4.737
+   },
+   {
+    "text": "kuadrat",
+    "start": 4.737,
+    "end": 5.128
+   },
+   {
+    "text": "ditambah",
+    "start": 5.128,
+    "end": 5.571
+   },
+   {
+    "text": "b",
+    "start": 5.571,
+    "end": 5.74
+   },
+   {
+    "text": "kuadrat",
+    "start": 5.74,
+    "end": 6.339
+   },
+   {
+    "text": "Benarkah",
+    "start": 7.211,
+    "end": 8.058
+   }
+  ]
+ },
+ "square": {
+  "hash": "ab24bb024573",
+  "voice": "id-ID-ArdiNeural",
+  "rate": "-4%",
+  "duration": 8.208,
+  "words": [
+   {
+    "text": "Mari",
+    "start": 0.1,
+    "end": 0.491
+   },
+   {
+    "text": "kita",
+    "start": 0.491,
+    "end": 0.725
+   },
+   {
+    "text": "lihat",
+    "start": 0.725,
+    "end": 1.285
+   },
+   {
+    "text": "Gambar",
+    "start": 2.175,
+    "end": 2.513
+   },
+   {
+    "text": "persegi",
+    "start": 2.513,
+    "end": 2.93
+   },
+   {
+    "text": "dengan",
+    "start": 2.93,
+    "end": 3.151
+   },
+   {
+    "text": "sisi",
+    "start": 3.151,
+    "end": 3.451
+   },
+   {
+    "text": "a",
+    "start": 3.451,
+    "end": 3.62
+   },
+   {
+    "text": "ditambah",
+    "start": 3.62,
+    "end": 4.089
+   },
+   {
+    "text": "b",
+    "start": 4.089,
+    "end": 4.271
+   },
+   {
+    "text": "Luasnya",
+    "start": 4.271,
+    "end": 4.766
+   },
+   {
+    "text": "adalah",
+    "start": 4.766,
+    "end": 5.117
+   },
+   {
+    "text": "a",
+    "start": 5.117,
+    "end": 5.26
+   },
+   {
+    "text": "ditambah",
+    "start": 5.26,
+    "end": 5.69
+   },
+   {
+    "text": "b",
+    "start": 5.69,
+    "end": 6.068
+   },
+   {
+    "text": "dikuadratkan",
+    "start": 6.302,
+    "end": 7.318
+   }
+  ]
+ },
+ "cut": {
+  "hash": "a6043adb84e3",
+  "voice": "id-ID-ArdiNeural",
+  "rate": "-4%",
+  "duration": 5.616,
+  "words": [
+   {
+    "text": "Sekarang",
+    "start": 0.101,
+    "end": 0.518
+   },
+   {
+    "text": "potong",
+    "start": 0.518,
+    "end": 0.778
+   },
+   {
+    "text": "persegi",
+    "start": 0.778,
+    "end": 1.091
+   },
+   {
+    "text": "itu",
+    "start": 1.091,
+    "end": 1.338
+   },
+   {
+    "text": "di",
+    "start": 1.338,
+    "end": 1.429
+   },
+   {
+    "text": "titik",
+    "start": 1.429,
+    "end": 1.703
+   },
+   {
+    "text": "yang",
+    "start": 1.703,
+    "end": 1.846
+   },
+   {
+    "text": "sama",
+    "start": 1.846,
+    "end": 2.393
+   },
+   {
+    "text": "sekali",
+    "start": 2.666,
+    "end": 2.992
+   },
+   {
+    "text": "mendatar",
+    "start": 2.992,
+    "end": 3.643
+   },
+   {
+    "text": "sekali",
+    "start": 3.838,
+    "end": 4.229
+   },
+   {
+    "text": "tegak",
+    "start": 4.229,
+    "end": 4.736
+   }
+  ]
+ },
+ "parts": {
+  "hash": "cdf6fa31f83b",
+  "voice": "id-ID-ArdiNeural",
+  "rate": "-4%",
+  "duration": 8.112,
+  "words": [
+   {
+    "text": "Muncul",
+    "start": 0.115,
+    "end": 0.48
+   },
+   {
+    "text": "empat",
+    "start": 0.48,
+    "end": 0.714
+   },
+   {
+    "text": "bagian",
+    "start": 0.714,
+    "end": 1.326
+   },
+   {
+    "text": "persegi",
+    "start": 1.613,
+    "end": 2.029
+   },
+   {
+    "text": "a",
+    "start": 2.029,
+    "end": 2.107
+   },
+   {
+    "text": "kuadrat",
+    "start": 2.107,
+    "end": 2.693
+   },
+   {
+    "text": "persegi",
+    "start": 2.941,
+    "end": 3.331
+   },
+   {
+    "text": "b",
+    "start": 3.331,
+    "end": 3.474
+   },
+   {
+    "text": "kuadrat",
+    "start": 3.474,
+    "end": 4.021
+   },
+   {
+    "text": "dan",
+    "start": 4.269,
+    "end": 4.503
+   },
+   {
+    "text": "dua",
+    "start": 4.503,
+    "end": 4.646
+   },
+   {
+    "text": "persegi",
+    "start": 4.646,
+    "end": 4.998
+   },
+   {
+    "text": "panjang",
+    "start": 4.998,
+    "end": 5.61
+   },
+   {
+    "text": "masing-masing",
+    "start": 5.87,
+    "end": 6.508
+   },
+   {
+    "text": "a",
+    "start": 6.508,
+    "end": 6.626
+   },
+   {
+    "text": "kali",
+    "start": 6.626,
+    "end": 6.847
+   },
+   {
+    "text": "b",
+    "start": 6.847,
+    "end": 7.224
+   }
+  ]
+ },
+ "sum": {
+  "hash": "4fa32998be53",
+  "voice": "id-ID-ArdiNeural",
+  "rate": "-4%",
+  "duration": 7.32,
+  "words": [
+   {
+    "text": "Jumlahkan",
+    "start": 0.101,
+    "end": 0.752
+   },
+   {
+    "text": "semua",
+    "start": 0.752,
+    "end": 1.064
+   },
+   {
+    "text": "bagian",
+    "start": 1.064,
+    "end": 1.741
+   },
+   {
+    "text": "a",
+    "start": 2.63,
+    "end": 2.76
+   },
+   {
+    "text": "kuadrat",
+    "start": 2.76,
+    "end": 3.411
+   },
+   {
+    "text": "ditambah",
+    "start": 3.646,
+    "end": 4.128
+   },
+   {
+    "text": "dua",
+    "start": 4.128,
+    "end": 4.336
+   },
+   {
+    "text": "a",
+    "start": 4.336,
+    "end": 4.466
+   },
+   {
+    "text": "b",
+    "start": 4.466,
+    "end": 4.857
+   },
+   {
+    "text": "ditambah",
+    "start": 5.104,
+    "end": 5.651
+   },
+   {
+    "text": "b",
+    "start": 5.651,
+    "end": 5.833
+   },
+   {
+    "text": "kuadrat",
+    "start": 5.833,
+    "end": 6.445
+   }
+  ]
+ },
+ "takeaway": {
+  "hash": "09ea2c94d993",
+  "voice": "id-ID-ArdiNeural",
+  "rate": "-4%",
+  "duration": 8.208,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.101,
+    "end": 0.778
+   },
+   {
+    "text": "dua",
+    "start": 1.078,
+    "end": 1.325
+   },
+   {
+    "text": "a",
+    "start": 1.325,
+    "end": 1.429
+   },
+   {
+    "text": "b",
+    "start": 1.429,
+    "end": 1.559
+   },
+   {
+    "text": "itulah",
+    "start": 1.559,
+    "end": 1.911
+   },
+   {
+    "text": "yang",
+    "start": 1.911,
+    "end": 2.054
+   },
+   {
+    "text": "sering",
+    "start": 2.054,
+    "end": 2.315
+   },
+   {
+    "text": "terlupa",
+    "start": 2.315,
+    "end": 2.966
+   },
+   {
+    "text": "Dua",
+    "start": 3.84,
+    "end": 4.088
+   },
+   {
+    "text": "persegi",
+    "start": 4.088,
+    "end": 4.452
+   },
+   {
+    "text": "panjang",
+    "start": 4.452,
+    "end": 4.817
+   },
+   {
+    "text": "di",
+    "start": 4.817,
+    "end": 4.895
+   },
+   {
+    "text": "tengah",
+    "start": 4.895,
+    "end": 5.429
+   },
+   {
+    "text": "yang",
+    "start": 5.702,
+    "end": 5.897
+   },
+   {
+    "text": "terlihat",
+    "start": 5.897,
+    "end": 6.249
+   },
+   {
+    "text": "jelas",
+    "start": 6.249,
+    "end": 6.601
+   },
+   {
+    "text": "di",
+    "start": 6.601,
+    "end": 6.705
+   },
+   {
+    "text": "gambar",
+    "start": 6.705,
+    "end": 7.317
+   }
+  ]
+ }
+}
