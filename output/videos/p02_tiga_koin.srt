@@ -1,0 +1,167 @@
+1
+00:00:00,000 --> 00:00:02,429
+Tiga koin dilempar.
+
+2
+00:00:02,429 --> 00:00:06,697
+Lalu ada bocoran: sedikitnya satu sisi gambar muncul.
+
+3
+00:00:06,697 --> 00:00:10,194
+Apakah bocoran ini mengubah peluangnya?
+
+4
+00:00:10,200 --> 00:00:12,461
+Soalnya begini.
+
+5
+00:00:12,461 --> 00:00:15,555
+Tiga koin fair dilempar bersamaan.
+
+6
+00:00:15,555 --> 00:00:18,497
+Jika diketahui sedikitnya satu sisi gambar muncul,
+
+7
+00:00:18,497 --> 00:00:21,738
+berapa peluang tepat dua sisi gambar?
+
+8
+00:00:21,767 --> 00:00:28,841
+Pilihannya: 2/7, 3/7, 4/7, atau 1/2.
+
+9
+00:00:28,867 --> 00:00:34,009
+Setiap koin punya dua sisi: G untuk gambar, A untuk angka.
+
+10
+00:00:34,009 --> 00:00:38,149
+Koinnya fair, jadi keduanya sama mungkin.
+
+11
+00:00:38,167 --> 00:00:41,145
+Perhatikan dua frasa penting.
+
+12
+00:00:41,145 --> 00:00:46,475
+Sedikitnya satu = 1, 2, atau 3 gambar.
+
+13
+00:00:46,475 --> 00:00:51,025
+Tepat dua = 2 saja, tidak lebih.
+
+14
+00:00:51,033 --> 00:00:53,598
+Kita gambar diagram pohon.
+
+15
+00:00:53,598 --> 00:00:58,203
+Koin pertama bercabang dua: G atau A.
+
+16
+00:00:58,233 --> 00:01:00,971
+Setiap cabang bercabang dua lagi untuk koin kedua,
+
+17
+00:01:00,971 --> 00:01:04,323
+lalu dua lagi untuk koin ketiga.
+
+18
+00:01:04,333 --> 00:01:08,013
+Ikuti setiap jalur dari kiri ke kanan.
+
+19
+00:01:08,013 --> 00:01:13,279
+2 × 2 × 2 = 8 hasil, semuanya sama mungkin.
+
+20
+00:01:13,300 --> 00:01:17,960
+Sekarang pakai bocorannya: sedikitnya satu gambar.
+
+21
+00:01:17,960 --> 00:01:22,990
+Hanya satu hasil tanpa gambar sama sekali: AAA.
+
+22
+00:01:23,000 --> 00:01:25,213
+Hasil itu dicoret.
+
+23
+00:01:25,213 --> 00:01:28,586
+Ruang sampel baru: 8 − 1 = 7.
+
+24
+00:01:28,600 --> 00:01:33,178
+Sekarang hitung banyaknya gambar di setiap hasil yang tersisa.
+
+25
+00:01:33,200 --> 00:01:38,020
+Tepat dua gambar: GGA, GAG, dan AGG.
+
+26
+00:01:38,020 --> 00:01:41,378
+Ada 3.
+
+27
+00:01:41,400 --> 00:01:47,178
+Peluangnya 3 dari 7 hasil yang masih mungkin: 3/7.
+
+28
+00:01:47,200 --> 00:01:52,128
+Jawabannya B, yaitu 3/7.
+
+29
+00:01:52,133 --> 00:01:54,948
+Cek dari strukturnya.
+
+30
+00:01:54,948 --> 00:02:02,783
+Kelompokkan hasil menurut banyak gambar: 0, 1, 2, atau 3.
+
+31
+00:02:02,800 --> 00:02:07,619
+Isinya 1, 3, 3, 1.
+
+32
+00:02:07,619 --> 00:02:13,645
+Syaratnya membuang kelompok 0: tersisa 3 + 3 + 1 = 7.
+
+33
+00:02:13,645 --> 00:02:18,802
+Yang tepat dua: 3.
+
+34
+00:02:18,833 --> 00:02:21,712
+Dengan rumus peluang bersyarat.
+
+35
+00:02:21,712 --> 00:02:24,719
+Tepat dua gambar pasti termasuk sedikitnya satu,
+
+36
+00:02:24,719 --> 00:02:29,435
+jadi irisannya adalah kejadian tepat dua itu sendiri.
+
+37
+00:02:29,467 --> 00:02:31,911
+Jadi 3/8 dibagi 7/8.
+
+38
+00:02:31,911 --> 00:02:38,533
+Penyebut 8 saling menghilangkan: tersisa 3/7.
+
+39
+00:02:38,533 --> 00:02:43,520
+Hati-hati: tanpa syarat, peluangnya 3/8.
+
+40
+00:02:43,520 --> 00:02:46,903
+Tidak ada di pilihan.
+
+41
+00:02:46,933 --> 00:02:55,369
+Intinya: syarat tidak mengubah koinnya, tapi mengubah ruang sampel: 8 → 7.
+
+42
+00:02:55,369 --> 00:03:01,177
+Peluangnya naik dari 3/8 menjadi 3/7.

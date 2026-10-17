@@ -1,0 +1,163 @@
+1
+00:00:00,000 --> 00:00:03,268
+Dua kartu diambil dari satu set kartu bridge.
+
+2
+00:00:03,268 --> 00:00:07,173
+Hanya satu yang bergambar, dan warnanya berbeda.
+
+3
+00:00:07,173 --> 00:00:09,882
+Berapa peluangnya?
+
+4
+00:00:09,900 --> 00:00:15,778
+Dua kartu diambil sekaligus dari 52 kartu bridge, tanpa joker.
+
+5
+00:00:15,778 --> 00:00:21,271
+Berapa peluang tepat satu kartu bergambar (J, Q, atau K)
+
+6
+00:00:21,271 --> 00:00:26,862
+dan kedua kartu berlainan warna?
+
+7
+00:00:26,867 --> 00:00:35,645
+Pilihannya: 20, 40, 60, atau 80, semuanya per 221.
+
+8
+00:00:35,667 --> 00:00:37,075
+Ada dua syarat sekaligus.
+
+9
+00:00:37,075 --> 00:00:40,895
+Pertama: tepat satu kartu bergambar.
+
+10
+00:00:40,895 --> 00:00:48,117
+Kedua: warnanya berbeda, satu merah, satu hitam.
+
+11
+00:00:48,133 --> 00:00:51,788
+Sekaligus berarti urutan tidak penting.
+
+12
+00:00:51,788 --> 00:00:55,183
+Kita menghitung pasangan kartu.
+
+13
+00:00:55,200 --> 00:01:00,709
+Susun ke-52 kartu: 4 jenis, masing-masing 13 kartu.
+
+14
+00:01:00,709 --> 00:01:06,978
+Hati dan wajik merah, sekop dan keriting hitam.
+
+15
+00:01:07,000 --> 00:01:13,065
+Kartu bergambar: J, Q, dan K, tiga per jenis.
+
+16
+00:01:13,065 --> 00:01:17,218
+Totalnya 12: 6 merah dan 6 hitam.
+
+17
+00:01:17,233 --> 00:01:22,939
+Sisanya 40 kartu tidak bergambar: 20 merah dan 20 hitam.
+
+18
+00:01:22,967 --> 00:01:27,209
+Jadi dek terbagi menjadi empat kelompok.
+
+19
+00:01:27,233 --> 00:01:32,052
+Tepat satu bergambar: satu dari baris atas, satu dari baris bawah.
+
+20
+00:01:32,052 --> 00:01:37,163
+Warna berbeda: kolomnya juga harus beda.
+
+21
+00:01:37,167 --> 00:01:41,077
+Merah bergambar dengan hitam tidak bergambar:
+
+22
+00:01:41,077 --> 00:01:44,193
+6 × 20 = 120 pasangan.
+
+23
+00:01:44,200 --> 00:01:49,545
+Hitam bergambar dengan merah tidak bergambar: juga 120.
+
+24
+00:01:49,545 --> 00:01:53,002
+Totalnya 240 pasangan yang cocok.
+
+25
+00:01:53,033 --> 00:01:56,399
+Sekarang hitung semua pasangan.
+
+26
+00:01:56,399 --> 00:02:01,547
+Kartu pertama: 52 pilihan, kartu kedua: 51.
+
+27
+00:02:01,567 --> 00:02:02,329
+Tapi setiap pasangan terhitung dua kali:
+
+28
+00:02:02,329 --> 00:02:02,377
+K♥ lalu 7♣ sama dengan 7♣ lalu K♥.
+
+29
+00:02:02,586 --> 00:02:02,377
+Bagi dua: 1326 pasangan.
+
+30
+00:02:04,900 --> 00:02:10,174
+Peluangnya 240 per 1326.
+
+31
+00:02:10,200 --> 00:02:17,298
+Bagi pembilang dan penyebut dengan 6: 40/221.
+
+32
+00:02:17,467 --> 00:02:23,259
+Jawabannya B, yaitu 40/221.
+
+33
+00:02:23,267 --> 00:02:27,966
+Cek dengan mengambil satu per satu.
+
+34
+00:02:27,966 --> 00:02:33,306
+Merah bergambar dulu, lalu hitam tidak bergambar:
+
+35
+00:02:33,306 --> 00:02:35,813
+6/52 × 20/51.
+
+36
+00:02:35,833 --> 00:02:43,685
+Ada 4 susunan: 2 pasangan warna × 2 urutan.
+
+37
+00:02:43,685 --> 00:02:47,635
+Hasilnya juga 40/221.
+
+38
+00:02:47,667 --> 00:02:53,416
+Hati-hati: hanya satu pasangan warna memberi 20/221.
+
+39
+00:02:53,416 --> 00:02:58,293
+Itu jebakan di pilihan A.
+
+40
+00:02:58,300 --> 00:03:02,736
+Intinya: pecah menjadi kelompok yang jelas.
+
+41
+00:03:02,736 --> 00:03:09,256
+Pasangkan kelompok yang memenuhi semua syarat, lalu kalikan.

@@ -1,0 +1,155 @@
+1
+00:00:00,000 --> 00:00:05,623
+Dua dadu dilempar, dan kita diberi satu petunjuk: kedua mata dadunya berbeda.
+
+2
+00:00:05,623 --> 00:00:09,234
+Apakah petunjuk ini mengubah peluangnya?
+
+3
+00:00:09,267 --> 00:00:11,535
+Soalnya begini.
+
+4
+00:00:11,535 --> 00:00:14,569
+Dua dadu fair dilempar bersamaan.
+
+5
+00:00:14,569 --> 00:00:17,754
+Diketahui kedua mata dadu berbeda.
+
+6
+00:00:17,754 --> 00:00:21,741
+Berapa peluang jumlahnya merupakan bilangan prima?
+
+7
+00:00:21,767 --> 00:00:29,849
+Pilihannya: 1/3, 7/15, 8/15, atau 17/30.
+
+8
+00:00:29,867 --> 00:00:32,027
+Kata kuncinya: diketahui.
+
+9
+00:00:32,027 --> 00:00:36,749
+Informasi itu mempersempit kemungkinan yang tersisa.
+
+10
+00:00:36,767 --> 00:00:43,673
+Peluang = hasil yang cocok dibagi hasil yang masih mungkin setelah syarat dipakai.
+
+11
+00:00:43,700 --> 00:00:46,847
+Mari susun semua kemungkinan.
+
+12
+00:00:46,847 --> 00:00:48,547
+Dadu pertama: 1 sampai 6.
+
+13
+00:00:48,547 --> 00:00:52,310
+Dadu kedua juga.
+
+14
+00:00:52,333 --> 00:00:56,160
+Setiap pasangan menempati satu kotak.
+
+15
+00:00:56,160 --> 00:01:01,039
+6 × 6 = 36 hasil, semuanya sama mungkin.
+
+16
+00:01:01,067 --> 00:01:05,399
+Sekarang pakai petunjuknya: mata dadu berbeda.
+
+17
+00:01:05,399 --> 00:01:12,245
+Pasangan kembar (1,1), (2,2), ..., (6,6) tidak mungkin.
+
+18
+00:01:12,267 --> 00:01:15,725
+Enam kotak diagonal dicoret.
+
+19
+00:01:15,725 --> 00:01:20,205
+Ruang sampel menyusut: 36 − 6 = 30.
+
+20
+00:01:20,233 --> 00:01:25,219
+Sekarang ganti setiap pasangan dengan jumlah kedua matanya.
+
+21
+00:01:25,233 --> 00:01:31,038
+Lihat polanya: jumlah yang sama berjajar miring.
+
+22
+00:01:31,038 --> 00:01:35,115
+Semua jumlah 7 ada di satu garis.
+
+23
+00:01:35,133 --> 00:01:38,529
+Jumlahnya dari 2 sampai 12.
+
+24
+00:01:38,529 --> 00:01:45,207
+Yang prima: 2, 3, 5, 7, dan 11.
+
+25
+00:01:45,233 --> 00:01:53,675
+Tapi jumlah 2 hanya dari (1,1): pasangan kembar yang sudah dicoret.
+
+26
+00:01:53,700 --> 00:02:00,126
+Nyalakan jajaran jumlah 3, 5, 7, dan 11.
+
+27
+00:02:00,133 --> 00:02:08,455
+2 + 4 + 6 + 2 = 14 kotak yang cocok.
+
+28
+00:02:08,467 --> 00:02:10,039
+Peluangnya 14/30.
+
+29
+00:02:10,039 --> 00:02:17,077
+Bagi pembilang dan penyebut dengan 2: 7/15.
+
+30
+00:02:17,100 --> 00:02:22,220
+Jawabannya B, yaitu 7/15.
+
+31
+00:02:22,233 --> 00:02:25,025
+Cek dengan cara lain.
+
+32
+00:02:25,025 --> 00:02:26,862
+Tabelnya simetris.
+
+33
+00:02:26,862 --> 00:02:32,763
+Cukup lihat setengahnya: 15 pasangan tanpa urutan.
+
+34
+00:02:32,767 --> 00:02:35,642
+Yang jumlahnya prima ada 7.
+
+35
+00:02:35,642 --> 00:02:41,569
+7 dari 15, hasilnya sama!
+
+36
+00:02:41,600 --> 00:02:48,243
+Hati-hati: tanpa syarat, peluangnya 15/36 = 5/12.
+
+37
+00:02:48,243 --> 00:02:52,898
+Tidak ada di pilihan.
+
+38
+00:02:52,900 --> 00:02:56,761
+Intinya: diketahui berarti ruang sampel menyusut.
+
+39
+00:02:56,761 --> 00:03:02,608
+Coret dulu yang tidak mungkin, baru hitung yang cocok.

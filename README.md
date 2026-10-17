@@ -6,13 +6,14 @@ rendered automatically by **GitHub Actions** — nothing to install on your devi
 
 | Video | Topic | Answer | Length |
 |---|---|---|---|
-| [`p00_poc_binomial`](problems/p00_poc_binomial/problem.md) | Proof of concept: (a + b)² as areas | — | 0:50 |
-| [`p01_dadu_berbeda`](problems/p01_dadu_berbeda/problem.md) | Two dice, distinct faces, prime sum | **B. 7/15** | 3:03 |
-| [`p02_tiga_koin`](problems/p02_tiga_koin/problem.md) | Three coins, at least one picture side | **B. 3/7** | see storyboard |
-| [`p03_kartu_bridge`](problems/p03_kartu_bridge/problem.md) | Two bridge cards, one face card, different colours | **B. 40/221** | see storyboard |
+| [`p00_poc_binomial`](problems/p00_poc_binomial/problem.md) | Proof of concept: (a + b)² as areas | — | 0:49 |
+| [`p01_dadu_berbeda`](problems/p01_dadu_berbeda/problem.md) | Two dice, distinct faces, prime sum | **B. 7/15** | 3:02 |
+| [`p02_tiga_koin`](problems/p02_tiga_koin/problem.md) | Three coins, at least one picture side | **B. 3/7** | 3:01 |
+| [`p03_kartu_bridge`](problems/p03_kartu_bridge/problem.md) | Two bridge cards, one face card, different colours | **B. 40/221** | 3:09 |
 
 Finished videos live in [`output/videos/`](output/videos) (MP4 + `.srt` subtitles);
-quality-control frames and reports in [`output/qc/`](output/qc).
+quality-control frames and reports in [`output/qc/`](output/qc); the summary is in
+[`output/QC_REPORT.md`](output/QC_REPORT.md).
 
 ## Render a video (no installation needed)
 
@@ -31,7 +32,7 @@ quality-control frames and reports in [`output/qc/`](output/qc).
 > The *Run workflow* button appears once `.github/workflows/render.yml` is on the
 > default branch (`main`). On `claude/**` branches every push also runs a smoke
 > test automatically: it regenerates narration for changed scripts, commits the
-> audio back to the branch, and renders the proof-of-concept video.
+> audio back to the branch, and renders every problem at preview quality.
 
 A full render of a 3-minute problem takes about 7–10 minutes on a GitHub runner.
 

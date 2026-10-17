@@ -1,0 +1,422 @@
+{
+  "problem": "p03_kartu_bridge",
+  "theme": "kinan",
+  "duration": 189.267,
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 9.9,
+      "chapter": "TANTANGAN",
+      "audio": true,
+      "say": "Dua kartu diambil dari satu set kartu bridge. Hanya satu yang bergambar, dan warnanya berbeda. Berapa peluangnya?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 3.268,
+          "text": "Dua kartu diambil dari satu set kartu bridge."
+        },
+        {
+          "start": 3.268,
+          "end": 7.173,
+          "text": "Hanya satu yang bergambar, dan warnanya berbeda."
+        },
+        {
+          "start": 7.173,
+          "end": 9.882,
+          "text": "Berapa peluangnya?"
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "start": 9.9,
+      "end": 26.867,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Soalnya begini. Dua kartu diambil sekaligus dari satu set kartu bridge standar, lima puluh dua kartu, tanpa joker. Berapa peluang tepat satu kartu bergambar, yaitu J, Q, atau K, dan kedua kartu berlainan warna?",
+      "pages": [
+        {
+          "start": 9.9,
+          "end": 15.778,
+          "text": "Dua kartu diambil sekaligus dari 52 kartu bridge, tanpa joker."
+        },
+        {
+          "start": 15.778,
+          "end": 21.271,
+          "text": "Berapa peluang tepat satu kartu bergambar (J, Q, atau K)"
+        },
+        {
+          "start": 21.271,
+          "end": 26.862,
+          "text": "dan kedua kartu berlainan warna?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 26.867,
+      "end": 35.667,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: dua puluh, empat puluh, enam puluh, atau delapan puluh, semuanya per dua ratus dua puluh satu.",
+      "pages": [
+        {
+          "start": 26.867,
+          "end": 35.645,
+          "text": "Pilihannya: 20, 40, 60, atau 80, semuanya per 221."
+        }
+      ]
+    },
+    {
+      "id": "conditions",
+      "start": 35.667,
+      "end": 48.133,
+      "chapter": "PAHAMI",
+      "audio": true,
+      "say": "Ada dua syarat yang harus terpenuhi bersamaan. Pertama, tepat satu kartu bergambar. Kedua, warnanya berbeda: satu merah, satu hitam.",
+      "pages": [
+        {
+          "start": 35.667,
+          "end": 37.075,
+          "text": "Ada dua syarat sekaligus."
+        },
+        {
+          "start": 37.075,
+          "end": 40.895,
+          "text": "Pertama: tepat satu kartu bergambar."
+        },
+        {
+          "start": 40.895,
+          "end": 48.117,
+          "text": "Kedua: warnanya berbeda, satu merah, satu hitam."
+        }
+      ]
+    },
+    {
+      "id": "together",
+      "start": 48.133,
+      "end": 55.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Diambil sekaligus berarti urutan tidak penting. Yang kita hitung adalah pasangan kartu.",
+      "pages": [
+        {
+          "start": 48.133,
+          "end": 51.788,
+          "text": "Sekaligus berarti urutan tidak penting."
+        },
+        {
+          "start": 51.788,
+          "end": 55.183,
+          "text": "Kita menghitung pasangan kartu."
+        }
+      ]
+    },
+    {
+      "id": "deck",
+      "start": 55.2,
+      "end": 67.0,
+      "chapter": "KELOMPOK",
+      "audio": true,
+      "say": "Susun kelima puluh dua kartu. Ada empat jenis, masing-masing tiga belas kartu. Hati dan wajik berwarna merah, sekop dan keriting berwarna hitam.",
+      "pages": [
+        {
+          "start": 55.2,
+          "end": 60.709,
+          "text": "Susun ke-52 kartu: 4 jenis, masing-masing 13 kartu."
+        },
+        {
+          "start": 60.709,
+          "end": 66.978,
+          "text": "Hati dan wajik merah, sekop dan keriting hitam."
+        }
+      ]
+    },
+    {
+      "id": "faces",
+      "start": 67.0,
+      "end": 77.233,
+      "chapter": null,
+      "audio": true,
+      "say": "Kartu bergambar adalah J, Q, dan K, tiga di setiap jenis. Totalnya dua belas: enam merah dan enam hitam.",
+      "pages": [
+        {
+          "start": 67.0,
+          "end": 73.065,
+          "text": "Kartu bergambar: J, Q, dan K, tiga per jenis."
+        },
+        {
+          "start": 73.065,
+          "end": 77.218,
+          "text": "Totalnya 12: 6 merah dan 6 hitam."
+        }
+      ]
+    },
+    {
+      "id": "plain",
+      "start": 77.233,
+      "end": 82.967,
+      "chapter": null,
+      "audio": true,
+      "say": "Sisanya empat puluh kartu tidak bergambar: dua puluh merah dan dua puluh hitam.",
+      "pages": [
+        {
+          "start": 77.233,
+          "end": 82.939,
+          "text": "Sisanya 40 kartu tidak bergambar: 20 merah dan 20 hitam."
+        }
+      ]
+    },
+    {
+      "id": "blocks",
+      "start": 82.967,
+      "end": 87.233,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi dek terbagi menjadi empat kelompok yang jelas.",
+      "pages": [
+        {
+          "start": 82.967,
+          "end": 87.209,
+          "text": "Jadi dek terbagi menjadi empat kelompok."
+        }
+      ]
+    },
+    {
+      "id": "link",
+      "start": 87.233,
+      "end": 97.167,
+      "chapter": "PASANGAN",
+      "audio": true,
+      "say": "Tepat satu bergambar berarti satu kartu dari baris atas, dan satu dari baris bawah. Warna berbeda berarti kolomnya juga harus beda.",
+      "pages": [
+        {
+          "start": 87.233,
+          "end": 92.052,
+          "text": "Tepat satu bergambar: satu dari baris atas, satu dari baris bawah."
+        },
+        {
+          "start": 92.052,
+          "end": 97.163,
+          "text": "Warna berbeda: kolomnya juga harus beda."
+        }
+      ]
+    },
+    {
+      "id": "rect1",
+      "start": 97.167,
+      "end": 104.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Merah bergambar dengan hitam tidak bergambar: enam kali dua puluh, ada seratus dua puluh pasangan.",
+      "pages": [
+        {
+          "start": 97.167,
+          "end": 101.077,
+          "text": "Merah bergambar dengan hitam tidak bergambar:"
+        },
+        {
+          "start": 101.077,
+          "end": 104.193,
+          "text": "6 × 20 = 120 pasangan."
+        }
+      ]
+    },
+    {
+      "id": "rect2",
+      "start": 104.2,
+      "end": 113.033,
+      "chapter": null,
+      "audio": true,
+      "say": "Hitam bergambar dengan merah tidak bergambar: juga seratus dua puluh. Totalnya dua ratus empat puluh pasangan yang cocok.",
+      "pages": [
+        {
+          "start": 104.2,
+          "end": 109.545,
+          "text": "Hitam bergambar dengan merah tidak bergambar: juga 120."
+        },
+        {
+          "start": 109.545,
+          "end": 113.002,
+          "text": "Totalnya 240 pasangan yang cocok."
+        }
+      ]
+    },
+    {
+      "id": "total",
+      "start": 113.033,
+      "end": 121.567,
+      "chapter": "SEMUA PASANGAN",
+      "audio": true,
+      "say": "Sekarang hitung semua pasangan yang mungkin. Kartu pertama punya lima puluh dua pilihan, kartu kedua lima puluh satu.",
+      "pages": [
+        {
+          "start": 113.033,
+          "end": 116.399,
+          "text": "Sekarang hitung semua pasangan."
+        },
+        {
+          "start": 116.399,
+          "end": 121.547,
+          "text": "Kartu pertama: 52 pilihan, kartu kedua: 51."
+        }
+      ]
+    },
+    {
+      "id": "double",
+      "start": 121.567,
+      "end": 124.9,
+      "chapter": null,
+      "audio": true,
+      "say": "Tapi setiap pasangan terhitung dua kali. K hati lalu tujuh keriting, sama saja dengan tujuh keriting lalu K hati. Jadi kita bagi dua, hasilnya seribu tiga ratus dua puluh enam pasangan.",
+      "pages": [
+        {
+          "start": 121.567,
+          "end": 122.329,
+          "text": "Tapi setiap pasangan terhitung dua kali:"
+        },
+        {
+          "start": 122.329,
+          "end": 122.377,
+          "text": "K♥ lalu 7♣ sama dengan 7♣ lalu K♥."
+        },
+        {
+          "start": 122.586,
+          "end": 122.377,
+          "text": "Bagi dua: 1326 pasangan."
+        }
+      ]
+    },
+    {
+      "id": "prob",
+      "start": 124.9,
+      "end": 130.2,
+      "chapter": "HITUNG",
+      "audio": true,
+      "say": "Peluangnya, dua ratus empat puluh per seribu tiga ratus dua puluh enam.",
+      "pages": [
+        {
+          "start": 124.9,
+          "end": 130.174,
+          "text": "Peluangnya 240 per 1326."
+        }
+      ]
+    },
+    {
+      "id": "simplify",
+      "start": 130.2,
+      "end": 137.467,
+      "chapter": null,
+      "audio": true,
+      "say": "Bagi pembilang dan penyebut dengan enam. Hasilnya empat puluh per dua ratus dua puluh satu.",
+      "pages": [
+        {
+          "start": 130.2,
+          "end": 137.298,
+          "text": "Bagi pembilang dan penyebut dengan 6: 40/221."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 137.467,
+      "end": 143.267,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi jawabannya adalah B, empat puluh per dua ratus dua puluh satu.",
+      "pages": [
+        {
+          "start": 137.467,
+          "end": 143.259,
+          "text": "Jawabannya B, yaitu 40/221."
+        }
+      ]
+    },
+    {
+      "id": "seq",
+      "start": 143.267,
+      "end": 155.833,
+      "chapter": "CEK",
+      "audio": true,
+      "say": "Mari kita cek dengan mengambil kartu satu per satu. Misalnya, merah bergambar dulu, lalu hitam tidak bergambar: enam per lima puluh dua, dikali dua puluh per lima puluh satu.",
+      "pages": [
+        {
+          "start": 143.267,
+          "end": 147.966,
+          "text": "Cek dengan mengambil satu per satu."
+        },
+        {
+          "start": 147.966,
+          "end": 153.306,
+          "text": "Merah bergambar dulu, lalu hitam tidak bergambar:"
+        },
+        {
+          "start": 153.306,
+          "end": 155.813,
+          "text": "6/52 × 20/51."
+        }
+      ]
+    },
+    {
+      "id": "seq2",
+      "start": 155.833,
+      "end": 167.667,
+      "chapter": null,
+      "audio": true,
+      "say": "Ada empat susunan seperti itu: dua pasangan warna, masing-masing dengan dua urutan. Empat kali hasil tadi, juga sama dengan empat puluh per dua ratus dua puluh satu.",
+      "pages": [
+        {
+          "start": 155.833,
+          "end": 163.685,
+          "text": "Ada 4 susunan: 2 pasangan warna × 2 urutan."
+        },
+        {
+          "start": 163.685,
+          "end": 167.635,
+          "text": "Hasilnya juga 40/221."
+        }
+      ]
+    },
+    {
+      "id": "trap",
+      "start": 167.667,
+      "end": 178.3,
+      "chapter": null,
+      "audio": true,
+      "say": "Hati-hati. Kalau hanya menghitung satu pasangan warna, kamu mendapat dua puluh per dua ratus dua puluh satu. Itu jebakan di pilihan A.",
+      "pages": [
+        {
+          "start": 167.667,
+          "end": 173.416,
+          "text": "Hati-hati: hanya satu pasangan warna memberi 20/221."
+        },
+        {
+          "start": 173.416,
+          "end": 178.293,
+          "text": "Itu jebakan di pilihan A."
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "start": 178.3,
+      "end": 189.267,
+      "chapter": "INTINYA",
+      "audio": true,
+      "say": "Intinya, pecah kartu menjadi kelompok yang jelas. Pasangkan kelompok yang memenuhi semua syarat, lalu kalikan untuk menghitung pasangannya.",
+      "pages": [
+        {
+          "start": 178.3,
+          "end": 182.736,
+          "text": "Intinya: pecah menjadi kelompok yang jelas."
+        },
+        {
+          "start": 182.736,
+          "end": 189.256,
+          "text": "Pasangkan kelompok yang memenuhi semua syarat, lalu kalikan."
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ name: Render math videos
 # Manual rendering: Actions tab -> "Render math videos" -> Run workflow.
 # Every push to a claude/** branch that touches the project also runs a smoke
 # test: narration audio is (re)generated for all problems and committed back,
-# and the proof-of-concept video is rendered and uploaded as an artifact.
+# and every problem is rendered at preview quality and uploaded as an artifact.
 
 on:
   workflow_dispatch:
@@ -59,9 +59,9 @@ jobs:
     timeout-minutes: 240
     env:
       IS_PUSH: ${{ github.event_name == 'push' }}
-      PROBLEMS: ${{ github.event_name == 'push' && 'p00_poc_binomial' || inputs.problems }}
+      PROBLEMS: ${{ github.event_name == 'push' && 'all' || inputs.problems }}
       NARRATE: ${{ github.event_name == 'push' && 'all' || inputs.problems }}
-      QUALITY: ${{ github.event_name == 'push' && 'final' || inputs.quality }}
+      QUALITY: ${{ github.event_name == 'push' && 'preview' || inputs.quality }}
       THEME: ${{ github.event_name == 'push' && 'kinan' || inputs.theme }}
       NARRATION: ${{ github.event_name == 'push' || inputs.narration }}
       FORCE: ${{ github.event_name == 'push' || inputs.force }}

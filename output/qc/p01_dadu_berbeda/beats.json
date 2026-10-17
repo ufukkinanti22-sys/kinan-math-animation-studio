@@ -1,0 +1,412 @@
+{
+  "problem": "p01_dadu_berbeda",
+  "theme": "kinan",
+  "duration": 182.633,
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 9.267,
+      "chapter": "TANTANGAN",
+      "audio": true,
+      "say": "Dua dadu dilempar, dan kita diberi satu petunjuk: kedua mata dadunya berbeda. Apakah petunjuk ini mengubah peluangnya?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 5.623,
+          "text": "Dua dadu dilempar, dan kita diberi satu petunjuk: kedua mata dadunya berbeda."
+        },
+        {
+          "start": 5.623,
+          "end": 9.234,
+          "text": "Apakah petunjuk ini mengubah peluangnya?"
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "start": 9.267,
+      "end": 21.767,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Soalnya begini. Dua dadu fair dilempar bersamaan. Diketahui kedua mata dadu berbeda. Berapa peluang jumlah mata dadunya merupakan bilangan prima?",
+      "pages": [
+        {
+          "start": 9.267,
+          "end": 11.535,
+          "text": "Soalnya begini."
+        },
+        {
+          "start": 11.535,
+          "end": 14.569,
+          "text": "Dua dadu fair dilempar bersamaan."
+        },
+        {
+          "start": 14.569,
+          "end": 17.754,
+          "text": "Diketahui kedua mata dadu berbeda."
+        },
+        {
+          "start": 17.754,
+          "end": 21.741,
+          "text": "Berapa peluang jumlahnya merupakan bilangan prima?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 21.767,
+      "end": 29.867,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: sepertiga, tujuh per lima belas, delapan per lima belas, atau tujuh belas per tiga puluh.",
+      "pages": [
+        {
+          "start": 21.767,
+          "end": 29.849,
+          "text": "Pilihannya: 1/3, 7/15, 8/15, atau 17/30."
+        }
+      ]
+    },
+    {
+      "id": "keyword",
+      "start": 29.867,
+      "end": 36.767,
+      "chapter": "PAHAMI",
+      "audio": true,
+      "say": "Kata kuncinya adalah diketahui. Informasi itu mempersempit kemungkinan yang tersisa.",
+      "pages": [
+        {
+          "start": 29.867,
+          "end": 32.027,
+          "text": "Kata kuncinya: diketahui."
+        },
+        {
+          "start": 32.027,
+          "end": 36.749,
+          "text": "Informasi itu mempersempit kemungkinan yang tersisa."
+        }
+      ]
+    },
+    {
+      "id": "idea",
+      "start": 36.767,
+      "end": 43.7,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi peluangnya adalah banyak hasil yang cocok, dibagi banyak hasil yang masih mungkin setelah syarat dipakai.",
+      "pages": [
+        {
+          "start": 36.767,
+          "end": 43.673,
+          "text": "Peluang = hasil yang cocok dibagi hasil yang masih mungkin setelah syarat dipakai."
+        }
+      ]
+    },
+    {
+      "id": "axes",
+      "start": 43.7,
+      "end": 52.333,
+      "chapter": "RUANG SAMPEL",
+      "audio": true,
+      "say": "Mari susun semua kemungkinan. Dadu pertama bisa muncul satu sampai enam. Dadu kedua juga.",
+      "pages": [
+        {
+          "start": 43.7,
+          "end": 46.847,
+          "text": "Mari susun semua kemungkinan."
+        },
+        {
+          "start": 46.847,
+          "end": 48.547,
+          "text": "Dadu pertama: 1 sampai 6."
+        },
+        {
+          "start": 48.547,
+          "end": 52.31,
+          "text": "Dadu kedua juga."
+        }
+      ]
+    },
+    {
+      "id": "cells",
+      "start": 52.333,
+      "end": 61.067,
+      "chapter": null,
+      "audio": true,
+      "say": "Setiap pasangan menempati satu kotak. Enam kali enam, ada tiga puluh enam hasil, dan semuanya sama mungkin.",
+      "pages": [
+        {
+          "start": 52.333,
+          "end": 56.16,
+          "text": "Setiap pasangan menempati satu kotak."
+        },
+        {
+          "start": 56.16,
+          "end": 61.039,
+          "text": "6 × 6 = 36 hasil, semuanya sama mungkin."
+        }
+      ]
+    },
+    {
+      "id": "doubles",
+      "start": 61.067,
+      "end": 72.267,
+      "chapter": "SYARAT",
+      "audio": true,
+      "say": "Sekarang pakai petunjuknya: mata dadu berbeda. Pasangan kembar, satu satu, dua dua, sampai enam enam, tidak mungkin terjadi.",
+      "pages": [
+        {
+          "start": 61.067,
+          "end": 65.399,
+          "text": "Sekarang pakai petunjuknya: mata dadu berbeda."
+        },
+        {
+          "start": 65.399,
+          "end": 72.245,
+          "text": "Pasangan kembar (1,1), (2,2), ..., (6,6) tidak mungkin."
+        }
+      ]
+    },
+    {
+      "id": "shrink",
+      "start": 72.267,
+      "end": 80.233,
+      "chapter": null,
+      "audio": true,
+      "say": "Enam kotak di diagonal dicoret. Ruang sampel kita menyusut, dari tiga puluh enam menjadi tiga puluh.",
+      "pages": [
+        {
+          "start": 72.267,
+          "end": 75.725,
+          "text": "Enam kotak diagonal dicoret."
+        },
+        {
+          "start": 75.725,
+          "end": 80.205,
+          "text": "Ruang sampel menyusut: 36 − 6 = 30."
+        }
+      ]
+    },
+    {
+      "id": "sums",
+      "start": 80.233,
+      "end": 85.233,
+      "chapter": "JUMLAH",
+      "audio": true,
+      "say": "Sekarang, ganti setiap pasangan dengan jumlah kedua matanya.",
+      "pages": [
+        {
+          "start": 80.233,
+          "end": 85.219,
+          "text": "Sekarang ganti setiap pasangan dengan jumlah kedua matanya."
+        }
+      ]
+    },
+    {
+      "id": "pattern",
+      "start": 85.233,
+      "end": 95.133,
+      "chapter": null,
+      "audio": true,
+      "say": "Lihat polanya. Jumlah yang sama selalu berjajar miring. Misalnya, semua jumlah tujuh ada di satu garis.",
+      "pages": [
+        {
+          "start": 85.233,
+          "end": 91.038,
+          "text": "Lihat polanya: jumlah yang sama berjajar miring."
+        },
+        {
+          "start": 91.038,
+          "end": 95.115,
+          "text": "Semua jumlah 7 ada di satu garis."
+        }
+      ]
+    },
+    {
+      "id": "primes",
+      "start": 95.133,
+      "end": 105.233,
+      "chapter": "PRIMA",
+      "audio": true,
+      "say": "Jumlahnya berkisar dari dua sampai dua belas. Yang prima adalah dua, tiga, lima, tujuh, dan sebelas.",
+      "pages": [
+        {
+          "start": 95.133,
+          "end": 98.529,
+          "text": "Jumlahnya dari 2 sampai 12."
+        },
+        {
+          "start": 98.529,
+          "end": 105.207,
+          "text": "Yang prima: 2, 3, 5, 7, dan 11."
+        }
+      ]
+    },
+    {
+      "id": "two",
+      "start": 105.233,
+      "end": 113.7,
+      "chapter": null,
+      "audio": true,
+      "say": "Tapi jumlah dua hanya bisa dari satu dan satu. Itu pasangan kembar yang sudah dicoret, jadi tidak ikut dihitung.",
+      "pages": [
+        {
+          "start": 105.233,
+          "end": 113.675,
+          "text": "Tapi jumlah 2 hanya dari (1,1): pasangan kembar yang sudah dicoret."
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "start": 113.7,
+      "end": 120.133,
+      "chapter": "HITUNG",
+      "audio": true,
+      "say": "Sekarang nyalakan jajaran jumlah tiga, lima, tujuh, dan sebelas.",
+      "pages": [
+        {
+          "start": 113.7,
+          "end": 120.126,
+          "text": "Nyalakan jajaran jumlah 3, 5, 7, dan 11."
+        }
+      ]
+    },
+    {
+      "id": "count",
+      "start": 120.133,
+      "end": 128.467,
+      "chapter": null,
+      "audio": true,
+      "say": "Dua, ditambah empat, ditambah enam, ditambah dua. Ada empat belas kotak yang cocok.",
+      "pages": [
+        {
+          "start": 120.133,
+          "end": 128.455,
+          "text": "2 + 4 + 6 + 2 = 14 kotak yang cocok."
+        }
+      ]
+    },
+    {
+      "id": "fraction",
+      "start": 128.467,
+      "end": 137.1,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi peluangnya empat belas per tiga puluh. Bagi pembilang dan penyebut dengan dua, hasilnya tujuh per lima belas.",
+      "pages": [
+        {
+          "start": 128.467,
+          "end": 130.039,
+          "text": "Peluangnya 14/30."
+        },
+        {
+          "start": 130.039,
+          "end": 137.077,
+          "text": "Bagi pembilang dan penyebut dengan 2: 7/15."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 137.1,
+      "end": 142.233,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi jawabannya adalah B, tujuh per lima belas.",
+      "pages": [
+        {
+          "start": 137.1,
+          "end": 142.22,
+          "text": "Jawabannya B, yaitu 7/15."
+        }
+      ]
+    },
+    {
+      "id": "symmetry",
+      "start": 142.233,
+      "end": 152.767,
+      "chapter": "CEK",
+      "audio": true,
+      "say": "Mari kita cek dengan cara lain. Tabelnya simetris, jadi cukup lihat setengahnya: lima belas pasangan berbeda, tanpa memperhatikan urutan.",
+      "pages": [
+        {
+          "start": 142.233,
+          "end": 145.025,
+          "text": "Cek dengan cara lain."
+        },
+        {
+          "start": 145.025,
+          "end": 146.862,
+          "text": "Tabelnya simetris."
+        },
+        {
+          "start": 146.862,
+          "end": 152.763,
+          "text": "Cukup lihat setengahnya: 15 pasangan tanpa urutan."
+        }
+      ]
+    },
+    {
+      "id": "half",
+      "start": 152.767,
+      "end": 161.6,
+      "chapter": null,
+      "audio": true,
+      "say": "Di setengah ini, yang jumlahnya prima ada tujuh. Tujuh dari lima belas. Hasilnya sama!",
+      "pages": [
+        {
+          "start": 152.767,
+          "end": 155.642,
+          "text": "Yang jumlahnya prima ada 7."
+        },
+        {
+          "start": 155.642,
+          "end": 161.569,
+          "text": "7 dari 15, hasilnya sama!"
+        }
+      ]
+    },
+    {
+      "id": "trap",
+      "start": 161.6,
+      "end": 172.9,
+      "chapter": null,
+      "audio": true,
+      "say": "Hati-hati. Kalau syaratnya diabaikan, kamu akan membagi dengan tiga puluh enam, dan mendapat lima per dua belas. Itu tidak ada di pilihan.",
+      "pages": [
+        {
+          "start": 161.6,
+          "end": 168.243,
+          "text": "Hati-hati: tanpa syarat, peluangnya 15/36 = 5/12."
+        },
+        {
+          "start": 168.243,
+          "end": 172.898,
+          "text": "Tidak ada di pilihan."
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "start": 172.9,
+      "end": 182.633,
+      "chapter": "INTINYA",
+      "audio": true,
+      "say": "Intinya, kata diketahui berarti ruang sampel menyusut. Coret dulu yang tidak mungkin, baru hitung yang cocok.",
+      "pages": [
+        {
+          "start": 172.9,
+          "end": 176.761,
+          "text": "Intinya: diketahui berarti ruang sampel menyusut."
+        },
+        {
+          "start": 176.761,
+          "end": 182.608,
+          "text": "Coret dulu yang tidak mungkin, baru hitung yang cocok."
+        }
+      ]
+    }
+  ]
+}

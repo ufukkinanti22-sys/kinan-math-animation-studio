@@ -89,13 +89,26 @@ def main():
                            capture_output=True, text=True)
         onsets = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r.stderr)]
         offsets = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r.stderr)]
+        # silence intervals [start, end], walking the events in order
+        silences, open_at = [], None
+        for kind, t in re.findall(r"silence_(start|end): ([\d.]+)", r.stderr):
+            if kind == "start":
+                open_at = float(t)
+            else:
+                silences.append((open_at if open_at is not None else 0.0, float(t)))
+                open_at = None
+        if open_at is not None:  # trailing silence runs to the end of the file
+            silences.append((open_at, dur))
+        a_end = float(a.get("duration", dur))  # the audio track may stop before the last frame
+        silences = [(s, dur if e >= a_end - 0.05 else e) for s, e in silences]
         late, overrun = [], []
         for b in beats:
             hits = [o for o in onsets if b["start"] - 0.05 <= o <= b["start"] + 0.8]
             if not hits and not (b["start"] < 0.1):  # speech at t=0 has no preceding silence
                 late.append(b["id"])
-            ends = [o for o in offsets if b["start"] < o <= b["end"] + 0.5]
-            if ends and max(ends) > b["end"] + 0.15:
+            # the boundary to the next beat must lie in silence, otherwise speech was cut/overlapped
+            edge = min(b["end"], dur) - 0.05
+            if not any(s <= edge <= e for s, e in silences):
                 overrun.append(b["id"])
         check("speech starts with its beat (A/V sync)", not late,
               f"{len(beats) - len(late)}/{len(beats)} beats" + (f"; late: {late}" if late else ""))

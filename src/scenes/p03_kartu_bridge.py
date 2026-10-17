@@ -148,8 +148,8 @@ class P03KartuBridge(KinanScene):
             self.play(TransformFromCopy(p1[0], p2[1], path_arc=-1.2), TransformFromCopy(p1[1], p2[0], path_arc=-1.2),
                       FadeIn(eq), run_time=1.0)
             self.until("pasangan")
-            label = M(r"\{K\varheartsuit,\ 7\clubsuit\}", size=70).move_to([0, 0.6, 0])
-            label[0][1:3].set_color(THEME.red_suit)
+            label = T("{K♥, 7♣}", size=70, weight=BLACK).move_to([0, 0.6, 0])
+            label[1:3].set_color(THEME.red_suit)  # characters: { K ♥ , space 7 ♣ }
             note = T("1 pasangan", size=40, weight=BLACK, color=THEME.purple).next_to(label, DOWN, 0.3)
             self.play(Write(label), FadeIn(note), run_time=0.9)
             self.together = VGroup(row, label, note)

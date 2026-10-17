@@ -1,0 +1,417 @@
+{
+  "problem": "p02_tiga_koin",
+  "theme": "kinan",
+  "duration": 181.2,
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 10.2,
+      "chapter": "TANTANGAN",
+      "audio": true,
+      "say": "Tiga koin dilempar. Lalu ada bocoran: sedikitnya satu sisi gambar muncul. Apakah bocoran ini mengubah peluangnya?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 2.429,
+          "text": "Tiga koin dilempar."
+        },
+        {
+          "start": 2.429,
+          "end": 6.697,
+          "text": "Lalu ada bocoran: sedikitnya satu sisi gambar muncul."
+        },
+        {
+          "start": 6.697,
+          "end": 10.194,
+          "text": "Apakah bocoran ini mengubah peluangnya?"
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "start": 10.2,
+      "end": 21.767,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Soalnya begini. Tiga koin fair dilempar bersamaan. Jika diketahui sedikitnya satu sisi gambar muncul, berapa peluang muncul tepat dua sisi gambar?",
+      "pages": [
+        {
+          "start": 10.2,
+          "end": 12.461,
+          "text": "Soalnya begini."
+        },
+        {
+          "start": 12.461,
+          "end": 15.555,
+          "text": "Tiga koin fair dilempar bersamaan."
+        },
+        {
+          "start": 15.555,
+          "end": 18.497,
+          "text": "Jika diketahui sedikitnya satu sisi gambar muncul,"
+        },
+        {
+          "start": 18.497,
+          "end": 21.738,
+          "text": "berapa peluang tepat dua sisi gambar?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 21.767,
+      "end": 28.867,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: dua per tujuh, tiga per tujuh, empat per tujuh, atau setengah.",
+      "pages": [
+        {
+          "start": 21.767,
+          "end": 28.841,
+          "text": "Pilihannya: 2/7, 3/7, 4/7, atau 1/2."
+        }
+      ]
+    },
+    {
+      "id": "faces",
+      "start": 28.867,
+      "end": 38.167,
+      "chapter": "PAHAMI",
+      "audio": true,
+      "say": "Setiap koin punya dua sisi: G untuk gambar, dan A untuk angka. Karena koinnya fair, keduanya sama mungkin.",
+      "pages": [
+        {
+          "start": 28.867,
+          "end": 34.009,
+          "text": "Setiap koin punya dua sisi: G untuk gambar, A untuk angka."
+        },
+        {
+          "start": 34.009,
+          "end": 38.149,
+          "text": "Koinnya fair, jadi keduanya sama mungkin."
+        }
+      ]
+    },
+    {
+      "id": "words",
+      "start": 38.167,
+      "end": 51.033,
+      "chapter": null,
+      "audio": true,
+      "say": "Perhatikan dua frasa penting. Sedikitnya satu, artinya satu, dua, atau tiga gambar. Tepat dua, artinya dua saja, tidak lebih.",
+      "pages": [
+        {
+          "start": 38.167,
+          "end": 41.145,
+          "text": "Perhatikan dua frasa penting."
+        },
+        {
+          "start": 41.145,
+          "end": 46.475,
+          "text": "Sedikitnya satu = 1, 2, atau 3 gambar."
+        },
+        {
+          "start": 46.475,
+          "end": 51.025,
+          "text": "Tepat dua = 2 saja, tidak lebih."
+        }
+      ]
+    },
+    {
+      "id": "tree1",
+      "start": 51.033,
+      "end": 58.233,
+      "chapter": "RUANG SAMPEL",
+      "audio": true,
+      "say": "Kita gambar diagram pohon. Koin pertama bercabang dua: G atau A.",
+      "pages": [
+        {
+          "start": 51.033,
+          "end": 53.598,
+          "text": "Kita gambar diagram pohon."
+        },
+        {
+          "start": 53.598,
+          "end": 58.203,
+          "text": "Koin pertama bercabang dua: G atau A."
+        }
+      ]
+    },
+    {
+      "id": "tree2",
+      "start": 58.233,
+      "end": 64.333,
+      "chapter": null,
+      "audio": true,
+      "say": "Setiap cabang bercabang dua lagi untuk koin kedua, lalu dua lagi untuk koin ketiga.",
+      "pages": [
+        {
+          "start": 58.233,
+          "end": 60.971,
+          "text": "Setiap cabang bercabang dua lagi untuk koin kedua,"
+        },
+        {
+          "start": 60.971,
+          "end": 64.323,
+          "text": "lalu dua lagi untuk koin ketiga."
+        }
+      ]
+    },
+    {
+      "id": "tree3",
+      "start": 64.333,
+      "end": 73.3,
+      "chapter": null,
+      "audio": true,
+      "say": "Ikuti setiap jalur dari kiri ke kanan. Dua kali dua kali dua, ada delapan hasil, dan semuanya sama mungkin.",
+      "pages": [
+        {
+          "start": 64.333,
+          "end": 68.013,
+          "text": "Ikuti setiap jalur dari kiri ke kanan."
+        },
+        {
+          "start": 68.013,
+          "end": 73.279,
+          "text": "2 × 2 × 2 = 8 hasil, semuanya sama mungkin."
+        }
+      ]
+    },
+    {
+      "id": "condition",
+      "start": 73.3,
+      "end": 83.0,
+      "chapter": "SYARAT",
+      "audio": true,
+      "say": "Sekarang pakai bocorannya: sedikitnya satu gambar. Hanya ada satu hasil yang sama sekali tidak punya gambar, yaitu A A A.",
+      "pages": [
+        {
+          "start": 73.3,
+          "end": 77.96,
+          "text": "Sekarang pakai bocorannya: sedikitnya satu gambar."
+        },
+        {
+          "start": 77.96,
+          "end": 82.99,
+          "text": "Hanya satu hasil tanpa gambar sama sekali: AAA."
+        }
+      ]
+    },
+    {
+      "id": "shrink",
+      "start": 83.0,
+      "end": 88.6,
+      "chapter": null,
+      "audio": true,
+      "say": "Hasil itu kita coret. Ruang sampel baru tinggal tujuh.",
+      "pages": [
+        {
+          "start": 83.0,
+          "end": 85.213,
+          "text": "Hasil itu dicoret."
+        },
+        {
+          "start": 85.213,
+          "end": 88.586,
+          "text": "Ruang sampel baru: 8 − 1 = 7."
+        }
+      ]
+    },
+    {
+      "id": "badges",
+      "start": 88.6,
+      "end": 93.2,
+      "chapter": "HITUNG",
+      "audio": true,
+      "say": "Sekarang hitung banyaknya gambar di setiap hasil yang tersisa.",
+      "pages": [
+        {
+          "start": 88.6,
+          "end": 93.178,
+          "text": "Sekarang hitung banyaknya gambar di setiap hasil yang tersisa."
+        }
+      ]
+    },
+    {
+      "id": "exactly",
+      "start": 93.2,
+      "end": 101.4,
+      "chapter": null,
+      "audio": true,
+      "say": "Yang tepat dua gambar adalah G G A, G A G, dan A G G. Ada tiga.",
+      "pages": [
+        {
+          "start": 93.2,
+          "end": 98.02,
+          "text": "Tepat dua gambar: GGA, GAG, dan AGG."
+        },
+        {
+          "start": 98.02,
+          "end": 101.378,
+          "text": "Ada 3."
+        }
+      ]
+    },
+    {
+      "id": "fraction",
+      "start": 101.4,
+      "end": 107.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi peluangnya tiga dari tujuh hasil yang masih mungkin, yaitu tiga per tujuh.",
+      "pages": [
+        {
+          "start": 101.4,
+          "end": 107.178,
+          "text": "Peluangnya 3 dari 7 hasil yang masih mungkin: 3/7."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 107.2,
+      "end": 112.133,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi jawabannya adalah B, tiga per tujuh.",
+      "pages": [
+        {
+          "start": 107.2,
+          "end": 112.128,
+          "text": "Jawabannya B, yaitu 3/7."
+        }
+      ]
+    },
+    {
+      "id": "groups",
+      "start": 112.133,
+      "end": 122.8,
+      "chapter": "CEK",
+      "audio": true,
+      "say": "Mari kita cek dari strukturnya. Kelompokkan kedelapan hasil menurut banyak gambarnya: nol, satu, dua, atau tiga gambar.",
+      "pages": [
+        {
+          "start": 112.133,
+          "end": 114.948,
+          "text": "Cek dari strukturnya."
+        },
+        {
+          "start": 114.948,
+          "end": 122.783,
+          "text": "Kelompokkan hasil menurut banyak gambar: 0, 1, 2, atau 3."
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "start": 122.8,
+      "end": 138.833,
+      "chapter": null,
+      "audio": true,
+      "say": "Isinya satu, tiga, tiga, satu. Syarat sedikitnya satu gambar membuang kelompok nol. Tersisa tiga ditambah tiga ditambah satu, yaitu tujuh. Yang tepat dua: tiga.",
+      "pages": [
+        {
+          "start": 122.8,
+          "end": 127.619,
+          "text": "Isinya 1, 3, 3, 1."
+        },
+        {
+          "start": 127.619,
+          "end": 133.645,
+          "text": "Syaratnya membuang kelompok 0: tersisa 3 + 3 + 1 = 7."
+        },
+        {
+          "start": 133.645,
+          "end": 138.802,
+          "text": "Yang tepat dua: 3."
+        }
+      ]
+    },
+    {
+      "id": "subset",
+      "start": 138.833,
+      "end": 149.467,
+      "chapter": null,
+      "audio": true,
+      "say": "Dengan rumus peluang bersyarat. Karena tepat dua gambar pasti termasuk sedikitnya satu gambar, irisan kedua kejadian adalah kejadian tepat dua itu sendiri.",
+      "pages": [
+        {
+          "start": 138.833,
+          "end": 141.712,
+          "text": "Dengan rumus peluang bersyarat."
+        },
+        {
+          "start": 141.712,
+          "end": 144.719,
+          "text": "Tepat dua gambar pasti termasuk sedikitnya satu,"
+        },
+        {
+          "start": 144.719,
+          "end": 149.435,
+          "text": "jadi irisannya adalah kejadian tepat dua itu sendiri."
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "start": 149.467,
+      "end": 158.533,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi tiga per delapan, dibagi tujuh per delapan. Penyebut delapan saling menghilangkan, tersisa tiga per tujuh.",
+      "pages": [
+        {
+          "start": 149.467,
+          "end": 151.911,
+          "text": "Jadi 3/8 dibagi 7/8."
+        },
+        {
+          "start": 151.911,
+          "end": 158.533,
+          "text": "Penyebut 8 saling menghilangkan: tersisa 3/7."
+        }
+      ]
+    },
+    {
+      "id": "trap",
+      "start": 158.533,
+      "end": 166.933,
+      "chapter": null,
+      "audio": true,
+      "say": "Hati-hati. Kalau bocorannya diabaikan, peluangnya tiga per delapan, dan itu tidak ada di pilihan.",
+      "pages": [
+        {
+          "start": 158.533,
+          "end": 163.52,
+          "text": "Hati-hati: tanpa syarat, peluangnya 3/8."
+        },
+        {
+          "start": 163.52,
+          "end": 166.903,
+          "text": "Tidak ada di pilihan."
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "start": 166.933,
+      "end": 181.2,
+      "chapter": "INTINYA",
+      "audio": true,
+      "say": "Intinya, syarat tidak mengubah koinnya. Syarat mengubah ruang sampelnya, dari delapan menjadi tujuh. Karena itu peluangnya naik, dari tiga per delapan menjadi tiga per tujuh.",
+      "pages": [
+        {
+          "start": 166.933,
+          "end": 175.369,
+          "text": "Intinya: syarat tidak mengubah koinnya, tapi mengubah ruang sampel: 8 → 7."
+        },
+        {
+          "start": 175.369,
+          "end": 181.177,
+          "text": "Peluangnya naik dari 3/8 menjadi 3/7."
+        }
+      ]
+    }
+  ]
+}
