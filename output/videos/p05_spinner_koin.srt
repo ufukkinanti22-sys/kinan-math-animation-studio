@@ -1,0 +1,151 @@
+1
+00:00:00,000 --> 00:00:04,027
+Yuk, baca soalnya bersama.
+
+2
+00:00:04,027 --> 00:00:10,214
+Sebuah spinner bernomor 1 sampai 6 dan sebuah koin dilempar bersamaan.
+
+3
+00:00:10,214 --> 00:00:16,924
+Berapa peluang bilangan ganjil pada spinner dan sisi gambar pada koin?
+
+4
+00:00:16,933 --> 00:00:25,073
+Pilihannya: 1/6, 1/4, 1/3, atau 1/2.
+
+5
+00:00:25,100 --> 00:00:29,674
+Pertama, kenali spinner-nya.
+
+6
+00:00:29,674 --> 00:00:36,495
+Papan bundar yang diputar; jarumnya berhenti di salah satu dari enam
+
+7
+00:00:36,495 --> 00:00:39,192
+bagian.
+
+8
+00:00:39,200 --> 00:00:45,304
+Keenam bagiannya sama besar, seperti pada gambar.
+
+9
+00:00:45,304 --> 00:00:50,676
+Jadi setiap angka punya kesempatan yang sama.
+
+10
+00:00:50,700 --> 00:00:56,752
+Bilangan ganjil tidak habis dibagi 2.
+
+11
+00:00:56,752 --> 00:01:04,240
+Di spinner ini: 1, 3, dan 5.
+
+12
+00:01:04,267 --> 00:01:09,652
+Koin punya dua sisi: gambar (G) dan angka (A).
+
+13
+00:01:09,652 --> 00:01:13,655
+Yang diminta: sisi gambar.
+
+14
+00:01:13,667 --> 00:01:19,246
+Kata dan berarti keduanya terjadi bersamaan:
+
+15
+00:01:19,246 --> 00:01:24,831
+spinner ganjil, dan koin gambar.
+
+16
+00:01:24,833 --> 00:01:30,045
+Contoh: spinner 3 dan gambar: cocok!
+
+17
+00:01:30,045 --> 00:01:35,403
+Spinner 3 dan angka: tidak cocok.
+
+18
+00:01:35,403 --> 00:01:42,501
+Spinner 4 dan gambar: juga tidak cocok.
+
+19
+00:01:42,533 --> 00:01:47,459
+Sekarang susun semua kemungkinan dalam tabel.
+
+20
+00:01:47,459 --> 00:01:53,001
+Enam angka spinner, dua sisi koin.
+
+21
+00:01:53,033 --> 00:02:02,517
+6 × 2 = 12 pasangan, semuanya sama mungkin.
+
+22
+00:02:02,533 --> 00:02:10,793
+Warnai kolom ganjil: 1, 3, dan 5.
+
+23
+00:02:10,800 --> 00:02:14,879
+Lalu ambil hanya baris gambar.
+
+24
+00:02:14,879 --> 00:02:19,420
+Kotak yang memenuhi keduanya: 3.
+
+25
+00:02:19,433 --> 00:02:21,937
+Peluangnya 3/12.
+
+26
+00:02:21,937 --> 00:02:31,173
+Bagi atas dan bawah dengan 3: 1/4.
+
+27
+00:02:31,200 --> 00:02:37,360
+Jawabannya B, yaitu 1/4.
+
+28
+00:02:37,367 --> 00:02:41,429
+Cara cepat untuk mengecek:
+
+29
+00:02:41,429 --> 00:02:47,739
+peluang spinner ganjil = 3/6 = 1/2.
+
+30
+00:02:47,767 --> 00:02:51,921
+Peluang koin gambar juga 1/2.
+
+31
+00:02:51,921 --> 00:02:55,723
+Setengah dari setengah = 1/4.
+
+32
+00:02:55,723 --> 00:02:58,427
+Sama!
+
+33
+00:02:58,433 --> 00:03:03,620
+Boleh dikalikan, karena spinner dan koin
+
+34
+00:03:03,620 --> 00:03:08,349
+tidak saling memengaruhi.
+
+35
+00:03:08,867 --> 00:03:11,645
+Yang perlu diingat:
+
+36
+00:03:11,645 --> 00:03:17,421
+kejadian dan = kotak yang memenuhi kedua syarat.
+
+37
+00:03:17,421 --> 00:03:19,500
+Tidak saling memengaruhi?
+
+38
+00:03:19,500 --> 00:03:25,203
+Peluangnya boleh dikalikan.

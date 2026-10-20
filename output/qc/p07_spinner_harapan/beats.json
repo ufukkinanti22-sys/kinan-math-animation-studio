@@ -1,0 +1,322 @@
+{
+  "problem": "p07_spinner_harapan",
+  "theme": "dark",
+  "duration": 214.9,
+  "beats": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 18.567,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Yuk, baca soalnya bersama. Sebuah spinner dengan delapan sektor sama besar, bernomor satu sampai delapan, diputar seratus empat puluh empat kali. Berapa frekuensi harapan muncul bilangan prima?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 4.386,
+          "text": "Yuk, baca soalnya bersama."
+        },
+        {
+          "start": 4.386,
+          "end": 10.784,
+          "text": "Spinner dengan 8 sektor sama besar, bernomor 1 sampai 8, diputar 144"
+        },
+        {
+          "start": 10.784,
+          "end": 11.3,
+          "text": "kali."
+        },
+        {
+          "start": 11.3,
+          "end": 18.556,
+          "text": "Berapa frekuensi harapan muncul bilangan prima?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 18.567,
+      "end": 28.4,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: lima puluh empat, enam puluh empat, tujuh puluh dua, atau delapan puluh satu.",
+      "pages": [
+        {
+          "start": 18.567,
+          "end": 28.387,
+          "text": "Pilihannya: 54, 64, 72, atau 81."
+        }
+      ]
+    },
+    {
+      "id": "frequency",
+      "start": 28.4,
+      "end": 44.2,
+      "chapter": "MAKSUDNYA",
+      "audio": true,
+      "say": "Apa itu frekuensi harapan? Frekuensi artinya berapa kali sesuatu terjadi. Frekuensi harapan artinya berapa kali kita perkirakan hal itu akan terjadi.",
+      "pages": [
+        {
+          "start": 28.4,
+          "end": 34.309,
+          "text": "Frekuensi = berapa kali sesuatu terjadi."
+        },
+        {
+          "start": 34.309,
+          "end": 44.196,
+          "text": "Frekuensi harapan = berapa kali kita perkirakan hal itu terjadi."
+        }
+      ]
+    },
+    {
+      "id": "coins10",
+      "start": 44.2,
+      "end": 61.367,
+      "chapter": "IDE DASAR",
+      "audio": true,
+      "say": "Coba contoh sederhana dulu, ya. Kalau sebuah koin dilempar sepuluh kali, kira-kira berapa kali muncul gambar? Peluang gambar setengah, jadi kita harapkan sekitar lima kali.",
+      "pages": [
+        {
+          "start": 44.2,
+          "end": 51.59,
+          "text": "Contoh sederhana: koin dilempar 10 kali."
+        },
+        {
+          "start": 51.59,
+          "end": 61.34,
+          "text": "Peluang gambar 1/2, jadi kita harapkan sekitar 5 kali."
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "start": 61.367,
+      "end": 72.8,
+      "chapter": null,
+      "audio": true,
+      "say": "Dari contoh tadi kita dapat aturannya. Frekuensi harapan sama dengan peluang, dikali banyaknya percobaan.",
+      "pages": [
+        {
+          "start": 61.367,
+          "end": 62.945,
+          "text": "Aturannya:"
+        },
+        {
+          "start": 62.945,
+          "end": 72.795,
+          "text": "frekuensi harapan = peluang × banyak percobaan."
+        }
+      ]
+    },
+    {
+      "id": "prime",
+      "start": 72.8,
+      "end": 85.533,
+      "chapter": "SELESAIKAN",
+      "audio": true,
+      "say": "Sekarang, apa itu bilangan prima? Bilangan prima adalah bilangan yang tepat punya dua pembagi, yaitu satu dan dirinya sendiri.",
+      "pages": [
+        {
+          "start": 72.8,
+          "end": 77.049,
+          "text": "Apa itu bilangan prima?"
+        },
+        {
+          "start": 77.049,
+          "end": 85.524,
+          "text": "Bilangan yang tepat punya dua pembagi: 1 dan dirinya sendiri."
+        }
+      ]
+    },
+    {
+      "id": "check_numbers",
+      "start": 85.533,
+      "end": 111.5,
+      "chapter": null,
+      "audio": true,
+      "say": "Kita periksa satu per satu. Dua, prima. Tiga, prima. Empat, bukan, karena bisa dibagi dua. Lima, prima. Enam, bukan. Tujuh, prima. Delapan, bukan.",
+      "pages": [
+        {
+          "start": 85.533,
+          "end": 99.962,
+          "text": "Periksa satu per satu: 2 prima, 3 prima, 4 bukan (bisa dibagi 2),"
+        },
+        {
+          "start": 99.962,
+          "end": 111.481,
+          "text": "5 prima, 6 bukan, 7 prima, 8 bukan."
+        }
+      ]
+    },
+    {
+      "id": "one",
+      "start": 111.5,
+      "end": 125.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Bagaimana dengan satu? Satu hanya punya satu pembagi, yaitu dirinya sendiri. Jadi, satu bukan bilangan prima.",
+      "pages": [
+        {
+          "start": 111.5,
+          "end": 115.059,
+          "text": "Bagaimana dengan 1?"
+        },
+        {
+          "start": 115.059,
+          "end": 118.479,
+          "text": "1 hanya punya satu pembagi."
+        },
+        {
+          "start": 118.479,
+          "end": 125.184,
+          "text": "Jadi 1 bukan bilangan prima."
+        }
+      ]
+    },
+    {
+      "id": "probability",
+      "start": 125.2,
+      "end": 140.233,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi bilangan primanya dua, tiga, lima, dan tujuh. Empat dari delapan sektor. Peluangnya empat per delapan, atau setengah.",
+      "pages": [
+        {
+          "start": 125.2,
+          "end": 135.187,
+          "text": "Bilangan prima: 2, 3, 5, 7: 4 dari 8 sektor."
+        },
+        {
+          "start": 135.187,
+          "end": 140.228,
+          "text": "Peluangnya 4/8 = 1/2."
+        }
+      ]
+    },
+    {
+      "id": "multiply",
+      "start": 140.233,
+      "end": 150.9,
+      "chapter": null,
+      "audio": true,
+      "say": "Sekarang pakai aturannya. Setengah dikali seratus empat puluh empat, sama dengan tujuh puluh dua.",
+      "pages": [
+        {
+          "start": 140.233,
+          "end": 145.179,
+          "text": "Pakai aturannya:"
+        },
+        {
+          "start": 145.179,
+          "end": 150.869,
+          "text": "1/2 × 144 = 72."
+        }
+      ]
+    },
+    {
+      "id": "picture",
+      "start": 150.9,
+      "end": 164.4,
+      "chapter": null,
+      "audio": true,
+      "say": "Bayangkan seratus empat puluh empat putaran ini. Kira-kira separuhnya, yaitu tujuh puluh dua kali, jarum berhenti di bilangan prima.",
+      "pages": [
+        {
+          "start": 150.9,
+          "end": 153.772,
+          "text": "Bayangkan 144 putaran ini."
+        },
+        {
+          "start": 153.772,
+          "end": 164.368,
+          "text": "Kira-kira separuhnya, 72 kali, jarum berhenti di bilangan prima."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 164.4,
+      "end": 171.167,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi, jawabannya adalah C, tujuh puluh dua.",
+      "pages": [
+        {
+          "start": 164.4,
+          "end": 171.136,
+          "text": "Jawabannya C, yaitu 72."
+        }
+      ]
+    },
+    {
+      "id": "estimate",
+      "start": 171.167,
+      "end": 188.0,
+      "chapter": null,
+      "audio": true,
+      "say": "Ingat, ini perkiraan. Kalau benar-benar diputar, hasilnya bisa tujuh puluh, atau tujuh puluh lima. Tapi tujuh puluh dua adalah angka yang paling kita harapkan.",
+      "pages": [
+        {
+          "start": 171.167,
+          "end": 175.612,
+          "text": "Ingat, ini perkiraan."
+        },
+        {
+          "start": 175.612,
+          "end": 180.164,
+          "text": "Hasil nyata bisa 70 atau 75."
+        },
+        {
+          "start": 180.164,
+          "end": 187.971,
+          "text": "Tapi 72 adalah yang paling kita harapkan."
+        }
+      ]
+    },
+    {
+      "id": "trap",
+      "start": 188.0,
+      "end": 200.667,
+      "chapter": null,
+      "audio": true,
+      "say": "Hati-hati. Kalau satu ikut dihitung sebagai prima, kita akan mendapat sembilan puluh. Itu tidak ada di pilihan.",
+      "pages": [
+        {
+          "start": 188.0,
+          "end": 195.031,
+          "text": "Hati-hati: kalau 1 ikut dihitung prima, hasilnya 90."
+        },
+        {
+          "start": 195.031,
+          "end": 200.652,
+          "text": "Itu tidak ada di pilihan."
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "start": 201.167,
+      "end": 214.9,
+      "chapter": "INGAT",
+      "audio": true,
+      "say": "Yang perlu diingat. Frekuensi harapan sama dengan peluang, dikali banyak percobaan. Dan satu bukan bilangan prima.",
+      "pages": [
+        {
+          "start": 201.167,
+          "end": 203.861,
+          "text": "Yang perlu diingat:"
+        },
+        {
+          "start": 203.861,
+          "end": 209.14,
+          "text": "frekuensi harapan = peluang × banyak percobaan."
+        },
+        {
+          "start": 209.14,
+          "end": 214.887,
+          "text": "Dan 1 bukan bilangan prima."
+        }
+      ]
+    }
+  ]
+}

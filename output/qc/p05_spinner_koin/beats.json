@@ -1,0 +1,377 @@
+{
+  "problem": "p05_spinner_koin",
+  "theme": "dark",
+  "duration": 205.233,
+  "beats": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 16.933,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Yuk, baca soalnya bersama. Sebuah spinner bernomor satu sampai enam dan sebuah koin dilempar bersamaan. Berapa peluang muncul bilangan ganjil pada spinner dan sisi gambar pada koin?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 4.027,
+          "text": "Yuk, baca soalnya bersama."
+        },
+        {
+          "start": 4.027,
+          "end": 10.214,
+          "text": "Sebuah spinner bernomor 1 sampai 6 dan sebuah koin dilempar bersamaan."
+        },
+        {
+          "start": 10.214,
+          "end": 16.924,
+          "text": "Berapa peluang bilangan ganjil pada spinner dan sisi gambar pada koin?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 16.933,
+      "end": 25.1,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: seperenam, seperempat, sepertiga, atau setengah.",
+      "pages": [
+        {
+          "start": 16.933,
+          "end": 25.073,
+          "text": "Pilihannya: 1/6, 1/4, 1/3, atau 1/2."
+        }
+      ]
+    },
+    {
+      "id": "spinner",
+      "start": 25.1,
+      "end": 39.2,
+      "chapter": "MAKSUDNYA",
+      "audio": true,
+      "say": "Pertama, kenali spinnernya. Spinner adalah papan bundar yang diputar. Jarumnya akan berhenti di salah satu dari enam bagian.",
+      "pages": [
+        {
+          "start": 25.1,
+          "end": 29.674,
+          "text": "Pertama, kenali spinner-nya."
+        },
+        {
+          "start": 29.674,
+          "end": 36.495,
+          "text": "Papan bundar yang diputar; jarumnya berhenti di salah satu dari enam"
+        },
+        {
+          "start": 36.495,
+          "end": 39.192,
+          "text": "bagian."
+        }
+      ]
+    },
+    {
+      "id": "equal",
+      "start": 39.2,
+      "end": 50.7,
+      "chapter": null,
+      "audio": true,
+      "say": "Keenam bagiannya sama besar, seperti pada gambar. Jadi setiap angka punya kesempatan yang sama untuk terpilih.",
+      "pages": [
+        {
+          "start": 39.2,
+          "end": 45.304,
+          "text": "Keenam bagiannya sama besar, seperti pada gambar."
+        },
+        {
+          "start": 45.304,
+          "end": 50.676,
+          "text": "Jadi setiap angka punya kesempatan yang sama."
+        }
+      ]
+    },
+    {
+      "id": "odd",
+      "start": 50.7,
+      "end": 64.267,
+      "chapter": null,
+      "audio": true,
+      "say": "Bilangan ganjil adalah bilangan yang tidak habis dibagi dua. Di spinner ini, bilangan ganjilnya adalah satu, tiga, dan lima.",
+      "pages": [
+        {
+          "start": 50.7,
+          "end": 56.752,
+          "text": "Bilangan ganjil tidak habis dibagi 2."
+        },
+        {
+          "start": 56.752,
+          "end": 64.24,
+          "text": "Di spinner ini: 1, 3, dan 5."
+        }
+      ]
+    },
+    {
+      "id": "coin",
+      "start": 64.267,
+      "end": 73.667,
+      "chapter": null,
+      "audio": true,
+      "say": "Koinnya punya dua sisi, gambar dan angka. Yang diminta adalah sisi gambar.",
+      "pages": [
+        {
+          "start": 64.267,
+          "end": 69.652,
+          "text": "Koin punya dua sisi: gambar (G) dan angka (A)."
+        },
+        {
+          "start": 69.652,
+          "end": 73.655,
+          "text": "Yang diminta: sisi gambar."
+        }
+      ]
+    },
+    {
+      "id": "and",
+      "start": 73.667,
+      "end": 84.833,
+      "chapter": null,
+      "audio": true,
+      "say": "Kata dan berarti kedua hal itu harus terjadi bersamaan. Spinner harus ganjil, dan koin harus gambar.",
+      "pages": [
+        {
+          "start": 73.667,
+          "end": 79.246,
+          "text": "Kata dan berarti keduanya terjadi bersamaan:"
+        },
+        {
+          "start": 79.246,
+          "end": 84.831,
+          "text": "spinner ganjil, dan koin gambar."
+        }
+      ]
+    },
+    {
+      "id": "examples",
+      "start": 84.833,
+      "end": 102.533,
+      "chapter": "IDE DASAR",
+      "audio": true,
+      "say": "Coba kita lihat contohnya. Spinner tiga dan koin gambar: cocok! Spinner tiga dan koin angka: tidak cocok. Spinner empat dan koin gambar: juga tidak cocok.",
+      "pages": [
+        {
+          "start": 84.833,
+          "end": 90.045,
+          "text": "Contoh: spinner 3 dan gambar: cocok!"
+        },
+        {
+          "start": 90.045,
+          "end": 95.403,
+          "text": "Spinner 3 dan angka: tidak cocok."
+        },
+        {
+          "start": 95.403,
+          "end": 102.501,
+          "text": "Spinner 4 dan gambar: juga tidak cocok."
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "start": 102.533,
+      "end": 113.033,
+      "chapter": "SELESAIKAN",
+      "audio": true,
+      "say": "Sekarang kita susun semua kemungkinan dalam tabel. Ada enam angka spinner, dan dua sisi koin.",
+      "pages": [
+        {
+          "start": 102.533,
+          "end": 107.459,
+          "text": "Sekarang susun semua kemungkinan dalam tabel."
+        },
+        {
+          "start": 107.459,
+          "end": 113.001,
+          "text": "Enam angka spinner, dua sisi koin."
+        }
+      ]
+    },
+    {
+      "id": "twelve",
+      "start": 113.033,
+      "end": 122.533,
+      "chapter": null,
+      "audio": true,
+      "say": "Enam kali dua, jadi ada dua belas pasangan. Semuanya punya kesempatan yang sama.",
+      "pages": [
+        {
+          "start": 113.033,
+          "end": 122.517,
+          "text": "6 × 2 = 12 pasangan, semuanya sama mungkin."
+        }
+      ]
+    },
+    {
+      "id": "cols",
+      "start": 122.533,
+      "end": 130.8,
+      "chapter": null,
+      "audio": true,
+      "say": "Sekarang warnai kolom bilangan ganjil, yaitu satu, tiga, dan lima.",
+      "pages": [
+        {
+          "start": 122.533,
+          "end": 130.793,
+          "text": "Warnai kolom ganjil: 1, 3, dan 5."
+        }
+      ]
+    },
+    {
+      "id": "row",
+      "start": 130.8,
+      "end": 139.433,
+      "chapter": null,
+      "audio": true,
+      "say": "Lalu ambil hanya baris gambar. Kotak yang memenuhi kedua syarat ada tiga.",
+      "pages": [
+        {
+          "start": 130.8,
+          "end": 134.879,
+          "text": "Lalu ambil hanya baris gambar."
+        },
+        {
+          "start": 134.879,
+          "end": 139.42,
+          "text": "Kotak yang memenuhi keduanya: 3."
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "start": 139.433,
+      "end": 151.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi peluangnya tiga per dua belas. Bagi atas dan bawah dengan tiga. Hasilnya satu per empat.",
+      "pages": [
+        {
+          "start": 139.433,
+          "end": 141.937,
+          "text": "Peluangnya 3/12."
+        },
+        {
+          "start": 141.937,
+          "end": 151.173,
+          "text": "Bagi atas dan bawah dengan 3: 1/4."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 151.2,
+      "end": 157.367,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi, jawabannya adalah B, seperempat.",
+      "pages": [
+        {
+          "start": 151.2,
+          "end": 157.36,
+          "text": "Jawabannya B, yaitu 1/4."
+        }
+      ]
+    },
+    {
+      "id": "check1",
+      "start": 157.367,
+      "end": 167.767,
+      "chapter": null,
+      "audio": true,
+      "say": "Ada cara cepat untuk mengeceknya. Peluang spinner ganjil adalah tiga dari enam, yaitu setengah.",
+      "pages": [
+        {
+          "start": 157.367,
+          "end": 161.429,
+          "text": "Cara cepat untuk mengecek:"
+        },
+        {
+          "start": 161.429,
+          "end": 167.739,
+          "text": "peluang spinner ganjil = 3/6 = 1/2."
+        }
+      ]
+    },
+    {
+      "id": "check2",
+      "start": 167.767,
+      "end": 178.433,
+      "chapter": null,
+      "audio": true,
+      "say": "Peluang koin gambar juga setengah. Setengah dari setengah adalah seperempat. Hasilnya sama!",
+      "pages": [
+        {
+          "start": 167.767,
+          "end": 171.921,
+          "text": "Peluang koin gambar juga 1/2."
+        },
+        {
+          "start": 171.921,
+          "end": 175.723,
+          "text": "Setengah dari setengah = 1/4."
+        },
+        {
+          "start": 175.723,
+          "end": 178.427,
+          "text": "Sama!"
+        }
+      ]
+    },
+    {
+      "id": "check3",
+      "start": 178.433,
+      "end": 188.367,
+      "chapter": null,
+      "audio": true,
+      "say": "Kita boleh mengalikan, karena hasil spinner tidak memengaruhi koin, dan hasil koin tidak memengaruhi spinner.",
+      "pages": [
+        {
+          "start": 178.433,
+          "end": 183.62,
+          "text": "Boleh dikalikan, karena spinner dan koin"
+        },
+        {
+          "start": 183.62,
+          "end": 188.349,
+          "text": "tidak saling memengaruhi."
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "start": 188.867,
+      "end": 205.233,
+      "chapter": "INGAT",
+      "audio": true,
+      "say": "Yang perlu diingat. Untuk kejadian dan, cari kotak yang memenuhi kedua syarat sekaligus. Kalau kedua benda tidak saling memengaruhi, peluangnya boleh dikalikan.",
+      "pages": [
+        {
+          "start": 188.867,
+          "end": 191.645,
+          "text": "Yang perlu diingat:"
+        },
+        {
+          "start": 191.645,
+          "end": 197.421,
+          "text": "kejadian dan = kotak yang memenuhi kedua syarat."
+        },
+        {
+          "start": 197.421,
+          "end": 199.5,
+          "text": "Tidak saling memengaruhi?"
+        },
+        {
+          "start": 199.5,
+          "end": 205.203,
+          "text": "Peluangnya boleh dikalikan."
+        }
+      ]
+    }
+  ]
+}

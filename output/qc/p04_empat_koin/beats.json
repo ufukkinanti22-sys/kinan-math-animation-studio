@@ -1,0 +1,427 @@
+{
+  "problem": "p04_empat_koin",
+  "theme": "dark",
+  "duration": 255.867,
+  "beats": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 13.033,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Yuk, kita baca soalnya pelan-pelan. Empat koin setimbang dilempar bersamaan. Berapa peluang muncul tepat tiga sisi angka?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 4.194,
+          "text": "Yuk, kita baca soalnya pelan-pelan."
+        },
+        {
+          "start": 4.194,
+          "end": 8.149,
+          "text": "Empat koin setimbang dilempar bersamaan."
+        },
+        {
+          "start": 8.149,
+          "end": 13.012,
+          "text": "Berapa peluang muncul tepat tiga sisi angka?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 13.033,
+      "end": 21.533,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: seperdelapan, seperempat, tiga per delapan, atau setengah.",
+      "pages": [
+        {
+          "start": 13.033,
+          "end": 21.533,
+          "text": "Pilihannya: 1/8, 1/4, 3/8, atau 1/2."
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "start": 21.533,
+      "end": 36.133,
+      "chapter": "MAKSUDNYA",
+      "audio": true,
+      "say": "Pertama, kenali dulu koinnya. Satu koin punya dua sisi. Sisi angka, kita tulis A. Dan sisi gambar, kita tulis G.",
+      "pages": [
+        {
+          "start": 21.533,
+          "end": 25.81,
+          "text": "Pertama, kenali dulu koinnya."
+        },
+        {
+          "start": 25.81,
+          "end": 29.142,
+          "text": "Satu koin punya dua sisi."
+        },
+        {
+          "start": 29.142,
+          "end": 36.105,
+          "text": "Sisi angka kita tulis A, sisi gambar kita tulis G."
+        }
+      ]
+    },
+    {
+      "id": "fair",
+      "start": 36.133,
+      "end": 48.433,
+      "chapter": null,
+      "audio": true,
+      "say": "Kata setimbang artinya koinnya adil. Sisi angka dan sisi gambar punya kesempatan yang sama untuk muncul, masing-masing setengah.",
+      "pages": [
+        {
+          "start": 36.133,
+          "end": 40.898,
+          "text": "Setimbang artinya koinnya adil."
+        },
+        {
+          "start": 40.898,
+          "end": 48.425,
+          "text": "Angka dan gambar punya kesempatan sama, masing-masing 1/2."
+        }
+      ]
+    },
+    {
+      "id": "exactly",
+      "start": 48.433,
+      "end": 65.833,
+      "chapter": null,
+      "audio": true,
+      "say": "Lalu, apa arti tepat tiga angka? Artinya, dari empat koin, tiga menunjukkan angka, dan satu sisanya gambar. Tidak boleh lebih, dan tidak boleh kurang.",
+      "pages": [
+        {
+          "start": 48.433,
+          "end": 53.415,
+          "text": "Apa arti tepat tiga angka?"
+        },
+        {
+          "start": 53.415,
+          "end": 58.859,
+          "text": "Dari empat koin: tiga angka, satu gambar."
+        },
+        {
+          "start": 58.859,
+          "end": 65.813,
+          "text": "Tidak boleh lebih, tidak boleh kurang."
+        }
+      ]
+    },
+    {
+      "id": "idea",
+      "start": 65.833,
+      "end": 79.933,
+      "chapter": "IDE DASAR",
+      "audio": true,
+      "say": "Bagaimana cara menghitung peluang? Idenya sederhana. Peluang sama dengan banyak hasil yang kita inginkan, dibagi banyak semua hasil yang mungkin.",
+      "pages": [
+        {
+          "start": 65.833,
+          "end": 70.417,
+          "text": "Bagaimana menghitung peluang?"
+        },
+        {
+          "start": 70.417,
+          "end": 79.901,
+          "text": "Peluang = hasil yang kita inginkan dibagi semua hasil yang mungkin."
+        }
+      ]
+    },
+    {
+      "id": "small1",
+      "start": 79.933,
+      "end": 89.4,
+      "chapter": null,
+      "audio": true,
+      "say": "Coba kita lihat contoh yang lebih sederhana dulu, ya. Bayangkan hanya ada dua koin.",
+      "pages": [
+        {
+          "start": 79.933,
+          "end": 85.124,
+          "text": "Coba kita lihat contoh yang lebih sederhana dulu, ya."
+        },
+        {
+          "start": 85.124,
+          "end": 89.369,
+          "text": "Bayangkan hanya ada dua koin."
+        }
+      ]
+    },
+    {
+      "id": "small2",
+      "start": 89.4,
+      "end": 101.167,
+      "chapter": null,
+      "audio": true,
+      "say": "Hasilnya bisa angka angka, angka gambar, gambar angka, atau gambar gambar. Ada empat kemungkinan.",
+      "pages": [
+        {
+          "start": 89.4,
+          "end": 95.275,
+          "text": "Hasilnya bisa AA, AG, GA, atau GG."
+        },
+        {
+          "start": 95.275,
+          "end": 101.14,
+          "text": "Ada empat kemungkinan."
+        }
+      ]
+    },
+    {
+      "id": "small3",
+      "start": 101.167,
+      "end": 111.7,
+      "chapter": null,
+      "audio": true,
+      "say": "Perhatikan, angka gambar dan gambar angka itu berbeda, karena koin pertama dan koin kedua bisa kita bedakan.",
+      "pages": [
+        {
+          "start": 101.167,
+          "end": 104.628,
+          "text": "Perhatikan: AG dan GA itu berbeda,"
+        },
+        {
+          "start": 104.628,
+          "end": 111.683,
+          "text": "karena koin pertama dan koin kedua bisa kita bedakan."
+        }
+      ]
+    },
+    {
+      "id": "small4",
+      "start": 111.7,
+      "end": 120.5,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi, peluang tepat satu angka pada dua koin adalah dua dari empat, atau dua per empat.",
+      "pages": [
+        {
+          "start": 111.7,
+          "end": 116.365,
+          "text": "Jadi peluang tepat satu angka pada dua koin:"
+        },
+        {
+          "start": 116.365,
+          "end": 120.488,
+          "text": "2 dari 4, yaitu 2/4."
+        }
+      ]
+    },
+    {
+      "id": "double1",
+      "start": 120.5,
+      "end": 133.667,
+      "chapter": "SELESAIKAN",
+      "audio": true,
+      "say": "Sekarang kembali ke empat koin. Berapa banyak semua hasilnya? Setiap koin tambahan membuat banyaknya kemungkinan menjadi dua kali lipat.",
+      "pages": [
+        {
+          "start": 120.5,
+          "end": 123.818,
+          "text": "Kembali ke empat koin."
+        },
+        {
+          "start": 123.818,
+          "end": 128.017,
+          "text": "Berapa banyak semua hasilnya?"
+        },
+        {
+          "start": 128.017,
+          "end": 133.656,
+          "text": "Setiap koin tambahan membuatnya dua kali lipat."
+        }
+      ]
+    },
+    {
+      "id": "double2",
+      "start": 133.667,
+      "end": 148.9,
+      "chapter": null,
+      "audio": true,
+      "say": "Satu koin, dua hasil. Dua koin, empat hasil. Tiga koin, delapan hasil. Dan empat koin, enam belas hasil.",
+      "pages": [
+        {
+          "start": 133.667,
+          "end": 138.488,
+          "text": "1 koin: 2 hasil."
+        },
+        {
+          "start": 138.488,
+          "end": 144.258,
+          "text": "2 koin: 4. 3 koin: 8."
+        },
+        {
+          "start": 144.258,
+          "end": 148.887,
+          "text": "4 koin: 16 hasil."
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "start": 148.9,
+      "end": 158.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Ini dia keenam belas hasilnya. Setiap baris adalah satu cara koin-koin itu jatuh.",
+      "pages": [
+        {
+          "start": 148.9,
+          "end": 152.776,
+          "text": "Ini dia keenam belas hasilnya."
+        },
+        {
+          "start": 152.776,
+          "end": 158.168,
+          "text": "Setiap baris = satu cara koin-koin itu jatuh."
+        }
+      ]
+    },
+    {
+      "id": "find",
+      "start": 158.2,
+      "end": 172.6,
+      "chapter": null,
+      "audio": true,
+      "say": "Sekarang cari baris yang angkanya tepat tiga. Caranya mudah. Cukup cari baris yang gambarnya hanya satu, lalu lihat di mana gambar itu berada.",
+      "pages": [
+        {
+          "start": 158.2,
+          "end": 164.986,
+          "text": "Cari baris yang angkanya tepat tiga."
+        },
+        {
+          "start": 164.986,
+          "end": 172.58,
+          "text": "Caranya: cari baris yang gambarnya hanya satu."
+        }
+      ]
+    },
+    {
+      "id": "four",
+      "start": 172.6,
+      "end": 184.3,
+      "chapter": null,
+      "audio": true,
+      "say": "Gambarnya bisa ada di koin pertama, kedua, ketiga, atau keempat. Jadi ada empat hasil yang cocok.",
+      "pages": [
+        {
+          "start": 172.6,
+          "end": 180.288,
+          "text": "Gambarnya bisa di koin ke-1, ke-2, ke-3, atau ke-4."
+        },
+        {
+          "start": 180.288,
+          "end": 184.292,
+          "text": "Ada 4 hasil yang cocok."
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "start": 184.3,
+      "end": 197.867,
+      "chapter": null,
+      "audio": true,
+      "say": "Peluangnya empat per enam belas. Empat dan enam belas sama-sama bisa dibagi empat. Hasilnya satu per empat, atau seperempat.",
+      "pages": [
+        {
+          "start": 184.3,
+          "end": 188.506,
+          "text": "Peluangnya 4/16."
+        },
+        {
+          "start": 188.506,
+          "end": 197.864,
+          "text": "Bagi atas dan bawah dengan 4: 1/4."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 197.867,
+      "end": 204.033,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi, jawabannya adalah B, seperempat.",
+      "pages": [
+        {
+          "start": 197.867,
+          "end": 204.027,
+          "text": "Jawabannya B, yaitu 1/4."
+        }
+      ]
+    },
+    {
+      "id": "check1",
+      "start": 204.033,
+      "end": 218.5,
+      "chapter": null,
+      "audio": true,
+      "say": "Kita cek dengan cara lain. Kelompokkan keenam belas hasil menurut banyaknya angka: nol, satu, dua, tiga, atau empat angka.",
+      "pages": [
+        {
+          "start": 204.033,
+          "end": 207.967,
+          "text": "Kita cek dengan cara lain."
+        },
+        {
+          "start": 207.967,
+          "end": 218.485,
+          "text": "Kelompokkan hasil menurut banyak angka: 0, 1, 2, 3, atau 4."
+        }
+      ]
+    },
+    {
+      "id": "check2",
+      "start": 218.5,
+      "end": 236.333,
+      "chapter": null,
+      "audio": true,
+      "say": "Isinya satu, empat, enam, empat, dan satu. Jumlahnya enam belas. Kelompok tiga angka berisi empat hasil. Cocok, empat per enam belas.",
+      "pages": [
+        {
+          "start": 218.5,
+          "end": 227.853,
+          "text": "Isinya 1, 4, 6, 4, 1. Jumlahnya 16."
+        },
+        {
+          "start": 227.853,
+          "end": 236.312,
+          "text": "Kelompok tiga angka berisi 4. Cocok!"
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "start": 236.833,
+      "end": 255.867,
+      "chapter": "INGAT",
+      "audio": true,
+      "say": "Yang perlu diingat. Pertama, hitung semua hasil yang mungkin. Setiap koin membuatnya dua kali lipat. Kedua, hitung hasil yang cocok. Lalu bagi keduanya.",
+      "pages": [
+        {
+          "start": 236.833,
+          "end": 240.646,
+          "text": "Yang perlu diingat:"
+        },
+        {
+          "start": 240.646,
+          "end": 245.736,
+          "text": "hitung semua hasil (setiap koin ×2),"
+        },
+        {
+          "start": 245.736,
+          "end": 255.833,
+          "text": "hitung yang cocok, lalu bagi keduanya."
+        }
+      ]
+    }
+  ]
+}

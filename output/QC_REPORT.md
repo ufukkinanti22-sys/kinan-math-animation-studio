@@ -8,6 +8,10 @@ Date: 2026-10-17 · Renderer: Manim CE 0.19.0 (Cairo) · Encoder: FFmpeg libx264
 | `p01_dadu_berbeda.mp4` | 3:02 | B. 7/15 | 12/12 pass | 21/21 beats |
 | `p02_tiga_koin.mp4` | 3:01 | B. 3/7 | 12/12 pass | 20/20 beats |
 | `p03_kartu_bridge.mp4` | 3:09 | B. 40/221 | 12/12 pass | 21/21 beats |
+| `p04_empat_koin.mp4` | 4:16 | B. 1/4 | 12/12 pass | 20/20 beats |
+| `p05_spinner_koin.mp4` | 3:25 | B. 1/4 | 12/12 pass | 18/18 beats |
+| `p06_dua_dadu_atau.mp4` | 3:34 | B. 5/18 | 12/12 pass | 17/17 beats |
+| `p07_spinner_harapan.mp4` | 3:35 | C. 72 | 12/12 pass | 15/15 beats |
 
 Per-video details: `output/qc/<id>/qc.json`, `contact_sheet.jpg`, `beats/*.jpg`
 (last frame of every narration beat), `beats.json` (actual beat timings).
@@ -60,3 +64,23 @@ Checked contact sheets and per-beat frames at preview and final resolution.
 - Some intermediate frames show text morphing into numbers (e.g. a card label
   becoming 6/52). These are transitions; all settled states were checked.
 - Text uses Nunito; card suits ♠♥♦♣ come from DejaVu Sans (font fallback).
+
+## P04–P07 (Lembar Guru, Bagian 1 & 2, Peluang HOTS) — 2026-10-20
+
+- **Voice:** female `id-ID-GadisNeural` (Edge neural TTS, free), rate −8 %, on all
+  70 beats (checked in every `timings.json`). Independent pitch check: median F0
+  235–239 Hz on all four (female range); the old male P01 narration measures 108 Hz.
+- **Theme:** dark 3Blue1Brown palette (navy `#101523`, white text, blue / yellow /
+  green / red accents), LaTeX for all math.
+- **Math:** answers solved by hand and brute-forced in `scripts/verify_math.py`
+  (16 coin outcomes, 12 spinner–coin pairs, 36 dice pairs, primes 1–8 × 144).
+  P05 assumes the six spinner sectors are equal, as drawn on the worksheet; the
+  video says so. Traps shown: 1/8 and 3/8 (P04), 12/36 without removing the
+  double count (P06), 90 if 1 is counted as prime (P07).
+- **Automated QC:** 12/12 per video (H.264, 1080 × 1920, 30 fps, AAC, every beat
+  voiced, speech onset at every beat, no speech cut, no black or frozen frames).
+- **Visual fixes found while checking frames:** spinner numbers hidden by sector
+  pulses (z-order); option fraction recoloured into its card while being read
+  (now an outline); answer result briefly overlapping the option cards (now moves
+  first); low-contrast chapter pill and white-on-yellow text in the dark theme
+  (new `label` / `mark` colour roles).

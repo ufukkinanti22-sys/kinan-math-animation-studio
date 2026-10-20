@@ -1,0 +1,357 @@
+{
+  "problem": "p06_dua_dadu_atau",
+  "theme": "dark",
+  "duration": 213.6,
+  "beats": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 14.8,
+      "chapter": "SOAL",
+      "audio": true,
+      "say": "Yuk, baca soalnya bersama. Dua dadu dilempar bersamaan. Berapa peluang jumlah mata dadu lebih dari sembilan, atau kedua mata dadu sama?",
+      "pages": [
+        {
+          "start": 0.0,
+          "end": 4.135,
+          "text": "Yuk, baca soalnya bersama."
+        },
+        {
+          "start": 4.135,
+          "end": 7.717,
+          "text": "Dua dadu dilempar bersamaan."
+        },
+        {
+          "start": 7.717,
+          "end": 14.788,
+          "text": "Berapa peluang jumlahnya lebih dari 9, atau kedua mata dadu sama?"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "start": 14.8,
+      "end": 25.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Pilihannya: seperempat, lima per delapan belas, tujuh per delapan belas, atau sebelas per delapan belas.",
+      "pages": [
+        {
+          "start": 14.8,
+          "end": 25.172,
+          "text": "Pilihannya: 1/4, 5/18, 7/18, atau 11/18."
+        }
+      ]
+    },
+    {
+      "id": "more",
+      "start": 25.2,
+      "end": 44.333,
+      "chapter": "MAKSUDNYA",
+      "audio": true,
+      "say": "Ada dua syarat di sini. Syarat pertama: jumlahnya lebih dari sembilan. Hati-hati, sembilan sendiri tidak termasuk. Jadi jumlahnya sepuluh, sebelas, atau dua belas.",
+      "pages": [
+        {
+          "start": 25.2,
+          "end": 31.101,
+          "text": "Syarat pertama: jumlah lebih dari 9."
+        },
+        {
+          "start": 31.101,
+          "end": 37.465,
+          "text": "Hati-hati, 9 sendiri tidak termasuk."
+        },
+        {
+          "start": 37.465,
+          "end": 44.332,
+          "text": "Jadi jumlahnya 10, 11, atau 12."
+        }
+      ]
+    },
+    {
+      "id": "same",
+      "start": 44.333,
+      "end": 58.2,
+      "chapter": null,
+      "audio": true,
+      "say": "Syarat kedua: kedua mata dadu sama. Misalnya satu dan satu, atau lima dan lima. Kita sebut ini pasangan kembar.",
+      "pages": [
+        {
+          "start": 44.333,
+          "end": 49.962,
+          "text": "Syarat kedua: kedua mata dadu sama."
+        },
+        {
+          "start": 49.962,
+          "end": 58.185,
+          "text": "Misalnya (1,1) atau (5,5): pasangan kembar."
+        }
+      ]
+    },
+    {
+      "id": "or",
+      "start": 58.2,
+      "end": 71.067,
+      "chapter": null,
+      "audio": true,
+      "say": "Lalu kata atau. Artinya, cukup salah satu syarat terpenuhi. Kalau dua-duanya terpenuhi, tentu juga boleh.",
+      "pages": [
+        {
+          "start": 58.2,
+          "end": 64.757,
+          "text": "Kata atau: cukup salah satu syarat terpenuhi."
+        },
+        {
+          "start": 64.757,
+          "end": 71.044,
+          "text": "Kalau dua-duanya terpenuhi, juga boleh."
+        }
+      ]
+    },
+    {
+      "id": "all",
+      "start": 71.067,
+      "end": 86.167,
+      "chapter": "IDE DASAR",
+      "audio": true,
+      "say": "Kita mulai dari semua kemungkinan. Dadu pertama punya enam mata, dadu kedua juga enam. Enam kali enam, ada tiga puluh enam pasangan.",
+      "pages": [
+        {
+          "start": 71.067,
+          "end": 75.407,
+          "text": "Mulai dari semua kemungkinan."
+        },
+        {
+          "start": 75.407,
+          "end": 82.071,
+          "text": "Dadu pertama 6 mata, dadu kedua 6 mata."
+        },
+        {
+          "start": 82.071,
+          "end": 86.143,
+          "text": "6 × 6 = 36 pasangan."
+        }
+      ]
+    },
+    {
+      "id": "sums",
+      "start": 86.167,
+      "end": 92.367,
+      "chapter": null,
+      "audio": true,
+      "say": "Di setiap kotak, kita tulis jumlah kedua mata dadunya.",
+      "pages": [
+        {
+          "start": 86.167,
+          "end": 92.339,
+          "text": "Di setiap kotak, tulis jumlah kedua mata dadunya."
+        }
+      ]
+    },
+    {
+      "id": "more_cells",
+      "start": 92.367,
+      "end": 108.433,
+      "chapter": "SELESAIKAN",
+      "audio": true,
+      "say": "Sekarang warnai kotak yang jumlahnya lebih dari sembilan. Jumlah sepuluh ada tiga kotak, sebelas ada dua kotak, dan dua belas ada satu kotak. Totalnya enam.",
+      "pages": [
+        {
+          "start": 92.367,
+          "end": 97.777,
+          "text": "Warnai kotak dengan jumlah lebih dari 9."
+        },
+        {
+          "start": 97.777,
+          "end": 104.013,
+          "text": "10: tiga kotak, 11: dua kotak, 12: satu kotak."
+        },
+        {
+          "start": 104.013,
+          "end": 108.403,
+          "text": "Totalnya 6."
+        }
+      ]
+    },
+    {
+      "id": "same_cells",
+      "start": 108.433,
+      "end": 119.233,
+      "chapter": null,
+      "audio": true,
+      "say": "Lalu tandai pasangan kembar. Mereka berada di garis miring ini. Jumlahnya juga enam kotak.",
+      "pages": [
+        {
+          "start": 108.433,
+          "end": 112.305,
+          "text": "Lalu tandai pasangan kembar."
+        },
+        {
+          "start": 112.305,
+          "end": 119.213,
+          "text": "Mereka di garis miring ini: juga 6 kotak."
+        }
+      ]
+    },
+    {
+      "id": "both",
+      "start": 119.233,
+      "end": 130.5,
+      "chapter": null,
+      "audio": true,
+      "say": "Perhatikan dua kotak ini: lima lima, dan enam enam. Keduanya memenuhi dua syarat sekaligus.",
+      "pages": [
+        {
+          "start": 119.233,
+          "end": 124.444,
+          "text": "Perhatikan dua kotak ini: (5,5) dan (6,6)."
+        },
+        {
+          "start": 124.444,
+          "end": 130.493,
+          "text": "Keduanya memenuhi dua syarat sekaligus."
+        }
+      ]
+    },
+    {
+      "id": "twice",
+      "start": 130.5,
+      "end": 143.367,
+      "chapter": null,
+      "audio": true,
+      "say": "Kalau kita langsung menjumlahkan enam ditambah enam, dua kotak ini terhitung dua kali. Padahal setiap kotak cukup dihitung satu kali.",
+      "pages": [
+        {
+          "start": 130.5,
+          "end": 135.764,
+          "text": "Kalau langsung 6 + 6, dua kotak ini terhitung dua kali."
+        },
+        {
+          "start": 135.764,
+          "end": 143.344,
+          "text": "Padahal setiap kotak cukup dihitung satu kali."
+        }
+      ]
+    },
+    {
+      "id": "minus",
+      "start": 143.367,
+      "end": 151.767,
+      "chapter": null,
+      "audio": true,
+      "say": "Jadi, enam ditambah enam, dikurangi dua, sama dengan sepuluh kotak.",
+      "pages": [
+        {
+          "start": 143.367,
+          "end": 151.747,
+          "text": "Jadi 6 + 6 − 2 = 10 kotak."
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "start": 151.767,
+      "end": 164.0,
+      "chapter": null,
+      "audio": true,
+      "say": "Peluangnya sepuluh per tiga puluh enam. Bagi atas dan bawah dengan dua. Hasilnya lima per delapan belas.",
+      "pages": [
+        {
+          "start": 151.767,
+          "end": 154.284,
+          "text": "Peluangnya 10/36."
+        },
+        {
+          "start": 154.284,
+          "end": 163.987,
+          "text": "Bagi atas dan bawah dengan 2: 5/18."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "start": 164.0,
+      "end": 171.367,
+      "chapter": "JAWABAN",
+      "audio": true,
+      "say": "Jadi, jawabannya adalah B, lima per delapan belas.",
+      "pages": [
+        {
+          "start": 164.0,
+          "end": 171.336,
+          "text": "Jawabannya B, yaitu 5/18."
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "start": 171.367,
+      "end": 185.667,
+      "chapter": null,
+      "audio": true,
+      "say": "Kita cek dengan menghitung langsung kotak yang berwarna. Satu, dua, tiga, sampai sepuluh. Cocok, sepuluh kotak!",
+      "pages": [
+        {
+          "start": 171.367,
+          "end": 177.032,
+          "text": "Cek: hitung langsung kotak yang berwarna."
+        },
+        {
+          "start": 177.032,
+          "end": 180.346,
+          "text": "1, 2, 3, ..."
+        },
+        {
+          "start": 180.346,
+          "end": 185.651,
+          "text": "sampai 10. Cocok!"
+        }
+      ]
+    },
+    {
+      "id": "trap",
+      "start": 185.667,
+      "end": 198.467,
+      "chapter": null,
+      "audio": true,
+      "say": "Kalau dua kotak tadi terhitung dua kali, hasilnya dua belas per tiga puluh enam, yaitu sepertiga. Itu tidak ada di pilihan.",
+      "pages": [
+        {
+          "start": 185.667,
+          "end": 191.12,
+          "text": "Kalau terhitung dua kali: 12/36 = 1/3."
+        },
+        {
+          "start": 191.12,
+          "end": 198.463,
+          "text": "Itu tidak ada di pilihan."
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "start": 198.967,
+      "end": 213.6,
+      "chapter": "INGAT",
+      "audio": true,
+      "say": "Yang perlu diingat. Untuk kejadian atau, gabungkan semua kotak yang cocok. Tapi kotak yang masuk dua kelompok cukup dihitung satu kali.",
+      "pages": [
+        {
+          "start": 198.967,
+          "end": 201.53,
+          "text": "Yang perlu diingat:"
+        },
+        {
+          "start": 201.53,
+          "end": 207.033,
+          "text": "kejadian atau = gabungkan semua kotak yang cocok,"
+        },
+        {
+          "start": 207.033,
+          "end": 213.599,
+          "text": "tapi yang masuk dua kelompok dihitung satu kali."
+        }
+      ]
+    }
+  ]
+}

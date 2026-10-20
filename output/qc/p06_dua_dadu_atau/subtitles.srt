@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:04,135
+Yuk, baca soalnya bersama.
+
+2
+00:00:04,135 --> 00:00:07,717
+Dua dadu dilempar bersamaan.
+
+3
+00:00:07,717 --> 00:00:14,788
+Berapa peluang jumlahnya lebih dari 9, atau kedua mata dadu sama?
+
+4
+00:00:14,800 --> 00:00:25,172
+Pilihannya: 1/4, 5/18, 7/18, atau 11/18.
+
+5
+00:00:25,200 --> 00:00:31,101
+Syarat pertama: jumlah lebih dari 9.
+
+6
+00:00:31,101 --> 00:00:37,465
+Hati-hati, 9 sendiri tidak termasuk.
+
+7
+00:00:37,465 --> 00:00:44,332
+Jadi jumlahnya 10, 11, atau 12.
+
+8
+00:00:44,333 --> 00:00:49,962
+Syarat kedua: kedua mata dadu sama.
+
+9
+00:00:49,962 --> 00:00:58,185
+Misalnya (1,1) atau (5,5): pasangan kembar.
+
+10
+00:00:58,200 --> 00:01:04,757
+Kata atau: cukup salah satu syarat terpenuhi.
+
+11
+00:01:04,757 --> 00:01:11,044
+Kalau dua-duanya terpenuhi, juga boleh.
+
+12
+00:01:11,067 --> 00:01:15,407
+Mulai dari semua kemungkinan.
+
+13
+00:01:15,407 --> 00:01:22,071
+Dadu pertama 6 mata, dadu kedua 6 mata.
+
+14
+00:01:22,071 --> 00:01:26,143
+6 × 6 = 36 pasangan.
+
+15
+00:01:26,167 --> 00:01:32,339
+Di setiap kotak, tulis jumlah kedua mata dadunya.
+
+16
+00:01:32,367 --> 00:01:37,777
+Warnai kotak dengan jumlah lebih dari 9.
+
+17
+00:01:37,777 --> 00:01:44,013
+10: tiga kotak, 11: dua kotak, 12: satu kotak.
+
+18
+00:01:44,013 --> 00:01:48,403
+Totalnya 6.
+
+19
+00:01:48,433 --> 00:01:52,305
+Lalu tandai pasangan kembar.
+
+20
+00:01:52,305 --> 00:01:59,213
+Mereka di garis miring ini: juga 6 kotak.
+
+21
+00:01:59,233 --> 00:02:04,444
+Perhatikan dua kotak ini: (5,5) dan (6,6).
+
+22
+00:02:04,444 --> 00:02:10,493
+Keduanya memenuhi dua syarat sekaligus.
+
+23
+00:02:10,500 --> 00:02:15,764
+Kalau langsung 6 + 6, dua kotak ini terhitung dua kali.
+
+24
+00:02:15,764 --> 00:02:23,344
+Padahal setiap kotak cukup dihitung satu kali.
+
+25
+00:02:23,367 --> 00:02:31,747
+Jadi 6 + 6 − 2 = 10 kotak.
+
+26
+00:02:31,767 --> 00:02:34,284
+Peluangnya 10/36.
+
+27
+00:02:34,284 --> 00:02:43,987
+Bagi atas dan bawah dengan 2: 5/18.
+
+28
+00:02:44,000 --> 00:02:51,336
+Jawabannya B, yaitu 5/18.
+
+29
+00:02:51,367 --> 00:02:57,032
+Cek: hitung langsung kotak yang berwarna.
+
+30
+00:02:57,032 --> 00:03:00,346
+1, 2, 3, ...
+
+31
+00:03:00,346 --> 00:03:05,651
+sampai 10. Cocok!
+
+32
+00:03:05,667 --> 00:03:11,120
+Kalau terhitung dua kali: 12/36 = 1/3.
+
+33
+00:03:11,120 --> 00:03:18,463
+Itu tidak ada di pilihan.
+
+34
+00:03:18,967 --> 00:03:21,530
+Yang perlu diingat:
+
+35
+00:03:21,530 --> 00:03:27,033
+kejadian atau = gabungkan semua kotak yang cocok,
+
+36
+00:03:27,033 --> 00:03:33,599
+tapi yang masuk dua kelompok dihitung satu kali.

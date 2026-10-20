@@ -10,10 +10,17 @@ rendered automatically by **GitHub Actions** — nothing to install on your devi
 | [`p01_dadu_berbeda`](problems/p01_dadu_berbeda/problem.md) | Two dice, distinct faces, prime sum | **B. 7/15** | 3:02 |
 | [`p02_tiga_koin`](problems/p02_tiga_koin/problem.md) | Three coins, at least one picture side | **B. 3/7** | 3:01 |
 | [`p03_kartu_bridge`](problems/p03_kartu_bridge/problem.md) | Two bridge cards, one face card, different colours | **B. 40/221** | 3:09 |
+| [`p04_empat_koin`](problems/p04_empat_koin/problem.md) | Four coins, exactly three number sides | **B. 1/4** | 4:16 |
+| [`p05_spinner_koin`](problems/p05_spinner_koin/problem.md) | Spinner 1–6 and a coin: odd and picture | **B. 1/4** | 3:25 |
+| [`p06_dua_dadu_atau`](problems/p06_dua_dadu_atau/problem.md) | Two dice: sum above 9 or a double | **B. 5/18** | 3:34 |
+| [`p07_spinner_harapan`](problems/p07_spinner_harapan/problem.md) | 8-sector spinner, expected frequency of primes | **C. 72** | 3:35 |
 
 Finished videos live in [`output/videos/`](output/videos) (MP4 + `.srt` subtitles);
 quality-control frames and reports in [`output/qc/`](output/qc); the summary is in
 [`output/QC_REPORT.md`](output/QC_REPORT.md).
+
+P00–P03: male voice (`id-ID-ArdiNeural`), cream theme. P04–P07: female voice
+(`id-ID-GadisNeural`), dark 3Blue1Brown theme (`theme: dark` in `narration.yaml`).
 
 ## Render a video (no installation needed)
 
