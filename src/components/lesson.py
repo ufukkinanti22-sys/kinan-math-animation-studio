@@ -47,7 +47,8 @@ class LessonMixin:
             self.play(LaggedStart(*[FadeIn(c, shift=0.2 * UP) for c in choices], lag_ratio=0.15), run_time=0.9)
             for i, tok in enumerate(option_tokens):
                 self.until(tok)
-                self.play(Indicate(choices[i], color=THEME.purple, scale_factor=1.08), run_time=0.5)
+                # outline only: Indicate() would recolour the fraction into the card while it is read
+                self.play(Circumscribe(choices[i], color=THEME.hl, buff=0.06, stroke_width=6), run_time=0.7)
             self.choices = choices
 
     def clear_question(self, keep_top: bool = False):
@@ -68,10 +69,9 @@ class LessonMixin:
     def reveal_answer(self, beat: str, options: list[str], correct: int, token: str, result=None):
         with self.beat(beat):
             choices = Choices(options, width=8.0, height=1.45, size=50).move_to([0, 0.6, 0])
-            anims = [FadeIn(choices, shift=0.2 * UP)]
-            if result is not None:
-                anims.append(result.animate.move_to([0, 3.3, 0]))
-            self.play(*anims, run_time=0.7)
+            if result is not None:  # make room first so the result never sits on the cards
+                self.play(result.animate.move_to([0, 3.3, 0]), run_time=0.6)
+            self.play(FadeIn(choices, shift=0.2 * UP), run_time=0.6)
             self.until(token)
             self.play(*[choices[i].animate.set_opacity(0.3) for i in range(len(options)) if i != correct],
                       choices[correct].animate.scale(1.12), run_time=0.6)
