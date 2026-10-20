@@ -30,10 +30,34 @@ def p03_kartu_bridge() -> F:
     return F(good, len(pairs))
 
 
+def p04_empat_koin() -> F:
+    outcomes = list(product("AG", repeat=4))  # A = angka, G = gambar
+    return F(sum(o.count("A") == 3 for o in outcomes), len(outcomes))
+
+
+def p05_spinner_koin() -> F:
+    outcomes = list(product(range(1, 7), "AG"))  # spinner with six equal sectors, fair coin
+    return F(sum(n % 2 == 1 and c == "G" for n, c in outcomes), len(outcomes))
+
+
+def p06_dua_dadu_atau() -> F:
+    pairs = list(product(range(1, 7), repeat=2))
+    return F(sum(a + b > 9 or a == b for a, b in pairs), len(pairs))
+
+
+def p07_spinner_harapan() -> F:
+    primes = [n for n in range(1, 9) if n > 1 and all(n % d for d in range(2, n))]
+    return F(len(primes), 8) * 144  # expected frequency = probability x number of trials
+
+
 EXPECTED = {
     p01_dadu_berbeda: F(7, 15),  # option B
     p02_tiga_koin: F(3, 7),  # option B
     p03_kartu_bridge: F(40, 221),  # option B
+    p04_empat_koin: F(1, 4),  # option B
+    p05_spinner_koin: F(1, 4),  # option B
+    p06_dua_dadu_atau: F(5, 18),  # option B
+    p07_spinner_harapan: F(72),  # option C
 }
 
 if __name__ == "__main__":

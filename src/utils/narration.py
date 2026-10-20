@@ -115,7 +115,7 @@ def _time_map(say_words: list[tuple[str, float]], speech: float):
     return f
 
 
-def _paginate(caption: str, times, max_chars: int = 46) -> list[list[CaptionWord]]:
+def _paginate(caption: str, times, max_chars: int = 40) -> list[list[CaptionWord]]:
     """Split the caption into pages (sentences, or '|' breaks) of <= 2 short lines."""
     raw = _tokens(caption)
     words_only = [t for t in raw if t != "|"]
@@ -185,7 +185,7 @@ def load_beats(problem_id: str, use_audio: bool = True) -> tuple[dict, dict[str,
                 acc += len(w) + 1
         beat = Beat(
             id=b["id"], say=say, caption=caption, chapter=b.get("chapter"),
-            pause=float(b.get("pause", DEFAULT_PAUSE)), audio=audio,
+            pause=float(b.get("pause", script.get("pause", DEFAULT_PAUSE))), audio=audio,
             speech=speech, word_times=word_times,
         )
         times = _time_map(word_times, speech)

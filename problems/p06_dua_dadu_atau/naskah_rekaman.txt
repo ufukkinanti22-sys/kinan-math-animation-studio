@@ -1,0 +1,67 @@
+Yuk, baca soalnya bersama.
+Dua dadu dilempar bersamaan.
+Berapa peluang jumlah mata dadu lebih dari sembilan,
+atau kedua mata dadu sama?
+
+Pilihannya: seperempat, lima per delapan belas,
+tujuh per delapan belas,
+atau sebelas per delapan belas.
+
+Ada dua syarat di sini.
+Syarat pertama: jumlahnya lebih dari sembilan.
+Hati-hati, sembilan sendiri tidak termasuk.
+Jadi jumlahnya sepuluh, sebelas, atau dua belas.
+
+Syarat kedua: kedua mata dadu sama.
+Misalnya satu dan satu, atau lima dan lima.
+Kita sebut ini pasangan kembar.
+
+Lalu kata atau.
+Artinya, cukup salah satu syarat terpenuhi.
+Kalau dua-duanya terpenuhi, tentu juga boleh.
+
+Kita mulai dari semua kemungkinan.
+Dadu pertama punya enam mata, dadu kedua juga enam.
+Enam kali enam, ada tiga puluh enam pasangan.
+
+Di setiap kotak,
+kita tulis jumlah kedua mata dadunya.
+
+Sekarang warnai kotak yang jumlahnya lebih dari sembilan.
+Jumlah sepuluh ada tiga kotak,
+sebelas ada dua kotak, dan dua belas ada satu kotak.
+Totalnya enam.
+
+Lalu tandai pasangan kembar.
+Mereka berada di garis miring ini.
+Jumlahnya juga enam kotak.
+
+Perhatikan dua kotak ini: lima lima, dan enam enam.
+Keduanya memenuhi dua syarat sekaligus.
+
+Kalau kita langsung menjumlahkan enam ditambah enam,
+dua kotak ini terhitung dua kali.
+Padahal setiap kotak cukup dihitung satu kali.
+
+Jadi, enam ditambah enam, dikurangi dua,
+sama dengan sepuluh kotak.
+
+Peluangnya sepuluh per tiga puluh enam.
+Bagi atas dan bawah dengan dua.
+Hasilnya lima per delapan belas.
+
+Jadi, jawabannya adalah B, lima per delapan belas.
+
+Kita cek dengan menghitung langsung kotak yang berwarna.
+Satu, dua, tiga, sampai sepuluh.
+Cocok, sepuluh kotak!
+
+Kalau dua kotak tadi terhitung dua kali,
+hasilnya dua belas per tiga puluh enam,
+yaitu sepertiga.
+Itu tidak ada di pilihan.
+
+Yang perlu diingat.
+Untuk kejadian atau,
+gabungkan semua kotak yang cocok.
+Tapi kotak yang masuk dua kelompok cukup dihitung satu kali.

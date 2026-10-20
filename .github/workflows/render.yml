@@ -1,9 +1,10 @@
 name: Render math videos
 
 # Manual rendering: Actions tab -> "Render math videos" -> Run workflow.
-# Every push to a claude/** branch that touches the project also runs a smoke
-# test: narration audio is (re)generated for all problems and committed back,
-# and every problem is rendered at preview quality and uploaded as an artifact.
+# Every push to a claude/** branch that touches the project also: (re)generates
+# narration audio for all problems (committed back to the branch) and renders at
+# final quality every problem whose video is not in output/videos yet. All final
+# videos are uploaded as a downloadable artifact.
 
 on:
   workflow_dispatch:
@@ -19,10 +20,10 @@ on:
         options: [final, preview]
         default: final
       theme:
-        description: "kinan = cream explainer style, dark = 3Blue1Brown-style navy"
+        description: "auto = each problem's own theme; kinan = cream; dark = 3Blue1Brown-style navy"
         type: choice
-        options: [kinan, dark]
-        default: kinan
+        options: [auto, kinan, dark]
+        default: auto
       narration:
         description: "Generate Indonesian voice-over (edge-tts)"
         type: boolean
@@ -61,10 +62,10 @@ jobs:
       IS_PUSH: ${{ github.event_name == 'push' }}
       PROBLEMS: ${{ github.event_name == 'push' && 'all' || inputs.problems }}
       NARRATE: ${{ github.event_name == 'push' && 'all' || inputs.problems }}
-      QUALITY: ${{ github.event_name == 'push' && 'preview' || inputs.quality }}
-      THEME: ${{ github.event_name == 'push' && 'kinan' || inputs.theme }}
+      QUALITY: ${{ github.event_name == 'push' && 'final' || inputs.quality }}
+      THEME: ${{ github.event_name == 'push' && 'auto' || inputs.theme }}
       NARRATION: ${{ github.event_name == 'push' || inputs.narration }}
-      FORCE: ${{ github.event_name == 'push' || inputs.force }}
+      FORCE: ${{ github.event_name != 'push' && inputs.force }}
       COMMIT_OUTPUTS: ${{ github.event_name != 'push' && inputs.commit_outputs }}
       PYTHONUNBUFFERED: "1"
     steps:
@@ -101,6 +102,21 @@ jobs:
         if: env.NARRATION == 'true'
         continue-on-error: true
         run: python scripts/narrate.py "$NARRATE"
+
+      - name: Commit narration audio (right away, before the long render)
+        if: steps.narrate.outcome == 'success'
+        run: |
+          git config user.name "kinan-render-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio
+          if git diff --cached --quiet; then echo "Narration unchanged."; exit 0; fi
+          git commit -m "Render bot: update narration audio [skip ci]"
+          for i in 1 2 3 4; do
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((2 ** i))
+          done
+          echo "::error::Could not push narration audio"
+          exit 1
 
       - name: Render video(s)
         id: render
@@ -163,25 +179,17 @@ jobs:
             output/qc/
             output/preview/qc/
 
-      - name: Commit narration audio (and outputs when requested)
-        if: always() && steps.narrate.outcome == 'success'
+      - name: Commit rendered videos (when requested)
+        if: always() && env.COMMIT_OUTPUTS == 'true'
         run: |
           git config user.name "kinan-render-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/audio
-          msg="Render bot: update narration audio"
-          if [ "$COMMIT_OUTPUTS" = "true" ]; then
-            git add output/videos output/qc
-            msg="Render bot: update narration audio and rendered videos"
-          fi
-          if git diff --cached --quiet; then
-            echo "Nothing new to commit."
-            exit 0
-          fi
-          git commit -m "$msg [skip ci]"
+          git add output/videos output/qc
+          if git diff --cached --quiet; then echo "Nothing new to commit."; exit 0; fi
+          git commit -m "Render bot: add rendered videos [skip ci]"
           for i in 1 2 3 4; do
             git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
             sleep $((2 ** i))
           done
-          echo "::error::Could not push generated files"
+          echo "::error::Could not push rendered videos"
           exit 1

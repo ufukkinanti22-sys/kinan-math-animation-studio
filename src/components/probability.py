@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
+import numpy as np
 from manim import (
-    DOWN, LEFT, RIGHT, UP, Circle, Dot, RoundedRectangle, VGroup,
+    DOWN, LEFT, PI, RIGHT, TAU, UP, Circle, Dot, Polygon, RoundedRectangle, Sector, VGroup,
 )
 
 from .cards import Badge, Card
@@ -49,7 +50,7 @@ class Coin(VGroup):
         self.rim = Circle(radius=radius * 0.78, stroke_color=THEME.warn if gold else THEME.blue,
                           stroke_width=3, fill_opacity=0)
         self.label = T(face, size=radius * 120 * 0.95, weight=BLACK,
-                       color=THEME.ink).move_to(self.disc)
+                       color=THEME.hl_text if gold else THEME.ink).move_to(self.disc)
         self.add(self.disc, self.rim, self.label)
 
 
@@ -114,7 +115,7 @@ class Choices(VGroup):
         self.cards, self.letters, self.values = VGroup(), VGroup(), VGroup()
         for i, tex in enumerate(options):
             card = Card(w, height, radius=0.18, stroke_width=4)
-            letter = T("ABCDE"[i], size=34, weight=BLACK, color=THEME.purple)
+            letter = T("ABCDE"[i], size=34, weight=BLACK, color=THEME.label)
             value = M(tex, size=size)
             row = VGroup(letter, value).arrange(RIGHT, buff=0.18).move_to(card.body)
             self.cards.add(card)
@@ -133,3 +134,41 @@ class Choices(VGroup):
 
 def outcome_row(*mobs, buff: float = 0.12) -> VGroup:
     return VGroup(*mobs).arrange(RIGHT, buff=buff)
+
+
+class Spinner(VGroup):
+    """Spinner with ``n`` equal sectors numbered 1..n clockwise from the top (as on worksheets),
+    and a needle that can be turned to point at any sector."""
+
+    def __init__(self, n: int, radius: float = 1.6, label_size: float | None = None, **kw):
+        super().__init__(**kw)
+        self.n, self.radius = n, radius
+        palette = [THEME.bad, THEME.hl, THEME.good, THEME.blue, THEME.purple, THEME.warn, "#4FD1C5", "#F28FB4"]
+        step = TAU / n
+        self.sectors, self.labels = VGroup(), VGroup()
+        for i in range(n):
+            start = PI / 2 - i * step  # sector i covers [start, start + step]: 1 sits left of 12 o'clock
+            sec = Sector(radius=radius, start_angle=start, angle=step, fill_color=palette[i % len(palette)],
+                         fill_opacity=0.9, stroke_color=THEME.bg, stroke_width=6)
+            mid = start + step / 2
+            lab = T(str(i + 1), size=label_size or radius * 120 * 0.32, weight=BLACK, color=THEME.hl_text)
+            lab.move_to([0.68 * radius * np.cos(mid), 0.68 * radius * np.sin(mid), 0])
+            self.sectors.add(sec)
+            self.labels.add(lab)
+        self.rim = Circle(radius=radius, stroke_color=THEME.ink, stroke_width=6, fill_opacity=0)
+        self.needle = Polygon([0, 0.82 * radius, 0], [-0.07 * radius, 0, 0], [0.07 * radius, 0, 0],
+                              fill_color=THEME.ink, fill_opacity=1, stroke_width=0)
+        self.hub = Circle(radius=0.09 * radius, fill_color=THEME.ink, fill_opacity=1, stroke_width=0)
+        self.angle = PI / 2  # needle direction
+        self.add(self.sectors, self.labels, self.rim, self.needle, self.hub)
+
+    def center_angle(self, k: int) -> float:
+        """Direction (radians) of the middle of sector number ``k`` (1-based)."""
+        return PI / 2 - (k - 1) * TAU / self.n + TAU / (2 * self.n)
+
+    def turn_to(self, k: int, extra_turns: int = 2) -> float:
+        """Clockwise rotation (negative radians) bringing the needle to sector ``k``."""
+        target = self.center_angle(k)
+        delta = (self.angle - target) % TAU + extra_turns * TAU
+        self.angle = target
+        return -delta

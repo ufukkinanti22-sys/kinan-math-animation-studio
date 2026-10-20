@@ -45,7 +45,7 @@ class Pill(VGroup):
     def __init__(self, text: str, color: str | None = None, fill: str | None = None,
                  size: float = 34, **kw):
         super().__init__(**kw)
-        label = T(text.upper(), size=size, color=color or THEME.purple, weight=BLACK)
+        label = T(text.upper(), size=size, color=color or THEME.label, weight=BLACK)
         bg = RoundedRectangle(
             width=label.width + 0.5, height=label.height + 0.32, corner_radius=0.2,
             fill_color=fill or THEME.soft_purple, fill_opacity=1, stroke_width=0,
@@ -64,7 +64,7 @@ class Tag(VGroup):
         label = T(text, size=size, color=color or THEME.ink, weight=HEAVY)
         bg = RoundedRectangle(
             width=label.width + 0.45, height=label.height + 0.36, corner_radius=0.18,
-            fill_color=fill or THEME.hl, fill_opacity=1,
+            fill_color=fill or THEME.mark, fill_opacity=1,
             stroke_color=stroke or THEME.card_stroke, stroke_width=4,
         )
         label.move_to(bg)
@@ -102,7 +102,7 @@ def marker(mob, color: str | None = None, pad: float = 0.08, opacity: float = 1.
     """Highlighter rectangle sized to sit *behind* ``mob``."""
     r = RoundedRectangle(
         width=mob.width + 2 * pad, height=mob.height + 2 * pad, corner_radius=0.08,
-        fill_color=color or THEME.hl, fill_opacity=opacity, stroke_width=0,
+        fill_color=color or THEME.mark, fill_opacity=opacity, stroke_width=0,
     )
     r.move_to(mob)
     return r
@@ -162,7 +162,7 @@ class TextCard(VGroup):
                 base = min((g.get_bottom()[1] for ch, g in zip(row, self.text[r])
                             if ch in "acemnorsuvwxz"), default=self.text[r].get_bottom()[1])
                 box = RoundedRectangle(width=glyphs.width + 0.14, height=cap * 1.9, corner_radius=0.07,
-                                       fill_color=color or THEME.hl, fill_opacity=1, stroke_width=0)
+                                       fill_color=color or THEME.mark, fill_opacity=1, stroke_width=0)
                 box.move_to([glyphs.get_center()[0], base + cap / 2, 0])
                 boxes.add(box)
             offset += len(row) + 1

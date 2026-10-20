@@ -1,0 +1,69 @@
+Yuk, baca soalnya bersama.
+Sebuah spinner dengan delapan sektor sama besar,
+bernomor satu sampai delapan,
+diputar seratus empat puluh empat kali.
+Berapa frekuensi harapan muncul bilangan prima?
+
+Pilihannya: lima puluh empat, enam puluh empat,
+tujuh puluh dua, atau delapan puluh satu.
+
+Apa itu frekuensi harapan?
+Frekuensi artinya berapa kali sesuatu terjadi.
+Frekuensi harapan artinya berapa kali kita perkirakan hal itu akan terjadi.
+
+Coba contoh sederhana dulu, ya.
+Kalau sebuah koin dilempar sepuluh kali,
+kira-kira berapa kali muncul gambar?
+Peluang gambar setengah,
+jadi kita harapkan sekitar lima kali.
+
+Dari contoh tadi kita dapat aturannya.
+Frekuensi harapan sama dengan peluang,
+dikali banyaknya percobaan.
+
+Sekarang, apa itu bilangan prima?
+Bilangan prima adalah bilangan yang tepat punya dua pembagi,
+yaitu satu dan dirinya sendiri.
+
+Kita periksa satu per satu.
+Dua, prima.
+Tiga, prima.
+Empat, bukan, karena bisa dibagi dua.
+Lima, prima.
+Enam, bukan.
+Tujuh, prima.
+Delapan, bukan.
+
+Bagaimana dengan satu?
+Satu hanya punya satu pembagi,
+yaitu dirinya sendiri.
+Jadi, satu bukan bilangan prima.
+
+Jadi bilangan primanya dua, tiga, lima, dan tujuh.
+Empat dari delapan sektor.
+Peluangnya empat per delapan, atau setengah.
+
+Sekarang pakai aturannya.
+Setengah dikali seratus empat puluh empat,
+sama dengan tujuh puluh dua.
+
+Bayangkan seratus empat puluh empat putaran ini.
+Kira-kira separuhnya, yaitu tujuh puluh dua kali,
+jarum berhenti di bilangan prima.
+
+Jadi, jawabannya adalah C, tujuh puluh dua.
+
+Ingat, ini perkiraan.
+Kalau benar-benar diputar,
+hasilnya bisa tujuh puluh, atau tujuh puluh lima.
+Tapi tujuh puluh dua adalah angka yang paling kita harapkan.
+
+Hati-hati.
+Kalau satu ikut dihitung sebagai prima,
+kita akan mendapat sembilan puluh.
+Itu tidak ada di pilihan.
+
+Yang perlu diingat.
+Frekuensi harapan sama dengan peluang,
+dikali banyak percobaan.
+Dan satu bukan bilangan prima.

@@ -1,0 +1,64 @@
+Yuk, baca soalnya bersama.
+Sebuah spinner bernomor satu sampai enam dan sebuah koin dilempar bersamaan.
+Berapa peluang muncul bilangan ganjil pada spinner dan sisi gambar pada koin?
+
+Pilihannya: seperenam, seperempat, sepertiga,
+atau setengah.
+
+Pertama, kenali spinnernya.
+Spinner adalah papan bundar yang diputar.
+Jarumnya akan berhenti di salah satu dari enam bagian.
+
+Keenam bagiannya sama besar, seperti pada gambar.
+Jadi setiap angka punya kesempatan yang sama untuk terpilih.
+
+Bilangan ganjil adalah bilangan yang tidak habis dibagi dua.
+Di spinner ini, bilangan ganjilnya adalah satu,
+tiga, dan lima.
+
+Koinnya punya dua sisi, gambar dan angka.
+Yang diminta adalah sisi gambar.
+
+Kata dan berarti kedua hal itu harus terjadi bersamaan.
+Spinner harus ganjil, dan koin harus gambar.
+
+Coba kita lihat contohnya.
+Spinner tiga dan koin gambar: cocok!
+Spinner tiga dan koin angka: tidak cocok.
+Spinner empat dan koin gambar: juga tidak cocok.
+
+Sekarang kita susun semua kemungkinan dalam tabel.
+Ada enam angka spinner, dan dua sisi koin.
+
+Enam kali dua, jadi ada dua belas pasangan.
+Semuanya punya kesempatan yang sama.
+
+Sekarang warnai kolom bilangan ganjil, yaitu satu,
+tiga, dan lima.
+
+Lalu ambil hanya baris gambar.
+Kotak yang memenuhi kedua syarat ada tiga.
+
+Jadi peluangnya tiga per dua belas.
+Bagi atas dan bawah dengan tiga.
+Hasilnya satu per empat.
+
+Jadi, jawabannya adalah B, seperempat.
+
+Ada cara cepat untuk mengeceknya.
+Peluang spinner ganjil adalah tiga dari enam,
+yaitu setengah.
+
+Peluang koin gambar juga setengah.
+Setengah dari setengah adalah seperempat.
+Hasilnya sama!
+
+Kita boleh mengalikan,
+karena hasil spinner tidak memengaruhi koin,
+dan hasil koin tidak memengaruhi spinner.
+
+Yang perlu diingat.
+Untuk kejadian dan,
+cari kotak yang memenuhi kedua syarat sekaligus.
+Kalau kedua benda tidak saling memengaruhi,
+peluangnya boleh dikalikan.

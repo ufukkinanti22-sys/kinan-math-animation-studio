@@ -1,0 +1,94 @@
+id: p05_spinner_koin
+title: "Spinner dan koin: ganjil dan gambar"
+scene_file: src/scenes/p05_spinner_koin.py
+scene_class: P05SpinnerKoin
+theme: dark
+voice: id-ID-GadisNeural
+rate: "-8%"
+pause: 0.7
+beats:
+  - id: question
+    chapter: SOAL
+    visual: "Original question card; 'bilangan ganjil pada spinner' and 'sisi gambar pada koin' highlighted; spinner and coin icons."
+    say: "Yuk, baca soalnya bersama. Sebuah spinner bernomor satu sampai enam dan sebuah koin dilempar bersamaan. Berapa peluang muncul bilangan ganjil pada spinner dan sisi gambar pada koin?"
+    caption: "Yuk, baca soalnya bersama. | Sebuah spinner bernomor 1 sampai 6 dan sebuah koin dilempar bersamaan. | Berapa peluang bilangan *ganjil* pada spinner dan sisi *gambar* pada koin?"
+  - id: options
+    visual: "Options A-D appear and pulse as read."
+    say: "Pilihannya: seperenam, seperempat, sepertiga, atau setengah."
+    caption: "Pilihannya: 1/6, 1/4, 1/3, atau 1/2."
+
+  - id: spinner
+    chapter: MAKSUDNYA
+    visual: "Big spinner; the needle spins and stops on 4."
+    say: "Pertama, kenali spinnernya. Spinner adalah papan bundar yang diputar. Jarumnya akan berhenti di salah satu dari enam bagian."
+    caption: "Pertama, kenali *spinner*-nya. | Papan bundar yang diputar; jarumnya berhenti di salah satu dari *enam* bagian."
+  - id: equal
+    visual: "The six sectors pulse one by one: all the same size."
+    say: "Keenam bagiannya sama besar, seperti pada gambar. Jadi setiap angka punya kesempatan yang sama untuk terpilih."
+    caption: "Keenam bagiannya *sama~besar*, seperti pada gambar. | Jadi setiap angka punya kesempatan yang sama."
+  - id: odd
+    visual: "Sectors 1, 3, 5 glow; 2, 4, 6 dim. Tag 'ganjil: 1, 3, 5'."
+    say: "Bilangan ganjil adalah bilangan yang tidak habis dibagi dua. Di spinner ini, bilangan ganjilnya adalah satu, tiga, dan lima."
+    caption: "Bilangan *ganjil* tidak habis dibagi 2. | Di spinner ini: 1, 3, dan 5."
+  - id: coin
+    visual: "Coin shows G and A; G is circled."
+    say: "Koinnya punya dua sisi, gambar dan angka. Yang diminta adalah sisi gambar."
+    caption: "Koin punya dua sisi: gambar (G) dan angka (A). | Yang diminta: sisi *gambar*."
+  - id: and
+    visual: "Two condition tags joined by a big 'DAN'."
+    say: "Kata dan berarti kedua hal itu harus terjadi bersamaan. Spinner harus ganjil, dan koin harus gambar."
+    caption: "Kata *dan* berarti keduanya terjadi *bersamaan*: | spinner ganjil, *dan* koin gambar."
+
+  - id: examples
+    chapter: IDE DASAR
+    visual: "Example pairs: (3, G) tick, (3, A) cross, (4, G) cross."
+    say: "Coba kita lihat contohnya. Spinner tiga dan koin gambar: cocok! Spinner tiga dan koin angka: tidak cocok. Spinner empat dan koin gambar: juga tidak cocok."
+    caption: "Contoh: spinner 3 dan gambar: *cocok!* | Spinner 3 dan angka: tidak cocok. | Spinner 4 dan gambar: juga tidak cocok."
+
+  - id: table
+    chapter: SELESAIKAN
+    visual: "Table: six columns (spinner 1..6) and two rows (G, A); 12 cells fill in."
+    say: "Sekarang kita susun semua kemungkinan dalam tabel. Ada enam angka spinner, dan dua sisi koin."
+    caption: "Sekarang susun semua kemungkinan dalam *tabel*. | Enam angka spinner, dua sisi koin."
+  - id: twelve
+    visual: "6 × 2 = 12 written; all cells shimmer."
+    say: "Enam kali dua, jadi ada dua belas pasangan. Semuanya punya kesempatan yang sama."
+    caption: "6~×~2 = *12* pasangan, semuanya sama mungkin."
+  - id: cols
+    visual: "Columns 1, 3, 5 are shaded blue."
+    say: "Sekarang warnai kolom bilangan ganjil, yaitu satu, tiga, dan lima."
+    caption: "Warnai kolom *ganjil*: 1, 3, dan 5."
+  - id: row
+    visual: "Row G is outlined yellow; the three cells in both turn green."
+    say: "Lalu ambil hanya baris gambar. Kotak yang memenuhi kedua syarat ada tiga."
+    caption: "Lalu ambil hanya baris *gambar*. | Kotak yang memenuhi keduanya: *3*."
+  - id: compute
+    visual: "Peluang = 3/12, ÷3 -> 1/4."
+    say: "Jadi peluangnya tiga per dua belas. Bagi atas dan bawah dengan tiga. Hasilnya satu per empat."
+    caption: "Peluangnya 3/12. | Bagi atas dan bawah dengan 3: *1/4*."
+
+  - id: answer
+    chapter: JAWABAN
+    visual: "Options return; B is confirmed."
+    say: "Jadi, jawabannya adalah B, seperempat."
+    caption: "Jawabannya *B*, yaitu 1/4."
+    pause: 1.0
+  - id: check1
+    visual: "Area model: a square; the odd half (spinner) is shaded."
+    say: "Ada cara cepat untuk mengeceknya. Peluang spinner ganjil adalah tiga dari enam, yaitu setengah."
+    caption: "Cara cepat untuk mengecek: | peluang spinner ganjil = 3/6 = *1/2*."
+  - id: check2
+    visual: "Half of that half (coin G) is shaded: one quarter of the square; 1/2 × 1/2 = 1/4."
+    say: "Peluang koin gambar juga setengah. Setengah dari setengah adalah seperempat. Hasilnya sama!"
+    caption: "Peluang koin gambar juga 1/2. | Setengah dari setengah = *1/4*. Sama!"
+  - id: check3
+    visual: "Note: spinner and coin do not affect each other."
+    say: "Kita boleh mengalikan, karena hasil spinner tidak memengaruhi koin, dan hasil koin tidak memengaruhi spinner."
+    caption: "Boleh dikalikan, karena spinner dan koin | *tidak saling memengaruhi*."
+
+  - id: remember
+    chapter: INGAT
+    visual: "Summary card: 'dan' = kotak yang memenuhi kedua syarat; jika tidak saling memengaruhi, kalikan."
+    say: "Yang perlu diingat. Untuk kejadian dan, cari kotak yang memenuhi kedua syarat sekaligus. Kalau kedua benda tidak saling memengaruhi, peluangnya boleh dikalikan."
+    caption: "Yang perlu diingat: | kejadian *dan* = kotak yang memenuhi *kedua* syarat. | Tidak saling memengaruhi? Peluangnya boleh *dikalikan*."
+    pause: 1.6

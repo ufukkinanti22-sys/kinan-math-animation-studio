@@ -1,0 +1,83 @@
+Yuk, kita baca soalnya pelan-pelan.
+Empat koin setimbang dilempar bersamaan.
+Berapa peluang muncul tepat tiga sisi angka?
+
+Pilihannya: seperdelapan, seperempat,
+tiga per delapan, atau setengah.
+
+Pertama, kenali dulu koinnya.
+Satu koin punya dua sisi.
+Sisi angka, kita tulis A.
+Dan sisi gambar, kita tulis G.
+
+Kata setimbang artinya koinnya adil.
+Sisi angka dan sisi gambar punya kesempatan yang sama untuk muncul,
+masing-masing setengah.
+
+Lalu, apa arti tepat tiga angka?
+Artinya, dari empat koin, tiga menunjukkan angka,
+dan satu sisanya gambar.
+Tidak boleh lebih, dan tidak boleh kurang.
+
+Bagaimana cara menghitung peluang?
+Idenya sederhana.
+Peluang sama dengan banyak hasil yang kita inginkan,
+dibagi banyak semua hasil yang mungkin.
+
+Coba kita lihat contoh yang lebih sederhana dulu,
+ya.
+Bayangkan hanya ada dua koin.
+
+Hasilnya bisa angka angka, angka gambar,
+gambar angka, atau gambar gambar.
+Ada empat kemungkinan.
+
+Perhatikan,
+angka gambar dan gambar angka itu berbeda,
+karena koin pertama dan koin kedua bisa kita bedakan.
+
+Jadi,
+peluang tepat satu angka pada dua koin adalah dua dari empat,
+atau dua per empat.
+
+Sekarang kembali ke empat koin.
+Berapa banyak semua hasilnya?
+Setiap koin tambahan membuat banyaknya kemungkinan menjadi dua kali lipat.
+
+Satu koin, dua hasil.
+Dua koin, empat hasil.
+Tiga koin, delapan hasil.
+Dan empat koin, enam belas hasil.
+
+Ini dia keenam belas hasilnya.
+Setiap baris adalah satu cara koin-koin itu jatuh.
+
+Sekarang cari baris yang angkanya tepat tiga.
+Caranya mudah.
+Cukup cari baris yang gambarnya hanya satu,
+lalu lihat di mana gambar itu berada.
+
+Gambarnya bisa ada di koin pertama, kedua, ketiga,
+atau keempat.
+Jadi ada empat hasil yang cocok.
+
+Peluangnya empat per enam belas.
+Empat dan enam belas sama-sama bisa dibagi empat.
+Hasilnya satu per empat, atau seperempat.
+
+Jadi, jawabannya adalah B, seperempat.
+
+Kita cek dengan cara lain.
+Kelompokkan keenam belas hasil menurut banyaknya angka:
+nol, satu, dua, tiga, atau empat angka.
+
+Isinya satu, empat, enam, empat, dan satu.
+Jumlahnya enam belas.
+Kelompok tiga angka berisi empat hasil.
+Cocok, empat per enam belas.
+
+Yang perlu diingat.
+Pertama, hitung semua hasil yang mungkin.
+Setiap koin membuatnya dua kali lipat.
+Kedua, hitung hasil yang cocok.
+Lalu bagi keduanya.

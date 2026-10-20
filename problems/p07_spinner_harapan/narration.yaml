@@ -1,0 +1,82 @@
+id: p07_spinner_harapan
+title: "Spinner 8 sektor: frekuensi harapan bilangan prima"
+scene_file: src/scenes/p07_spinner_harapan.py
+scene_class: P07SpinnerHarapan
+theme: dark
+voice: id-ID-GadisNeural
+rate: "-8%"
+pause: 0.7
+beats:
+  - id: question
+    chapter: SOAL
+    visual: "Original question card; '8 sektor sama besar', '144 kali', 'frekuensi harapan', 'bilangan prima' highlighted; spinner icon."
+    say: "Yuk, baca soalnya bersama. Sebuah spinner dengan delapan sektor sama besar, bernomor satu sampai delapan, diputar seratus empat puluh empat kali. Berapa frekuensi harapan muncul bilangan prima?"
+    caption: "Yuk, baca soalnya bersama. | Spinner dengan 8 sektor *sama~besar*, bernomor 1 sampai 8, diputar *144* kali. | Berapa *frekuensi~harapan* muncul bilangan *prima*?"
+  - id: options
+    visual: "Options A-D appear and pulse as read."
+    say: "Pilihannya: lima puluh empat, enam puluh empat, tujuh puluh dua, atau delapan puluh satu."
+    caption: "Pilihannya: 54, 64, 72, atau 81."
+
+  - id: frequency
+    chapter: MAKSUDNYA
+    visual: "Tally marks grow: 'frekuensi = berapa kali terjadi'; then 'harapan = perkiraan'."
+    say: "Apa itu frekuensi harapan? Frekuensi artinya berapa kali sesuatu terjadi. Frekuensi harapan artinya berapa kali kita perkirakan hal itu akan terjadi."
+    caption: "*Frekuensi* = berapa kali sesuatu terjadi. | *Frekuensi~harapan* = berapa kali kita *perkirakan* hal itu terjadi."
+
+  - id: coins10
+    chapter: IDE DASAR
+    visual: "Ten coins flip; about half land G; '10 × 1/2 = 5'."
+    say: "Coba contoh sederhana dulu, ya. Kalau sebuah koin dilempar sepuluh kali, kira-kira berapa kali muncul gambar? Peluang gambar setengah, jadi kita harapkan sekitar lima kali."
+    caption: "Contoh sederhana: koin dilempar *10* kali. | Peluang gambar 1/2, jadi kita harapkan sekitar *5* kali."
+  - id: formula
+    visual: "Formula: frekuensi harapan = peluang × banyak percobaan."
+    say: "Dari contoh tadi kita dapat aturannya. Frekuensi harapan sama dengan peluang, dikali banyaknya percobaan."
+    caption: "Aturannya: | frekuensi harapan = *peluang* × *banyak~percobaan*."
+
+  - id: prime
+    chapter: SELESAIKAN
+    visual: "Definition: a prime number has exactly two divisors: 1 and itself."
+    say: "Sekarang, apa itu bilangan prima? Bilangan prima adalah bilangan yang tepat punya dua pembagi, yaitu satu dan dirinya sendiri."
+    caption: "Apa itu bilangan *prima*? | Bilangan yang tepat punya *dua* pembagi: 1 dan dirinya sendiri."
+  - id: check_numbers
+    visual: "Spinner sectors light up green (prime) or fade (not prime), with divisors listed."
+    say: "Kita periksa satu per satu. Dua, prima. Tiga, prima. Empat, bukan, karena bisa dibagi dua. Lima, prima. Enam, bukan. Tujuh, prima. Delapan, bukan."
+    caption: "Periksa satu per satu: 2 prima, 3 prima, 4 *bukan* (bisa dibagi 2), | 5 prima, 6 bukan, 7 prima, 8 bukan."
+  - id: one
+    visual: "Sector 1: 'pembagi: 1 saja' -> bukan prima."
+    say: "Bagaimana dengan satu? Satu hanya punya satu pembagi, yaitu dirinya sendiri. Jadi, satu bukan bilangan prima."
+    caption: "Bagaimana dengan 1? | 1 hanya punya *satu* pembagi. Jadi 1 *bukan* bilangan prima."
+  - id: probability
+    visual: "Primes 2, 3, 5, 7: 4 of 8 sectors; P = 4/8 = 1/2."
+    say: "Jadi bilangan primanya dua, tiga, lima, dan tujuh. Empat dari delapan sektor. Peluangnya empat per delapan, atau setengah."
+    caption: "Bilangan prima: 2, 3, 5, 7: *4* dari *8* sektor. | Peluangnya 4/8 = *1/2*."
+  - id: multiply
+    visual: "Frekuensi harapan = 1/2 × 144 = 72."
+    say: "Sekarang pakai aturannya. Setengah dikali seratus empat puluh empat, sama dengan tujuh puluh dua."
+    caption: "Pakai aturannya: | 1/2 × 144 = *72*."
+  - id: picture
+    visual: "144 dots (12 × 12); 72 of them turn green."
+    say: "Bayangkan seratus empat puluh empat putaran ini. Kira-kira separuhnya, yaitu tujuh puluh dua kali, jarum berhenti di bilangan prima."
+    caption: "Bayangkan 144 putaran ini. | Kira-kira separuhnya, *72* kali, jarum berhenti di bilangan prima."
+
+  - id: answer
+    chapter: JAWABAN
+    visual: "Options return; C is confirmed."
+    say: "Jadi, jawabannya adalah C, tujuh puluh dua."
+    caption: "Jawabannya *C*, yaitu 72."
+    pause: 1.0
+  - id: estimate
+    visual: "Example real results 70, 75, 69 jitter around 72."
+    say: "Ingat, ini perkiraan. Kalau benar-benar diputar, hasilnya bisa tujuh puluh, atau tujuh puluh lima. Tapi tujuh puluh dua adalah angka yang paling kita harapkan."
+    caption: "Ingat, ini *perkiraan*. Hasil nyata bisa 70 atau 75. | Tapi *72* adalah yang paling kita harapkan."
+  - id: trap
+    visual: "If 1 were counted: 5/8 × 144 = 90, red cross: not an option."
+    say: "Hati-hati. Kalau satu ikut dihitung sebagai prima, kita akan mendapat sembilan puluh. Itu tidak ada di pilihan."
+    caption: "Hati-hati: kalau 1 ikut dihitung prima, hasilnya 90. | Itu *tidak* ada di pilihan."
+
+  - id: remember
+    chapter: INGAT
+    visual: "Summary card: frekuensi harapan = peluang × banyak percobaan; 1 bukan prima."
+    say: "Yang perlu diingat. Frekuensi harapan sama dengan peluang, dikali banyak percobaan. Dan satu bukan bilangan prima."
+    caption: "Yang perlu diingat: | frekuensi harapan = *peluang* × *banyak~percobaan*. | Dan 1 *bukan* bilangan prima."
+    pause: 1.6

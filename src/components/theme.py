@@ -24,6 +24,8 @@ class Theme:
     faint: str  # empty progress segments, guides
     hl: str  # yellow emphasis (current caption word, markers)
     hl_text: str  # text drawn on top of the yellow emphasis
+    mark: str  # highlighter behind normal (ink) text
+    label: str  # small labels: chapter pill text, option letters
     good: str  # green: favourable outcome, correct answer, progress
     warn: str  # orange: secondary quantity
     bad: str  # coral: excluded outcome, wrong answer
@@ -50,6 +52,8 @@ KINAN = Theme(
     faint="#E4DED3",
     hl="#FFD447",
     hl_text="#201C32",
+    mark="#FFD447",
+    label="#7B61FF",
     good="#35C79D",
     warn="#E99927",
     bad="#F46B70",
@@ -76,6 +80,8 @@ DARK = Theme(
     faint="#2A3147",
     hl="#FFFF00",
     hl_text="#101523",
+    mark="#6B5A00",
+    label="#C9B3F5",
     good="#83C167",
     warn="#F0AC5F",
     bad="#FC6255",

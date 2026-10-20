@@ -1,0 +1,102 @@
+id: p04_empat_koin
+title: "Empat koin, tepat tiga angka"
+scene_file: src/scenes/p04_empat_koin.py
+scene_class: P04EmpatKoin
+theme: dark
+voice: id-ID-GadisNeural
+rate: "-8%"
+pause: 0.7
+beats:
+  - id: question
+    chapter: SOAL
+    visual: "The original question card appears; 'Empat koin setimbang' and 'tepat tiga sisi angka' are highlighted as read; four coins below."
+    say: "Yuk, kita baca soalnya pelan-pelan. Empat koin setimbang dilempar bersamaan. Berapa peluang muncul tepat tiga sisi angka?"
+    caption: "Yuk, kita baca soalnya pelan-pelan. | Empat koin setimbang dilempar bersamaan. | Berapa peluang muncul *tepat~tiga* sisi *angka*?"
+  - id: options
+    visual: "Options A-D appear and pulse as read."
+    say: "Pilihannya: seperdelapan, seperempat, tiga per delapan, atau setengah."
+    caption: "Pilihannya: 1/8, 1/4, 3/8, atau 1/2."
+
+  - id: sides
+    chapter: MAKSUDNYA
+    visual: "One big coin flips between its two faces; labels A = angka and G = gambar."
+    say: "Pertama, kenali dulu koinnya. Satu koin punya dua sisi. Sisi angka, kita tulis A. Dan sisi gambar, kita tulis G."
+    caption: "Pertama, kenali dulu koinnya. Satu koin punya dua sisi. | Sisi *angka* kita tulis A, sisi *gambar* kita tulis G."
+  - id: fair
+    visual: "A balanced seesaw with coin A on one end and coin G on the other; ½ under each."
+    say: "Kata setimbang artinya koinnya adil. Sisi angka dan sisi gambar punya kesempatan yang sama untuk muncul, masing-masing setengah."
+    caption: "*Setimbang* artinya koinnya adil. | Angka dan gambar punya kesempatan *sama*, masing-masing 1/2."
+  - id: exactly
+    visual: "Three example rows of four coins: AAAG (tick), AAAA (cross, 4 angka), AAGG (cross, 2 angka)."
+    say: "Lalu, apa arti tepat tiga angka? Artinya, dari empat koin, tiga menunjukkan angka, dan satu sisanya gambar. Tidak boleh lebih, dan tidak boleh kurang."
+    caption: "Apa arti *tepat* tiga angka? | Dari empat koin: tiga angka, satu gambar. | Tidak boleh lebih, tidak boleh kurang."
+
+  - id: idea
+    chapter: IDE DASAR
+    visual: "Word fraction: Peluang = hasil yang kita inginkan / semua hasil yang mungkin."
+    say: "Bagaimana cara menghitung peluang? Idenya sederhana. Peluang sama dengan banyak hasil yang kita inginkan, dibagi banyak semua hasil yang mungkin."
+    caption: "Bagaimana menghitung peluang? | Peluang = hasil yang kita *inginkan* dibagi *semua* hasil yang mungkin."
+  - id: small1
+    visual: "Two coins labelled koin 1 and koin 2."
+    say: "Coba kita lihat contoh yang lebih sederhana dulu, ya. Bayangkan hanya ada dua koin."
+    caption: "Coba kita lihat contoh yang lebih *sederhana* dulu, ya. | Bayangkan hanya ada dua koin."
+  - id: small2
+    visual: "The four outcomes AA, AG, GA, GG appear one by one."
+    say: "Hasilnya bisa angka angka, angka gambar, gambar angka, atau gambar gambar. Ada empat kemungkinan."
+    caption: "Hasilnya bisa AA, AG, GA, atau GG. | Ada *empat* kemungkinan."
+  - id: small3
+    visual: "AG and GA pulse; the first and second coin are marked with different colours."
+    say: "Perhatikan, angka gambar dan gambar angka itu berbeda, karena koin pertama dan koin kedua bisa kita bedakan."
+    caption: "Perhatikan: AG dan GA itu *berbeda*, | karena koin pertama dan koin kedua bisa kita bedakan."
+  - id: small4
+    visual: "AG and GA turn green; fraction 2/4 appears."
+    say: "Jadi, peluang tepat satu angka pada dua koin adalah dua dari empat, atau dua per empat."
+    caption: "Jadi peluang tepat satu angka pada dua koin: | *2* dari *4*, yaitu 2/4."
+
+  - id: double1
+    chapter: SELESAIKAN
+    visual: "Back to four coins. Rows grow: 1 coin -> 2 outcomes, 2 -> 4, 3 -> 8, 4 -> 16 with ×2 arrows."
+    say: "Sekarang kembali ke empat koin. Berapa banyak semua hasilnya? Setiap koin tambahan membuat banyaknya kemungkinan menjadi dua kali lipat."
+    caption: "Kembali ke empat koin. Berapa banyak semua hasilnya? | Setiap koin tambahan membuatnya *dua~kali~lipat*."
+  - id: double2
+    visual: "Counter: 2, 4, 8, 16 lights up step by step; 2×2×2×2 = 16."
+    say: "Satu koin, dua hasil. Dua koin, empat hasil. Tiga koin, delapan hasil. Dan empat koin, enam belas hasil."
+    caption: "1 koin: 2 hasil. 2 koin: 4. 3 koin: 8. | 4 koin: *16* hasil."
+  - id: list
+    visual: "All 16 outcomes appear as rows of four small coins in two columns."
+    say: "Ini dia keenam belas hasilnya. Setiap baris adalah satu cara koin-koin itu jatuh."
+    caption: "Ini dia keenam belas hasilnya. | Setiap baris = satu cara koin-koin itu jatuh."
+  - id: find
+    visual: "Rows are scanned; the only G in each candidate row is circled."
+    say: "Sekarang cari baris yang angkanya tepat tiga. Caranya mudah. Cukup cari baris yang gambarnya hanya satu, lalu lihat di mana gambar itu berada."
+    caption: "Cari baris yang angkanya tepat tiga. | Caranya: cari baris yang gambarnya hanya *satu*."
+  - id: four
+    visual: "The four matching rows GAAA, AGAA, AAGA, AAAG light up green; the G moves position 1, 2, 3, 4."
+    say: "Gambarnya bisa ada di koin pertama, kedua, ketiga, atau keempat. Jadi ada empat hasil yang cocok."
+    caption: "Gambarnya bisa di koin ke-1, ke-2, ke-3, atau ke-4. | Ada *4* hasil yang cocok."
+  - id: compute
+    visual: "Peluang = 4/16; both divided by 4 -> 1/4."
+    say: "Peluangnya empat per enam belas. Empat dan enam belas sama-sama bisa dibagi empat. Hasilnya satu per empat, atau seperempat."
+    caption: "Peluangnya 4/16. | Bagi atas dan bawah dengan 4: *1/4*."
+
+  - id: answer
+    chapter: JAWABAN
+    visual: "Options return; B is confirmed with a check badge."
+    say: "Jadi, jawabannya adalah B, seperempat."
+    caption: "Jawabannya *B*, yaitu 1/4."
+    pause: 1.0
+  - id: check1
+    visual: "The 16 rows regroup into bins by number of A: 0, 1, 2, 3, 4."
+    say: "Kita cek dengan cara lain. Kelompokkan keenam belas hasil menurut banyaknya angka: nol, satu, dua, tiga, atau empat angka."
+    caption: "Kita cek dengan cara lain. | Kelompokkan hasil menurut banyak angka: 0, 1, 2, 3, atau 4."
+  - id: check2
+    visual: "Counts 1, 4, 6, 4, 1 appear; the bin '3 angka' (4 outcomes) is highlighted."
+    say: "Isinya satu, empat, enam, empat, dan satu. Jumlahnya enam belas. Kelompok tiga angka berisi empat hasil. Cocok, empat per enam belas."
+    caption: "Isinya 1, 4, 6, 4, 1. Jumlahnya 16. | Kelompok tiga angka berisi *4*. Cocok!"
+
+  - id: remember
+    chapter: INGAT
+    visual: "Summary card: 1. hitung semua hasil (×2 setiap koin), 2. hitung yang cocok, 3. bagi."
+    say: "Yang perlu diingat. Pertama, hitung semua hasil yang mungkin. Setiap koin membuatnya dua kali lipat. Kedua, hitung hasil yang cocok. Lalu bagi keduanya."
+    caption: "Yang perlu diingat: | hitung *semua* hasil (setiap koin ×2), | hitung yang *cocok*, lalu bagi keduanya."
+    pause: 1.6

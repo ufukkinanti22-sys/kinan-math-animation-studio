@@ -1,0 +1,90 @@
+id: p06_dua_dadu_atau
+title: "Dua dadu: jumlah lebih dari 9 atau kembar"
+scene_file: src/scenes/p06_dua_dadu_atau.py
+scene_class: P06DuaDaduAtau
+theme: dark
+voice: id-ID-GadisNeural
+rate: "-8%"
+pause: 0.7
+beats:
+  - id: question
+    chapter: SOAL
+    visual: "Original question card; 'lebih dari 9' and 'kedua mata dadu sama' highlighted; two dice."
+    say: "Yuk, baca soalnya bersama. Dua dadu dilempar bersamaan. Berapa peluang jumlah mata dadu lebih dari sembilan, atau kedua mata dadu sama?"
+    caption: "Yuk, baca soalnya bersama. | Dua dadu dilempar bersamaan. | Berapa peluang jumlahnya *lebih~dari~9*, atau kedua mata dadu *sama*?"
+  - id: options
+    visual: "Options A-D appear and pulse as read."
+    say: "Pilihannya: seperempat, lima per delapan belas, tujuh per delapan belas, atau sebelas per delapan belas."
+    caption: "Pilihannya: 1/4, 5/18, 7/18, atau 11/18."
+
+  - id: more
+    chapter: MAKSUDNYA
+    visual: "Number line 2..12; 9 is crossed out; 10, 11, 12 glow."
+    say: "Ada dua syarat di sini. Syarat pertama: jumlahnya lebih dari sembilan. Hati-hati, sembilan sendiri tidak termasuk. Jadi jumlahnya sepuluh, sebelas, atau dua belas."
+    caption: "Syarat pertama: jumlah *lebih~dari~9*. | Hati-hati, 9 sendiri *tidak* termasuk. | Jadi jumlahnya 10, 11, atau 12."
+  - id: same
+    visual: "Pairs of equal dice: (1,1), (5,5)."
+    say: "Syarat kedua: kedua mata dadu sama. Misalnya satu dan satu, atau lima dan lima. Kita sebut ini pasangan kembar."
+    caption: "Syarat kedua: kedua mata dadu *sama*. | Misalnya (1,1) atau (5,5): pasangan *kembar*."
+  - id: or
+    visual: "Two overlapping circles: 'jumlah > 9' and 'kembar'; the whole union glows."
+    say: "Lalu kata atau. Artinya, cukup salah satu syarat terpenuhi. Kalau dua-duanya terpenuhi, tentu juga boleh."
+    caption: "Kata *atau*: cukup *salah~satu* syarat terpenuhi. | Kalau dua-duanya terpenuhi, juga boleh."
+
+  - id: all
+    chapter: IDE DASAR
+    visual: "6×6 table with dice headers; all 36 cells appear."
+    say: "Kita mulai dari semua kemungkinan. Dadu pertama punya enam mata, dadu kedua juga enam. Enam kali enam, ada tiga puluh enam pasangan."
+    caption: "Mulai dari *semua* kemungkinan. | Dadu pertama 6 mata, dadu kedua 6 mata. | 6~×~6 = *36* pasangan."
+  - id: sums
+    visual: "Each cell shows the sum of its two dice."
+    say: "Di setiap kotak, kita tulis jumlah kedua mata dadunya."
+    caption: "Di setiap kotak, tulis *jumlah* kedua mata dadunya."
+
+  - id: more_cells
+    chapter: SELESAIKAN
+    visual: "Cells with sum 10, 11, 12 turn orange (3 + 2 + 1 = 6)."
+    say: "Sekarang warnai kotak yang jumlahnya lebih dari sembilan. Jumlah sepuluh ada tiga kotak, sebelas ada dua kotak, dan dua belas ada satu kotak. Totalnya enam."
+    caption: "Warnai kotak dengan jumlah lebih dari 9. | 10: tiga kotak, 11: dua kotak, 12: satu kotak. | Totalnya *6*."
+  - id: same_cells
+    visual: "The diagonal (equal dice) is outlined blue: 6 cells."
+    say: "Lalu tandai pasangan kembar. Mereka berada di garis miring ini. Jumlahnya juga enam kotak."
+    caption: "Lalu tandai pasangan *kembar*. | Mereka di garis miring ini: juga *6* kotak."
+  - id: both
+    visual: "Cells (5,5) and (6,6) pulse: orange and blue at once."
+    say: "Perhatikan dua kotak ini: lima lima, dan enam enam. Keduanya memenuhi dua syarat sekaligus."
+    caption: "Perhatikan dua kotak ini: (5,5) dan (6,6). | Keduanya memenuhi *dua* syarat sekaligus."
+  - id: twice
+    visual: "6 + 6 = 12 with the two shared cells marked twice."
+    say: "Kalau kita langsung menjumlahkan enam ditambah enam, dua kotak ini terhitung dua kali. Padahal setiap kotak cukup dihitung satu kali."
+    caption: "Kalau langsung 6 + 6, dua kotak ini terhitung *dua~kali*. | Padahal setiap kotak cukup dihitung *satu~kali*."
+  - id: minus
+    visual: "6 + 6 − 2 = 10."
+    say: "Jadi, enam ditambah enam, dikurangi dua, sama dengan sepuluh kotak."
+    caption: "Jadi 6 + 6 − 2 = *10* kotak."
+  - id: compute
+    visual: "Peluang = 10/36, ÷2 -> 5/18."
+    say: "Peluangnya sepuluh per tiga puluh enam. Bagi atas dan bawah dengan dua. Hasilnya lima per delapan belas."
+    caption: "Peluangnya 10/36. | Bagi atas dan bawah dengan 2: *5/18*."
+
+  - id: answer
+    chapter: JAWABAN
+    visual: "Options return; B is confirmed."
+    say: "Jadi, jawabannya adalah B, lima per delapan belas."
+    caption: "Jawabannya *B*, yaitu 5/18."
+    pause: 1.0
+  - id: check
+    visual: "The 10 coloured cells are counted one by one with a counter."
+    say: "Kita cek dengan menghitung langsung kotak yang berwarna. Satu, dua, tiga, sampai sepuluh. Cocok, sepuluh kotak!"
+    caption: "Cek: hitung langsung kotak yang berwarna. | 1, 2, 3, ... sampai *10*. Cocok!"
+  - id: trap
+    visual: "12/36 = 1/3 with a red cross: not among the options."
+    say: "Kalau dua kotak tadi terhitung dua kali, hasilnya dua belas per tiga puluh enam, yaitu sepertiga. Itu tidak ada di pilihan."
+    caption: "Kalau terhitung dua kali: 12/36 = 1/3. | Itu *tidak* ada di pilihan."
+
+  - id: remember
+    chapter: INGAT
+    visual: "Summary card: 'atau' = gabungkan; yang masuk dua kelompok dihitung sekali."
+    say: "Yang perlu diingat. Untuk kejadian atau, gabungkan semua kotak yang cocok. Tapi kotak yang masuk dua kelompok cukup dihitung satu kali."
+    caption: "Yang perlu diingat: | kejadian *atau* = gabungkan semua kotak yang cocok, | tapi yang masuk dua kelompok dihitung *satu~kali*."
+    pause: 1.6

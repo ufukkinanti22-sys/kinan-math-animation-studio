@@ -3,7 +3,7 @@
 
     python scripts/render.py p01_dadu_berbeda                 # final 1080x1920
     python scripts/render.py p01_dadu_berbeda --quality preview
-    python scripts/render.py all --theme dark
+    python scripts/render.py all --theme dark          # override the problem's own theme
     python scripts/render.py p01_dadu_berbeda --force         # replace an existing final video
 
 Pipeline per problem:
@@ -60,7 +60,9 @@ def has_audio(path: Path) -> bool:
 def render(pid: str, quality: str, theme: str, audio: bool, force: bool, timeout: int) -> Path:
     q = QUALITY[quality]
     script = load_script(pid)
-    suffix = "" if theme == "kinan" else f"__{theme}"
+    own = script.get("theme", "kinan")  # each problem declares its look (kinan = cream, dark = 3B1B navy)
+    theme = own if theme == "auto" else theme
+    suffix = "" if theme == own else f"__{theme}"
     final = q["dir"] / f"{pid}{suffix}.mp4"
     if quality == "final" and final.exists() and not force:
         print(f"SKIP {pid}: {final.relative_to(ROOT)} already exists (use --force to replace)")
@@ -71,13 +73,14 @@ def render(pid: str, quality: str, theme: str, audio: bool, force: bool, timeout
                KINAN_LOG_DIR=str(log_dir), PYTHONPATH=str(ROOT))
     w, h = q["res"]
     raw_name = f"{pid}{suffix}_{quality}"
+    media = ROOT / "media" / f"{pid}{suffix}"  # one media dir per render: parallel renders share no cache files
     started = time.time()
     run([sys.executable, str(ROOT / "scripts" / "manim_entry.py"), "render",
-         "-r", f"{w},{h}", "--fps", str(q["fps"]), "--media_dir", str(ROOT / "media"),
+         "-r", f"{w},{h}", "--fps", str(q["fps"]), "--media_dir", str(media),
          "-o", raw_name, "--disable_caching", "--progress_bar", "none",
          str(ROOT / script["scene_file"]), script["scene_class"]], env=env, timeout=timeout)
     stem = Path(script["scene_file"]).stem
-    raw = ROOT / "media" / "videos" / stem / f"{h}p{q['fps']}" / f"{raw_name}.mp4"
+    raw = media / "videos" / stem / f"{h}p{q['fps']}" / f"{raw_name}.mp4"
     if not raw.exists():
         raise FileNotFoundError(f"Manim finished but {raw} is missing")
 
@@ -113,7 +116,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("problems", help="problem id, comma-separated ids, or 'all'")
     ap.add_argument("--quality", choices=QUALITY, default="final")
-    ap.add_argument("--theme", choices=["kinan", "dark"], default="kinan")
+    ap.add_argument("--theme", choices=["auto", "kinan", "dark"], default="auto",
+                    help="auto = the theme declared in the problem's narration.yaml")
     ap.add_argument("--no-audio", action="store_true", help="ignore narration audio (silent video)")
     ap.add_argument("--force", action="store_true", help="overwrite an existing final video")
     ap.add_argument("--timeout", type=int, default=5400, help="seconds per Manim render")
