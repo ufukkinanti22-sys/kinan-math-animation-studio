@@ -161,6 +161,9 @@ class Spinner(VGroup):
         self.hub = Circle(radius=0.09 * radius, fill_color=THEME.ink, fill_opacity=1, stroke_width=0)
         self.angle = PI / 2  # needle direction
         self.add(self.sectors, self.labels, self.rim, self.needle, self.hub)
+        # Indicate() on a sector must not bury the numbers or the needle
+        self.labels.set_z_index(1); self.rim.set_z_index(1)
+        self.needle.set_z_index(2); self.hub.set_z_index(3)
 
     def center_angle(self, k: int) -> float:
         """Direction (radians) of the middle of sector number ``k`` (1-based)."""

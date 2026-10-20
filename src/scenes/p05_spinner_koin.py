@@ -57,7 +57,7 @@ class P05SpinnerKoin(LessonMixin, KinanScene):
         self.summary_card("remember", "Yang perlu diingat", [
             T("1. Kejadian 'dan' = kotak yang", size=38, weight=BLACK),
             T("    memenuhi kedua syarat", size=38, weight=BLACK),
-            T("2. Tidak saling memengaruhi?", size=38, weight=BLACK),
+            T("2. Tidak saling memengaruhi: kalikan", size=38, weight=BLACK),
             M(r"\tfrac{1}{2} \times \tfrac{1}{2} = \tfrac{1}{4}", size=60, color=THEME.good),
         ], ["*dan*", None, "Tidak", "*dikalikan*."])
 
