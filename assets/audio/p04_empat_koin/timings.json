@@ -1,0 +1,1882 @@
+{
+ "question": {
+  "hash": "76c3cd206db7",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 12.312,
+  "words": [
+   {
+    "text": "Yuk",
+    "start": 0.1,
+    "end": 0.535
+   },
+   {
+    "text": "kita",
+    "start": 0.929,
+    "end": 1.268
+   },
+   {
+    "text": "baca",
+    "start": 1.268,
+    "end": 1.69
+   },
+   {
+    "text": "soalnya",
+    "start": 1.69,
+    "end": 2.315
+   },
+   {
+    "text": "pelan-pelan",
+    "start": 2.315,
+    "end": 3.239
+   },
+   {
+    "text": "Empat",
+    "start": 4.153,
+    "end": 4.615
+   },
+   {
+    "text": "koin",
+    "start": 4.615,
+    "end": 4.928
+   },
+   {
+    "text": "setimbang",
+    "start": 4.928,
+    "end": 5.539
+   },
+   {
+    "text": "dilempar",
+    "start": 5.539,
+    "end": 6.191
+   },
+   {
+    "text": "bersamaan",
+    "start": 6.191,
+    "end": 7.265
+   },
+   {
+    "text": "Berapa",
+    "start": 8.175,
+    "end": 8.691
+   },
+   {
+    "text": "peluang",
+    "start": 8.691,
+    "end": 9.099
+   },
+   {
+    "text": "muncul",
+    "start": 9.099,
+    "end": 9.615
+   },
+   {
+    "text": "tepat",
+    "start": 9.615,
+    "end": 9.982
+   },
+   {
+    "text": "tiga",
+    "start": 9.982,
+    "end": 10.39
+   },
+   {
+    "text": "sisi",
+    "start": 10.39,
+    "end": 10.811
+   },
+   {
+    "text": "angka",
+    "start": 10.811,
+    "end": 11.382
+   }
+  ]
+ },
+ "options": {
+  "hash": "caad7ae72ddc",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 7.8,
+  "words": [
+   {
+    "text": "Pilihannya",
+    "start": 0.1,
+    "end": 1.146
+   },
+   {
+    "text": "seperdelapan",
+    "start": 1.486,
+    "end": 2.573
+   },
+   {
+    "text": "seperempat",
+    "start": 2.899,
+    "end": 3.673
+   },
+   {
+    "text": "tiga",
+    "start": 4.013,
+    "end": 4.407
+   },
+   {
+    "text": "per",
+    "start": 4.407,
+    "end": 4.584
+   },
+   {
+    "text": "delapan",
+    "start": 4.584,
+    "end": 5.317
+   },
+   {
+    "text": "atau",
+    "start": 5.616,
+    "end": 6.065
+   },
+   {
+    "text": "setengah",
+    "start": 6.065,
+    "end": 6.866
+   }
+  ]
+ },
+ "sides": {
+  "hash": "e8b5053acb11",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 13.872,
+  "words": [
+   {
+    "text": "Pertama",
+    "start": 0.1,
+    "end": 1.038
+   },
+   {
+    "text": "kenali",
+    "start": 1.418,
+    "end": 1.934
+   },
+   {
+    "text": "dulu",
+    "start": 1.934,
+    "end": 2.328
+   },
+   {
+    "text": "koinnya",
+    "start": 2.328,
+    "end": 3.171
+   },
+   {
+    "text": "Satu",
+    "start": 4.085,
+    "end": 4.642
+   },
+   {
+    "text": "koin",
+    "start": 4.642,
+    "end": 4.996
+   },
+   {
+    "text": "punya",
+    "start": 4.996,
+    "end": 5.417
+   },
+   {
+    "text": "dua",
+    "start": 5.417,
+    "end": 5.811
+   },
+   {
+    "text": "sisi",
+    "start": 5.811,
+    "end": 6.449
+   },
+   {
+    "text": "Sisi",
+    "start": 7.36,
+    "end": 7.862
+   },
+   {
+    "text": "angka",
+    "start": 7.862,
+    "end": 8.515
+   },
+   {
+    "text": "kita",
+    "start": 8.895,
+    "end": 9.167
+   },
+   {
+    "text": "tulis",
+    "start": 9.167,
+    "end": 9.588
+   },
+   {
+    "text": "A",
+    "start": 9.588,
+    "end": 9.968
+   },
+   {
+    "text": "Dan",
+    "start": 9.968,
+    "end": 10.254
+   },
+   {
+    "text": "sisi",
+    "start": 10.254,
+    "end": 10.621
+   },
+   {
+    "text": "gambar",
+    "start": 10.621,
+    "end": 11.273
+   },
+   {
+    "text": "kita",
+    "start": 11.585,
+    "end": 11.884
+   },
+   {
+    "text": "tulis",
+    "start": 11.884,
+    "end": 12.468
+   },
+   {
+    "text": "G",
+    "start": 12.468,
+    "end": 12.958
+   }
+  ]
+ },
+ "fair": {
+  "hash": "a86334af02db",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 11.592,
+  "words": [
+   {
+    "text": "Kata",
+    "start": 0.1,
+    "end": 0.521
+   },
+   {
+    "text": "setimbang",
+    "start": 0.521,
+    "end": 1.119
+   },
+   {
+    "text": "artinya",
+    "start": 1.119,
+    "end": 1.785
+   },
+   {
+    "text": "koinnya",
+    "start": 1.785,
+    "end": 2.437
+   },
+   {
+    "text": "adil",
+    "start": 2.437,
+    "end": 3.13
+   },
+   {
+    "text": "Sisi",
+    "start": 4.045,
+    "end": 4.547
+   },
+   {
+    "text": "angka",
+    "start": 4.547,
+    "end": 5.009
+   },
+   {
+    "text": "dan",
+    "start": 5.009,
+    "end": 5.213
+   },
+   {
+    "text": "sisi",
+    "start": 5.213,
+    "end": 5.539
+   },
+   {
+    "text": "gambar",
+    "start": 5.539,
+    "end": 5.96
+   },
+   {
+    "text": "punya",
+    "start": 5.96,
+    "end": 6.382
+   },
+   {
+    "text": "kesempatan",
+    "start": 6.382,
+    "end": 7.034
+   },
+   {
+    "text": "yang",
+    "start": 7.034,
+    "end": 7.21
+   },
+   {
+    "text": "sama",
+    "start": 7.21,
+    "end": 7.604
+   },
+   {
+    "text": "untuk",
+    "start": 7.604,
+    "end": 8.093
+   },
+   {
+    "text": "muncul",
+    "start": 8.093,
+    "end": 8.746
+   },
+   {
+    "text": "masing-masing",
+    "start": 9.072,
+    "end": 9.928
+   },
+   {
+    "text": "setengah",
+    "start": 9.928,
+    "end": 10.661
+   }
+  ]
+ },
+ "exactly": {
+  "hash": "8ac92e641e01",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 16.68,
+  "words": [
+   {
+    "text": "Lalu",
+    "start": 0.1,
+    "end": 0.82
+   },
+   {
+    "text": "apa",
+    "start": 1.255,
+    "end": 1.608
+   },
+   {
+    "text": "arti",
+    "start": 1.608,
+    "end": 1.989
+   },
+   {
+    "text": "tepat",
+    "start": 1.989,
+    "end": 2.342
+   },
+   {
+    "text": "tiga",
+    "start": 2.342,
+    "end": 2.695
+   },
+   {
+    "text": "angka",
+    "start": 2.695,
+    "end": 3.252
+   },
+   {
+    "text": "Artinya",
+    "start": 4.167,
+    "end": 5.131
+   },
+   {
+    "text": "dari",
+    "start": 5.539,
+    "end": 5.879
+   },
+   {
+    "text": "empat",
+    "start": 5.879,
+    "end": 6.341
+   },
+   {
+    "text": "koin",
+    "start": 6.341,
+    "end": 6.843
+   },
+   {
+    "text": "tiga",
+    "start": 7.224,
+    "end": 7.618
+   },
+   {
+    "text": "menunjukkan",
+    "start": 7.618,
+    "end": 8.27
+   },
+   {
+    "text": "angka",
+    "start": 8.27,
+    "end": 8.922
+   },
+   {
+    "text": "dan",
+    "start": 9.276,
+    "end": 9.534
+   },
+   {
+    "text": "satu",
+    "start": 9.534,
+    "end": 10.077
+   },
+   {
+    "text": "sisanya",
+    "start": 10.077,
+    "end": 10.716
+   },
+   {
+    "text": "gambar",
+    "start": 10.716,
+    "end": 11.449
+   },
+   {
+    "text": "Tidak",
+    "start": 12.36,
+    "end": 12.74
+   },
+   {
+    "text": "boleh",
+    "start": 12.74,
+    "end": 13.093
+   },
+   {
+    "text": "lebih",
+    "start": 13.093,
+    "end": 13.691
+   },
+   {
+    "text": "dan",
+    "start": 14.031,
+    "end": 14.303
+   },
+   {
+    "text": "tidak",
+    "start": 14.303,
+    "end": 14.71
+   },
+   {
+    "text": "boleh",
+    "start": 14.71,
+    "end": 15.091
+   },
+   {
+    "text": "kurang",
+    "start": 15.091,
+    "end": 15.77
+   }
+  ]
+ },
+ "idea": {
+  "hash": "22ffbe785887",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 13.368,
+  "words": [
+   {
+    "text": "Bagaimana",
+    "start": 0.1,
+    "end": 0.874
+   },
+   {
+    "text": "cara",
+    "start": 0.874,
+    "end": 1.282
+   },
+   {
+    "text": "menghitung",
+    "start": 1.282,
+    "end": 1.839
+   },
+   {
+    "text": "peluang",
+    "start": 1.839,
+    "end": 2.505
+   },
+   {
+    "text": "Idenya",
+    "start": 3.42,
+    "end": 4.099
+   },
+   {
+    "text": "sederhana",
+    "start": 4.099,
+    "end": 5.145
+   },
+   {
+    "text": "Peluang",
+    "start": 6.06,
+    "end": 6.562
+   },
+   {
+    "text": "sama",
+    "start": 6.562,
+    "end": 6.957
+   },
+   {
+    "text": "dengan",
+    "start": 6.957,
+    "end": 7.296
+   },
+   {
+    "text": "banyak",
+    "start": 7.296,
+    "end": 7.622
+   },
+   {
+    "text": "hasil",
+    "start": 7.622,
+    "end": 8.084
+   },
+   {
+    "text": "yang",
+    "start": 8.084,
+    "end": 8.274
+   },
+   {
+    "text": "kita",
+    "start": 8.274,
+    "end": 8.573
+   },
+   {
+    "text": "inginkan",
+    "start": 8.573,
+    "end": 9.361
+   },
+   {
+    "text": "dibagi",
+    "start": 9.755,
+    "end": 10.217
+   },
+   {
+    "text": "banyak",
+    "start": 10.217,
+    "end": 10.625
+   },
+   {
+    "text": "semua",
+    "start": 10.625,
+    "end": 11.033
+   },
+   {
+    "text": "hasil",
+    "start": 11.033,
+    "end": 11.549
+   },
+   {
+    "text": "yang",
+    "start": 11.549,
+    "end": 11.739
+   },
+   {
+    "text": "mungkin",
+    "start": 11.739,
+    "end": 12.446
+   }
+  ]
+ },
+ "small1": {
+  "hash": "b506ed4a916d",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 8.736,
+  "words": [
+   {
+    "text": "Coba",
+    "start": 0.1,
+    "end": 0.562
+   },
+   {
+    "text": "kita",
+    "start": 0.562,
+    "end": 0.942
+   },
+   {
+    "text": "lihat",
+    "start": 0.942,
+    "end": 1.268
+   },
+   {
+    "text": "contoh",
+    "start": 1.268,
+    "end": 1.812
+   },
+   {
+    "text": "yang",
+    "start": 1.812,
+    "end": 2.016
+   },
+   {
+    "text": "lebih",
+    "start": 2.016,
+    "end": 2.342
+   },
+   {
+    "text": "sederhana",
+    "start": 2.342,
+    "end": 2.885
+   },
+   {
+    "text": "dulu",
+    "start": 2.885,
+    "end": 3.429
+   },
+   {
+    "text": "ya",
+    "start": 3.755,
+    "end": 4.271
+   },
+   {
+    "text": "Bayangkan",
+    "start": 5.186,
+    "end": 5.906
+   },
+   {
+    "text": "hanya",
+    "start": 5.906,
+    "end": 6.436
+   },
+   {
+    "text": "ada",
+    "start": 6.436,
+    "end": 6.83
+   },
+   {
+    "text": "dua",
+    "start": 6.83,
+    "end": 7.197
+   },
+   {
+    "text": "koin",
+    "start": 7.197,
+    "end": 7.808
+   }
+  ]
+ },
+ "small2": {
+  "hash": "4fe7a83f5e3b",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 11.04,
+  "words": [
+   {
+    "text": "Hasilnya",
+    "start": 0.1,
+    "end": 0.902
+   },
+   {
+    "text": "bisa",
+    "start": 0.902,
+    "end": 1.282
+   },
+   {
+    "text": "angka",
+    "start": 1.282,
+    "end": 1.744
+   },
+   {
+    "text": "angka",
+    "start": 1.744,
+    "end": 2.355
+   },
+   {
+    "text": "angka",
+    "start": 2.749,
+    "end": 3.116
+   },
+   {
+    "text": "gambar",
+    "start": 3.116,
+    "end": 3.823
+   },
+   {
+    "text": "gambar",
+    "start": 4.149,
+    "end": 4.597
+   },
+   {
+    "text": "angka",
+    "start": 4.597,
+    "end": 5.263
+   },
+   {
+    "text": "atau",
+    "start": 5.562,
+    "end": 5.942
+   },
+   {
+    "text": "gambar",
+    "start": 5.942,
+    "end": 6.472
+   },
+   {
+    "text": "gambar",
+    "start": 6.472,
+    "end": 7.206
+   },
+   {
+    "text": "Ada",
+    "start": 8.121,
+    "end": 8.583
+   },
+   {
+    "text": "empat",
+    "start": 8.583,
+    "end": 9.072
+   },
+   {
+    "text": "kemungkinan",
+    "start": 9.072,
+    "end": 10.118
+   }
+  ]
+ },
+ "small3": {
+  "hash": "f60cf047be7d",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 9.816,
+  "words": [
+   {
+    "text": "Perhatikan",
+    "start": 0.103,
+    "end": 1.122
+   },
+   {
+    "text": "angka",
+    "start": 1.571,
+    "end": 1.91
+   },
+   {
+    "text": "gambar",
+    "start": 1.91,
+    "end": 2.44
+   },
+   {
+    "text": "dan",
+    "start": 2.44,
+    "end": 2.671
+   },
+   {
+    "text": "gambar",
+    "start": 2.671,
+    "end": 3.065
+   },
+   {
+    "text": "angka",
+    "start": 3.065,
+    "end": 3.446
+   },
+   {
+    "text": "itu",
+    "start": 3.446,
+    "end": 3.717
+   },
+   {
+    "text": "berbeda",
+    "start": 3.717,
+    "end": 4.519
+   },
+   {
+    "text": "karena",
+    "start": 4.886,
+    "end": 5.321
+   },
+   {
+    "text": "koin",
+    "start": 5.321,
+    "end": 5.606
+   },
+   {
+    "text": "pertama",
+    "start": 5.606,
+    "end": 6.149
+   },
+   {
+    "text": "dan",
+    "start": 6.149,
+    "end": 6.435
+   },
+   {
+    "text": "koin",
+    "start": 6.435,
+    "end": 6.72
+   },
+   {
+    "text": "kedua",
+    "start": 6.72,
+    "end": 7.223
+   },
+   {
+    "text": "bisa",
+    "start": 7.223,
+    "end": 7.685
+   },
+   {
+    "text": "kita",
+    "start": 7.685,
+    "end": 8.106
+   },
+   {
+    "text": "bedakan",
+    "start": 8.106,
+    "end": 8.894
+   }
+  ]
+ },
+ "small4": {
+  "hash": "221a50b60b58",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 8.088,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.1,
+    "end": 0.82
+   },
+   {
+    "text": "peluang",
+    "start": 1.228,
+    "end": 1.649
+   },
+   {
+    "text": "tepat",
+    "start": 1.649,
+    "end": 1.961
+   },
+   {
+    "text": "satu",
+    "start": 1.961,
+    "end": 2.328
+   },
+   {
+    "text": "angka",
+    "start": 2.328,
+    "end": 2.736
+   },
+   {
+    "text": "pada",
+    "start": 2.736,
+    "end": 3.021
+   },
+   {
+    "text": "dua",
+    "start": 3.021,
+    "end": 3.361
+   },
+   {
+    "text": "koin",
+    "start": 3.361,
+    "end": 3.701
+   },
+   {
+    "text": "adalah",
+    "start": 3.701,
+    "end": 4.203
+   },
+   {
+    "text": "dua",
+    "start": 4.203,
+    "end": 4.556
+   },
+   {
+    "text": "dari",
+    "start": 4.557,
+    "end": 4.815
+   },
+   {
+    "text": "empat",
+    "start": 4.815,
+    "end": 5.317
+   },
+   {
+    "text": "atau",
+    "start": 5.684,
+    "end": 6.024
+   },
+   {
+    "text": "dua",
+    "start": 6.024,
+    "end": 6.432
+   },
+   {
+    "text": "per",
+    "start": 6.432,
+    "end": 6.676
+   },
+   {
+    "text": "empat",
+    "start": 6.676,
+    "end": 7.152
+   }
+  ]
+ },
+ "double1": {
+  "hash": "93750afcb204",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 12.456,
+  "words": [
+   {
+    "text": "Sekarang",
+    "start": 0.1,
+    "end": 0.793
+   },
+   {
+    "text": "kembali",
+    "start": 0.793,
+    "end": 1.323
+   },
+   {
+    "text": "ke",
+    "start": 1.323,
+    "end": 1.527
+   },
+   {
+    "text": "empat",
+    "start": 1.527,
+    "end": 2.043
+   },
+   {
+    "text": "koin",
+    "start": 2.043,
+    "end": 2.641
+   },
+   {
+    "text": "Berapa",
+    "start": 3.555,
+    "end": 4.072
+   },
+   {
+    "text": "banyak",
+    "start": 4.072,
+    "end": 4.493
+   },
+   {
+    "text": "semua",
+    "start": 4.493,
+    "end": 4.996
+   },
+   {
+    "text": "hasilnya",
+    "start": 4.996,
+    "end": 5.852
+   },
+   {
+    "text": "Setiap",
+    "start": 6.762,
+    "end": 7.346
+   },
+   {
+    "text": "koin",
+    "start": 7.346,
+    "end": 7.672
+   },
+   {
+    "text": "tambahan",
+    "start": 7.672,
+    "end": 8.216
+   },
+   {
+    "text": "membuat",
+    "start": 8.216,
+    "end": 8.623
+   },
+   {
+    "text": "banyaknya",
+    "start": 8.623,
+    "end": 9.18
+   },
+   {
+    "text": "kemungkinan",
+    "start": 9.18,
+    "end": 9.914
+   },
+   {
+    "text": "menjadi",
+    "start": 9.914,
+    "end": 10.376
+   },
+   {
+    "text": "dua",
+    "start": 10.376,
+    "end": 10.716
+   },
+   {
+    "text": "kali",
+    "start": 10.716,
+    "end": 11.069
+   },
+   {
+    "text": "lipat",
+    "start": 11.069,
+    "end": 11.545
+   }
+  ]
+ },
+ "double2": {
+  "hash": "66359546990d",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 14.52,
+  "words": [
+   {
+    "text": "Satu",
+    "start": 0.1,
+    "end": 0.657
+   },
+   {
+    "text": "koin",
+    "start": 0.657,
+    "end": 1.214
+   },
+   {
+    "text": "dua",
+    "start": 1.527,
+    "end": 1.893
+   },
+   {
+    "text": "hasil",
+    "start": 1.893,
+    "end": 2.627
+   },
+   {
+    "text": "Dua",
+    "start": 3.542,
+    "end": 3.977
+   },
+   {
+    "text": "koin",
+    "start": 3.977,
+    "end": 4.52
+   },
+   {
+    "text": "empat",
+    "start": 4.833,
+    "end": 5.227
+   },
+   {
+    "text": "hasil",
+    "start": 5.227,
+    "end": 6.028
+   },
+   {
+    "text": "Tiga",
+    "start": 6.939,
+    "end": 7.373
+   },
+   {
+    "text": "koin",
+    "start": 7.373,
+    "end": 7.944
+   },
+   {
+    "text": "delapan",
+    "start": 8.243,
+    "end": 8.8
+   },
+   {
+    "text": "hasil",
+    "start": 8.8,
+    "end": 9.574
+   },
+   {
+    "text": "Dan",
+    "start": 10.485,
+    "end": 10.797
+   },
+   {
+    "text": "empat",
+    "start": 10.797,
+    "end": 11.259
+   },
+   {
+    "text": "koin",
+    "start": 11.259,
+    "end": 11.776
+   },
+   {
+    "text": "enam",
+    "start": 12.115,
+    "end": 12.482
+   },
+   {
+    "text": "belas",
+    "start": 12.482,
+    "end": 12.808
+   },
+   {
+    "text": "hasil",
+    "start": 12.808,
+    "end": 13.596
+   }
+  ]
+ },
+ "list": {
+  "hash": "8766d2bb5d14",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 8.568,
+  "words": [
+   {
+    "text": "Ini",
+    "start": 0.1,
+    "end": 0.535
+   },
+   {
+    "text": "dia",
+    "start": 0.535,
+    "end": 0.888
+   },
+   {
+    "text": "keenam",
+    "start": 0.888,
+    "end": 1.459
+   },
+   {
+    "text": "belas",
+    "start": 1.459,
+    "end": 1.812
+   },
+   {
+    "text": "hasilnya",
+    "start": 1.812,
+    "end": 2.777
+   },
+   {
+    "text": "Setiap",
+    "start": 3.691,
+    "end": 4.276
+   },
+   {
+    "text": "baris",
+    "start": 4.276,
+    "end": 4.751
+   },
+   {
+    "text": "adalah",
+    "start": 4.751,
+    "end": 5.213
+   },
+   {
+    "text": "satu",
+    "start": 5.213,
+    "end": 5.634
+   },
+   {
+    "text": "cara",
+    "start": 5.634,
+    "end": 5.974
+   },
+   {
+    "text": "koin-koin",
+    "start": 5.974,
+    "end": 6.572
+   },
+   {
+    "text": "itu",
+    "start": 6.572,
+    "end": 6.952
+   },
+   {
+    "text": "jatuh",
+    "start": 6.952,
+    "end": 7.659
+   }
+  ]
+ },
+ "find": {
+  "hash": "5b23938d0ce2",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 13.68,
+  "words": [
+   {
+    "text": "Sekarang",
+    "start": 0.1,
+    "end": 0.766
+   },
+   {
+    "text": "cari",
+    "start": 0.766,
+    "end": 1.01
+   },
+   {
+    "text": "baris",
+    "start": 1.01,
+    "end": 1.54
+   },
+   {
+    "text": "yang",
+    "start": 1.54,
+    "end": 1.69
+   },
+   {
+    "text": "angkanya",
+    "start": 1.69,
+    "end": 2.342
+   },
+   {
+    "text": "tepat",
+    "start": 2.342,
+    "end": 2.831
+   },
+   {
+    "text": "tiga",
+    "start": 2.831,
+    "end": 3.483
+   },
+   {
+    "text": "Caranya",
+    "start": 4.398,
+    "end": 5.064
+   },
+   {
+    "text": "mudah",
+    "start": 5.064,
+    "end": 5.77
+   },
+   {
+    "text": "Cukup",
+    "start": 6.68,
+    "end": 7.102
+   },
+   {
+    "text": "cari",
+    "start": 7.102,
+    "end": 7.373
+   },
+   {
+    "text": "baris",
+    "start": 7.373,
+    "end": 7.835
+   },
+   {
+    "text": "yang",
+    "start": 7.835,
+    "end": 7.971
+   },
+   {
+    "text": "gambarnya",
+    "start": 7.971,
+    "end": 8.487
+   },
+   {
+    "text": "hanya",
+    "start": 8.488,
+    "end": 8.895
+   },
+   {
+    "text": "satu",
+    "start": 8.895,
+    "end": 9.534
+   },
+   {
+    "text": "lalu",
+    "start": 9.928,
+    "end": 10.281
+   },
+   {
+    "text": "lihat",
+    "start": 10.281,
+    "end": 10.756
+   },
+   {
+    "text": "di",
+    "start": 10.757,
+    "end": 10.892
+   },
+   {
+    "text": "mana",
+    "start": 10.892,
+    "end": 11.232
+   },
+   {
+    "text": "gambar",
+    "start": 11.232,
+    "end": 11.653
+   },
+   {
+    "text": "itu",
+    "start": 11.653,
+    "end": 12.061
+   },
+   {
+    "text": "berada",
+    "start": 12.061,
+    "end": 12.767
+   }
+  ]
+ },
+ "four": {
+  "hash": "51551b1adeed",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 10.992,
+  "words": [
+   {
+    "text": "Gambarnya",
+    "start": 0.1,
+    "end": 0.834
+   },
+   {
+    "text": "bisa",
+    "start": 0.834,
+    "end": 1.173
+   },
+   {
+    "text": "ada",
+    "start": 1.173,
+    "end": 1.513
+   },
+   {
+    "text": "di",
+    "start": 1.513,
+    "end": 1.662
+   },
+   {
+    "text": "koin",
+    "start": 1.663,
+    "end": 1.975
+   },
+   {
+    "text": "pertama",
+    "start": 1.975,
+    "end": 2.763
+   },
+   {
+    "text": "kedua",
+    "start": 3.143,
+    "end": 3.877
+   },
+   {
+    "text": "ketiga",
+    "start": 4.203,
+    "end": 5.018
+   },
+   {
+    "text": "atau",
+    "start": 5.331,
+    "end": 5.779
+   },
+   {
+    "text": "keempat",
+    "start": 5.779,
+    "end": 6.472
+   },
+   {
+    "text": "Jadi",
+    "start": 7.387,
+    "end": 7.958
+   },
+   {
+    "text": "ada",
+    "start": 7.958,
+    "end": 8.379
+   },
+   {
+    "text": "empat",
+    "start": 8.379,
+    "end": 8.773
+   },
+   {
+    "text": "hasil",
+    "start": 8.773,
+    "end": 9.33
+   },
+   {
+    "text": "yang",
+    "start": 9.33,
+    "end": 9.588
+   },
+   {
+    "text": "cocok",
+    "start": 9.588,
+    "end": 10.077
+   }
+  ]
+ },
+ "compute": {
+  "hash": "417544a6d4e3",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 12.864,
+  "words": [
+   {
+    "text": "Peluangnya",
+    "start": 0.1,
+    "end": 0.82
+   },
+   {
+    "text": "empat",
+    "start": 0.82,
+    "end": 1.323
+   },
+   {
+    "text": "per",
+    "start": 1.323,
+    "end": 1.567
+   },
+   {
+    "text": "enam",
+    "start": 1.567,
+    "end": 2.029
+   },
+   {
+    "text": "belas",
+    "start": 2.029,
+    "end": 2.749
+   },
+   {
+    "text": "Empat",
+    "start": 3.664,
+    "end": 4.167
+   },
+   {
+    "text": "dan",
+    "start": 4.167,
+    "end": 4.357
+   },
+   {
+    "text": "enam",
+    "start": 4.357,
+    "end": 4.792
+   },
+   {
+    "text": "belas",
+    "start": 4.792,
+    "end": 5.036
+   },
+   {
+    "text": "sama-sama",
+    "start": 5.036,
+    "end": 5.716
+   },
+   {
+    "text": "bisa",
+    "start": 5.716,
+    "end": 6.246
+   },
+   {
+    "text": "dibagi",
+    "start": 6.246,
+    "end": 6.83
+   },
+   {
+    "text": "empat",
+    "start": 6.83,
+    "end": 7.36
+   },
+   {
+    "text": "Hasilnya",
+    "start": 8.27,
+    "end": 9.072
+   },
+   {
+    "text": "satu",
+    "start": 9.072,
+    "end": 9.574
+   },
+   {
+    "text": "per",
+    "start": 9.574,
+    "end": 9.792
+   },
+   {
+    "text": "empat",
+    "start": 9.792,
+    "end": 10.281
+   },
+   {
+    "text": "atau",
+    "start": 10.648,
+    "end": 11.137
+   },
+   {
+    "text": "seperempat",
+    "start": 11.137,
+    "end": 11.939
+   }
+  ]
+ },
+ "answer": {
+  "hash": "5663337f5da6",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 5.16,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.1,
+    "end": 0.82
+   },
+   {
+    "text": "jawabannya",
+    "start": 1.241,
+    "end": 2.07
+   },
+   {
+    "text": "adalah",
+    "start": 2.07,
+    "end": 2.654
+   },
+   {
+    "text": "B",
+    "start": 2.654,
+    "end": 3.103
+   },
+   {
+    "text": "seperempat",
+    "start": 3.415,
+    "end": 4.244
+   }
+  ]
+ },
+ "check1": {
+  "hash": "ca6cae436c47",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 13.752,
+  "words": [
+   {
+    "text": "Kita",
+    "start": 0.1,
+    "end": 0.521
+   },
+   {
+    "text": "cek",
+    "start": 0.521,
+    "end": 0.942
+   },
+   {
+    "text": "dengan",
+    "start": 0.942,
+    "end": 1.404
+   },
+   {
+    "text": "cara",
+    "start": 1.404,
+    "end": 1.744
+   },
+   {
+    "text": "lain",
+    "start": 1.744,
+    "end": 2.396
+   },
+   {
+    "text": "Kelompokkan",
+    "start": 3.311,
+    "end": 4.058
+   },
+   {
+    "text": "keenam",
+    "start": 4.058,
+    "end": 4.507
+   },
+   {
+    "text": "belas",
+    "start": 4.507,
+    "end": 4.737
+   },
+   {
+    "text": "hasil",
+    "start": 4.737,
+    "end": 5.227
+   },
+   {
+    "text": "menurut",
+    "start": 5.227,
+    "end": 5.689
+   },
+   {
+    "text": "banyaknya",
+    "start": 5.689,
+    "end": 6.273
+   },
+   {
+    "text": "angka",
+    "start": 6.273,
+    "end": 6.925
+   },
+   {
+    "text": "nol",
+    "start": 7.319,
+    "end": 7.835
+   },
+   {
+    "text": "satu",
+    "start": 8.161,
+    "end": 8.936
+   },
+   {
+    "text": "dua",
+    "start": 9.221,
+    "end": 9.86
+   },
+   {
+    "text": "tiga",
+    "start": 10.132,
+    "end": 10.852
+   },
+   {
+    "text": "atau",
+    "start": 11.137,
+    "end": 11.585
+   },
+   {
+    "text": "empat",
+    "start": 11.585,
+    "end": 12.102
+   },
+   {
+    "text": "angka",
+    "start": 12.102,
+    "end": 12.835
+   }
+  ]
+ },
+ "check2": {
+  "hash": "d238af2728b5",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 17.112,
+  "words": [
+   {
+    "text": "Isinya",
+    "start": 0.1,
+    "end": 0.671
+   },
+   {
+    "text": "satu",
+    "start": 0.671,
+    "end": 1.336
+   },
+   {
+    "text": "empat",
+    "start": 1.717,
+    "end": 2.192
+   },
+   {
+    "text": "enam",
+    "start": 2.614,
+    "end": 3.211
+   },
+   {
+    "text": "empat",
+    "start": 3.538,
+    "end": 4.04
+   },
+   {
+    "text": "dan",
+    "start": 4.393,
+    "end": 4.72
+   },
+   {
+    "text": "satu",
+    "start": 4.72,
+    "end": 5.385
+   },
+   {
+    "text": "Jumlahnya",
+    "start": 6.3,
+    "end": 7.074
+   },
+   {
+    "text": "enam",
+    "start": 7.074,
+    "end": 7.577
+   },
+   {
+    "text": "belas",
+    "start": 7.577,
+    "end": 8.324
+   },
+   {
+    "text": "Kelompok",
+    "start": 9.235,
+    "end": 9.819
+   },
+   {
+    "text": "tiga",
+    "start": 9.819,
+    "end": 10.227
+   },
+   {
+    "text": "angka",
+    "start": 10.227,
+    "end": 10.675
+   },
+   {
+    "text": "berisi",
+    "start": 10.675,
+    "end": 11.232
+   },
+   {
+    "text": "empat",
+    "start": 11.232,
+    "end": 11.694
+   },
+   {
+    "text": "hasil",
+    "start": 11.694,
+    "end": 12.428
+   },
+   {
+    "text": "Cocok",
+    "start": 13.338,
+    "end": 13.977
+   },
+   {
+    "text": "empat",
+    "start": 14.33,
+    "end": 14.751
+   },
+   {
+    "text": "per",
+    "start": 14.751,
+    "end": 15.009
+   },
+   {
+    "text": "enam",
+    "start": 15.009,
+    "end": 15.458
+   },
+   {
+    "text": "belas",
+    "start": 15.458,
+    "end": 16.191
+   }
+  ]
+ },
+ "remember": {
+  "hash": "328cfe346a17",
+  "voice": "id-ID-GadisNeural",
+  "rate": "-8%",
+  "duration": 17.4,
+  "words": [
+   {
+    "text": "Yang",
+    "start": 0.1,
+    "end": 0.426
+   },
+   {
+    "text": "perlu",
+    "start": 0.426,
+    "end": 0.834
+   },
+   {
+    "text": "diingat",
+    "start": 0.834,
+    "end": 1.432
+   },
+   {
+    "text": "Pertama",
+    "start": 2.346,
+    "end": 3.243
+   },
+   {
+    "text": "hitung",
+    "start": 3.596,
+    "end": 4.085
+   },
+   {
+    "text": "semua",
+    "start": 4.085,
+    "end": 4.479
+   },
+   {
+    "text": "hasil",
+    "start": 4.479,
+    "end": 5.064
+   },
+   {
+    "text": "yang",
+    "start": 5.064,
+    "end": 5.349
+   },
+   {
+    "text": "mungkin",
+    "start": 5.349,
+    "end": 6.083
+   },
+   {
+    "text": "Setiap",
+    "start": 6.993,
+    "end": 7.55
+   },
+   {
+    "text": "koin",
+    "start": 7.55,
+    "end": 7.89
+   },
+   {
+    "text": "membuatnya",
+    "start": 7.89,
+    "end": 8.555
+   },
+   {
+    "text": "dua",
+    "start": 8.555,
+    "end": 8.922
+   },
+   {
+    "text": "kali",
+    "start": 8.922,
+    "end": 9.289
+   },
+   {
+    "text": "lipat",
+    "start": 9.289,
+    "end": 9.751
+   },
+   {
+    "text": "Kedua",
+    "start": 10.661,
+    "end": 11.422
+   },
+   {
+    "text": "hitung",
+    "start": 11.789,
+    "end": 12.183
+   },
+   {
+    "text": "hasil",
+    "start": 12.183,
+    "end": 12.74
+   },
+   {
+    "text": "yang",
+    "start": 12.74,
+    "end": 13.026
+   },
+   {
+    "text": "cocok",
+    "start": 13.026,
+    "end": 13.542
+   },
+   {
+    "text": "Lalu",
+    "start": 14.452,
+    "end": 14.968
+   },
+   {
+    "text": "bagi",
+    "start": 14.968,
+    "end": 15.458
+   },
+   {
+    "text": "keduanya",
+    "start": 15.458,
+    "end": 16.477
+   }
+  ]
+ }
+}
